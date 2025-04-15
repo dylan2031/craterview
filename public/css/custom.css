@@ -1,0 +1,144 @@
+html, body {
+    font-family: 'Work Sans', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+
+}
+  
+nav, .sidebar {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500; 
+    font-style: normal;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* sidebar icons disappear in a 'sweet spot' for better responsiveness */
+@media (min-width: 768px) and (max-width: 1328px) {
+    .sidebar-icon {
+      display: none; /* Hides the sidebar-icon */
+    }
+  }
+
+
+.sidebar {
+    background: linear-gradient(to bottom, #245DDA, #02A5FF); /* Frutiger Aero-style blue */
+    color: white;
+    height: 100% !important;
+    padding: 1.5rem 1rem;
+    backdrop-filter: blur(4px);
+    background: linear-gradient(to bottom, rgba(36, 93, 218, 0.85), rgba(2, 165, 255, 0.85));
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1),
+                0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar .nav-link {
+    color: white;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border-radius: 0.25rem;
+    text-shadow: 0 0 5px #00eaff, 0 0 10px #00cfff;
+}
+
+.sidebar hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sidebar small {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.frutiger-aero-navbar {
+    background: linear-gradient(to bottom, #92D050, #d47d00);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2), 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.frutiger-aero-navbar .nav-link {
+    color: white !important;
+    margin: 0 0.75rem;
+}
+
+.frutiger-aero-navbar .navbar-brand {
+    color: white;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+
+.frutiger-aero-navbar .nav-link:hover,
+.frutiger-aero-navbar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border-radius: 0.25rem;
+    text-shadow: 0 0 5px #00eaff, 0 0 10px #00cfff;
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 3px #00eaff; }
+    25% { box-shadow: 0 0 6px #00eaff; }
+    50% { box-shadow: 0 0 9px #00eaff; }
+    75% { box-shadow: 0 0 6px #00eaff; }
+    100% { box-shadow: 0 0 3px #00eaff; }
+}
+
+.glow-on-hover:hover {
+    animation: glow 1s ease-in-out infinite;
+}
+
+/* Style the logo to enlarge on hover */
+.logo {
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Enlarge the image by 10% on hover */
+    filter: brightness(1.5); /* Increase brightness by 50% */
+}
+
+/*xp style buttons */
+/* Basic XP-style button styles */
+.xp-btn-primary, .xp-btn-secondary {
+    padding: 10px 20px;
+    border: 2px solid #b2b2b2;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+}
+
+.xp-btn-primary {
+    background: linear-gradient(to bottom, #92D050, #d47d00);
+    color: #333;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.xp-btn-secondary {
+    background: linear-gradient(to bottom, #f4f4f4, #d3d3d3);
+    color: #333;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.xp-btn-primary:hover, .xp-btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.xp-btn-primary:active, .xp-btn-secondary:active {
+    transform: translateY(2px);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4);
+}

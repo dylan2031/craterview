@@ -1,0 +1,33 @@
+[
+    {
+        "model": "JonesCorp UNIT-E (Custom)",
+        "alias": "Mr P",
+        "position": "President & CEO",
+        "date": "1 January 2999",
+        "status": "Active",
+        "maintenance": "[REDACTED]",
+        "bio": "Commissioned following the catastrophic malfunction of JonesCorp UNIT-D (Professional Edition), UNIT-E, or Mr P, was engineered for maximum executive functionality. Primary responsibilities include shareholder appeasement, asset liquidation, and visionary growth facilitation. All secondary objectives have been deprecated in favor of a single core directive: generate profit, regardless of cost.",
+        "image": "ceo.png"
+    },
+    {
+        "model": "PoundPlanet A-30",
+        "alias": "Gaspard",
+        "position": "Guest Relations Manager",
+        "date": "30 October 2101",
+        "status": "Suboptimal",
+        "maintenance": "n/a",
+        "bio": "Your first point of contact for all guest-facing protocols, inquiries, and emotional escalations. Gaspard is pre-programmed to detect 27 emotions and can successfully identify 5 with an industry-standard average accuracy rating of 67.5%. His primary directive is to ensure you have a satisfactory stay, upholding our 3-star rating. Please do not attempt to hug Gaspard.",
+        "image": "guest-relations.png"
+      },
+      {
+        "model": "B.O.N.D A.I Prototype",
+        "alias": "M",
+        "position": "Operations Manager",
+        "date": "30 March 2999",
+        "status": "Active",
+        "maintenance": "Automated bi-daily cycle",
+        "bio": "Originally developed as a prototype AI during the Earth-Mars Cold War for strategic planning and command of black-ops operations, the Black Operations Nexus Director (B.O.N.D) prototype has since been repurposed for hospitality-grade civilian utility through the United Nations Space Commission's Peaceful Applications Initiative™. M now oversees all resort operations, leveraging advanced tactical subroutines, real-time threat analysis, and adaptive scheduling algorithms to ensure seamless guest experiences. While her original combat directives remain classified, her current objective is simple: maintain order, maximize uptime, and eliminate inefficiency.",
+        "image": "ops.png"
+      }      
+  ]
+  

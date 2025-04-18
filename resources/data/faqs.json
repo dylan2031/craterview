@@ -1,0 +1,34 @@
+[
+    {
+      "question": "What time is check-in/check-out?",
+      "answer": "Check-in is from 3:00 PM Mars Local Time. Check-out is by 11:00 AM."
+    },
+    {
+      "question": "What is your policy on early check-ins and late check-outs?",
+      "answer": "Early check-ins and late check-outs are subject to availability and cannot be guaranteed in advance. If your room is ready early or remains unbooked following your stay, we’ll do our best to accommodate your request."
+    },
+    {
+      "question": "Is breakfast included with my stay?",
+      "answer": "Yes, breakfast is included and served daily from 7:00 AM to 10:00 AM. Options include hydroponically-grown fruit, assorted flavours of nutrient paste, and a classic Earth-style breakfast."
+    },
+    {
+      "question": "What amenities are available at the resort?",
+      "answer": "Our amenities include a 24-hour casino, 15 distinct dining establishments, a fitness center, both indoor and outdoor heated pools, and a full-service spa for when the Martian dust gets to you. Stay connected with 0.004 Mbps dial-up Extranet access available at our 24/7 Extranet Cafe. Our bar features a rotating selection of domestic and Luna-imported beverages. Be sure to check our events page for upcoming attractions, including regular bingo nights and the occasional meteor shower viewing."
+    },
+    {
+      "question": "Are pets allowed?",
+      "answer": "Yes, we welcome pets of all sizes."
+    },
+    {
+      "question": "Can I request a room with a view?",
+      "answer": "Rooms with views of the Martian landscape are available upon request, but cannot be guaranteed due to high-demand."
+    },
+    {
+      "question": "What is your cancellation policy?",
+      "answer": "Cancellations can be made any time, but please be aware the our no-refund policy still applies."
+    },
+    {
+      "question": "Are children allowed in the casino?",
+      "answer": "There are no laws against this on Mars. However, we recommend that children use our designated 'Future Gamblers' zone instead."
+    }
+  ]  

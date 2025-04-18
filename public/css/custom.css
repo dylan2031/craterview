@@ -3,7 +3,7 @@ html, body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 
 }
-  
+
 nav, .sidebar {
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
@@ -141,4 +141,52 @@ nav, .sidebar {
 .xp-btn-primary:active, .xp-btn-secondary:active {
     transform: translateY(2px);
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* use with bootstrap modal for a windows xp inspired look */
+
+/* Ensure modal-content has no overflow issues */
+.xp-modal.modal.fade .modal-dialog .modal-content {
+    border: 4px solid #1d4e89 !important;
+    border-radius: 8px !important;
+    padding: 0 !important;
+    overflow: hidden;
+    background-color: #1d4e89 !important; /* Fill the gap */
+}
+
+
+.xp-title-bar {
+    background: linear-gradient(to bottom, #3399ff, #1d4e89); /* XP-style gradient */
+    color: white;
+    font-weight: bold;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    user-select: none;
+    cursor: default;
+
+    height: 2rem;
+    width: 100%;
+    margin: 0;
+    padding: 6px 12px;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: flex-start; /* Align text to the left */
+}
+
+.xp-title-bar img {
+    height: 2rem;
+    cursor: pointer;
+}
+
+.xp-title-bar img:hover {
+    filter: brightness(1.2);  /* Lighten the image on hover */
+}
+
+.xp-card {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to top, #e3f2fd, #ffffff);
+    padding: 1.5rem;
 }

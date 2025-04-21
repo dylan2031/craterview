@@ -12,6 +12,14 @@ class PagesController extends Controller
         return view('pages.index');
     }
 
+    public function entertainment()
+    {
+        $entJson = File::get(resource_path('data/entertainment.json'));
+        $entertainment = json_decode($entJson, true);
+    
+        return view('pages.entertainment', compact('entertainment'));
+    }
+
     public function about()
     {
         $teamJson = File::get(resource_path('data/team.json'));

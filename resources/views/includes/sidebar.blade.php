@@ -19,7 +19,7 @@
             </a>
         </li>
         <li>
-            <a href="#" class="nav-link glow-on-hover">
+            <a href="/entertainment" class="nav-link glow-on-hover">
                 <img src="{{ asset('images/icons/mars.svg') }}" width="32" height="32" class="img-fluid pb-1 sidebar-icon">
                 Entertainment
             </a>

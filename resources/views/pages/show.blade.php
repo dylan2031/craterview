@@ -2,7 +2,8 @@
 
 @section('content')
 <div class="container-flex">
-    <a href="{{ url()->previous() }}#search" class="btn xp-btn-secondary">Back</a>
+    <a onclick="history.back(); document.getElementById('results').scrollIntoView();" class="btn xp-btn-secondary">Back</a>
+    
 </div>
 <div class="container">
     <div class="row">

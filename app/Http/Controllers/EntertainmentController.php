@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use Illuminate\Support\Collection;
-use Illuminate\Pagination\LengthAwarePaginator;
 
 use File;
 
@@ -16,9 +14,8 @@ class EntertainmentController extends Controller
         $entJson = File::get(resource_path('data/entertainment.json'));
         $entertainment = json_decode($entJson, true);
 
-        return view('pages.entertainment', compact('entertainment'));
+        return view('pages.entertainment.index', compact('entertainment'));
     }
-
 
     public function search(Request $request)
     {
@@ -79,11 +76,11 @@ class EntertainmentController extends Controller
             });
         }
     
-        return view('pages.entertainment', [
+        return view('pages.entertainment.index', [
             'entertainment' => $entertainment,
             'filtered' => $filtered,
             'scrollTo' => 'results',
-        ]);
+        ]);        
     }
     
     public function show($slug)
@@ -107,7 +104,7 @@ class EntertainmentController extends Controller
         ->where('name', '!=', $item['name'])
         ->random();
 
-        return view('pages.show', compact('item', 'randomItem'));
+        return view('pages.entertainment.show', compact('item', 'randomItem'));
     }
     
 }

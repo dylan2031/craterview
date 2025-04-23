@@ -60,8 +60,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ $member['alias'] }}</h5>
                             <p class="card-subtitle mb-2 text-muted">{{ $member['position'] }}</p>
-                            <a href="/about/{{ $member['alias'] }}" class="btn xp-btn-secondary">Profile</a>
-
+                            <a href="/about/{{ Str::slug($member['alias']) }}" class="btn xp-btn-secondary">Profile</a>
                         </div>
                     </div>
                 </div>

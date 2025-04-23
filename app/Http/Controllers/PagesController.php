@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 
 
 class PagesController extends Controller
@@ -17,7 +18,7 @@ class PagesController extends Controller
         $entJson = File::get(resource_path('data/entertainment.json'));
         $entertainment = json_decode($entJson, true);
     
-        return view('pages.entertainment', compact('entertainment'));
+        return view('pages.entertainment.index', compact('entertainment'));
     }
 
     public function about()
@@ -28,20 +29,22 @@ class PagesController extends Controller
         $faqJson = File::get(resource_path('data/faqs.json'));
         $faqs = json_decode($faqJson, true);
     
-        return view('pages.about', compact('team', 'faqs'));
+        return view('pages.about.index', compact('team', 'faqs'));
     }
     
 
     public function teamMember($alias)
     {
         $team = json_decode(file_get_contents(resource_path('data/team.json')), true);
-        $member = collect($team)->firstWhere('alias', $alias);
+        $member = collect($team)->first(function ($item) use ($alias) {
+            return Str::slug($item['alias']) === $alias;
+        });
 
         if (!$member) {
             abort(404);
         }
 
-        return view('pages.profile', ['member' => $member]);
+        return view('pages.about.profile', ['member' => $member]);
     }
 
 

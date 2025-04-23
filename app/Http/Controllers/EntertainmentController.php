@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\Support\Collection;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 use File;
 
@@ -17,6 +19,7 @@ class EntertainmentController extends Controller
         return view('pages.entertainment', compact('entertainment'));
     }
 
+
     public function search(Request $request)
     {
         // Retrieve the 'included_in_pass' filter values and convert 'true' string to boolean true
@@ -29,7 +32,7 @@ class EntertainmentController extends Controller
         $ageSuitability = $request->input('age_suitability', []); // ['All Ages', '13 and up', 'Adults']
     
         // Retrieve the 'category' filter values
-        $categories = $request->input('category', []); // ['amusement', 'gambling', 'shopping', 'exhibition', 'excursion']
+        $categories = $request->input('category', []); // ['amusement', 'gambling', 'shopping', 'nightlife', 'exhibition', 'excursion']
     
         // Retrieve the 'location' filter values
         $locations = $request->input('location', []); // ['Main Building', 'Pavilion', 'The Strip™', 'Nebula Park', 'The Crater']

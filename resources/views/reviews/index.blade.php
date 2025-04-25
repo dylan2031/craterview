@@ -22,20 +22,22 @@
                 </p>
                 <h3>...and our guests agree!</h3>
                 <br>
-                <button class="btn xp-btn-primary">Show me!</button>
+                <button class="btn xp-btn-primary" onclick="scrollToOverview()">Show me!</button>
             </div>  
         </div>
     </section>
-    <section>
+    <section id="overview">
         <div class="container">
             <br>
             @include('includes.review-calculations')
-            <br>
+            <br id="top"> {{--id anchor--}}
             <h3 class="text-center">Guest Reviews</h3>
+                <a href="/reviews/create" class="btn xp-btn-secondary ms-4 mb-2"><i class="bi bi-star"></i> Write a review</a>
+                <a href="#" class="btn xp-btn-secondary ms-2 mb-2"><i class="bi bi-cup-hot"></i> Buy us a coffee</a>
             <div>
                 @if (count($reviews)>0)
                     @foreach ($reviews as $review)
-                        <div class="xp-card card-text p-3 mb-3">
+                        <div class="xp-card card-text p-3 mb-2">
                             <p class="mb-0">User says...</p>
                             <small class="text-muted">
                                 {{ $review->created_at->format('M j, Y') }}
@@ -61,7 +63,10 @@
                             
                             <a href="/reviews/{{$review->id}}" class="btn xp-btn-primary">Read full review</a>
                         </div>
-                    @endforeach
+                    @endforeach    
+                    <div class="d-flex mt-4">
+                        {{ $reviews->withQueryString()->links('pagination::bootstrap-5') }}
+                    </div>                                                         
                 @else
                 <p>Nothing here yet...</p>
                 <p>Be the first to leave a review!</p>
@@ -69,5 +74,28 @@
             </div>
         </div>
     </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".pagination a").forEach(function (el) {
+                el.href += "#top";
+            });
+        });
+    </script>    
+    <script>
+        function scrollToOverview() {
+            const element = document.getElementById("overview");
+            const offset = 50;
+            const bodyRect = document.body.getBoundingClientRect().top;
+            const elementRect = element.getBoundingClientRect().top;
+            const elementPosition = elementRect - bodyRect;
+            const offsetPosition = elementPosition - offset;
+    
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+    </script>
 
 @endsection

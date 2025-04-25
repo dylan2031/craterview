@@ -30,6 +30,11 @@
         @include('includes.nav-sm')
     </div>
 
+    {{-- Message pop up if we have a message --}}
+    @if(session('message'))
+        @include('includes.msg-window')
+    @endif
+
     <!-- Layout Container with Flexbox (Main layout structure) -->
     <div class="container-fluid g-0">
         <div class="d-flex">    

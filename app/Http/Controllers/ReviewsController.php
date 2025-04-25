@@ -13,7 +13,7 @@ class ReviewsController extends Controller
     public function index()
     
     {
-        $reviews = Review::all();
+        $reviews = Review::orderBy('id', 'desc')->paginate(6);
         return view('reviews.index')->with('reviews', $reviews);
     }
 
@@ -22,7 +22,7 @@ class ReviewsController extends Controller
      */
     public function create()
     {
-        //
+        return view('reviews.create');
     }
 
     /**
@@ -30,7 +30,18 @@ class ReviewsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Validate the incoming request data
+        $validated = $request->validate([
+            'title' => 'required|string|max:255',
+            'star_rating' => 'required|integer|min:1|max:5',
+            'body' => 'required|string',
+        ]);
+
+        // Create review in DB
+        Review::create($validated);
+
+        //back to page
+        return redirect('/reviews#top')->with('message', 'Thank you for your feedback. Your review has been submitted successfully.');
     }
 
     /**

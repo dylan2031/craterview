@@ -190,3 +190,26 @@ nav, .sidebar {
     background: linear-gradient(to top, #e3f2fd, #ffffff);
     padding: 1.5rem;
 }
+
+.star-rating {
+    direction: rtl;
+    display: inline-flex;
+    gap: 5px;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star-rating input[type="radio"]:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: gold;
+}

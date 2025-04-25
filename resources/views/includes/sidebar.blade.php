@@ -43,6 +43,12 @@
             </a>
         </li>
         <li>
+            <a href="/reviews" class="nav-link glow-on-hover">
+                <img src="{{ asset('images/icons/reviews.svg') }}" width="32" height="32" class="img-fluid pb-1 sidebar-icon">
+                Reviews
+            </a>
+        </li>
+        <li>
             <a href="/about" class="nav-link glow-on-hover">
                 <img src="{{ asset('images/icons/about.svg') }}" width="32" height="32" class="img-fluid pb-1 sidebar-icon">
                 About Us

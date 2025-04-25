@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\EntertainmentController;
+use App\Http\Controllers\ReviewsController;
 
 Route::get('/', [PagesController::class, 'index']);
 
@@ -23,3 +24,6 @@ Route::get('/entertainment/{slug}', [EntertainmentController::class, 'show'])->n
 Route::get('/about', [PagesController::class, 'about']);
 Route::get('/about/{alias}', [PagesController::class, 'teamMember']);
 // End of about
+
+// Reviews
+Route::resource('reviews', ReviewsController::class);

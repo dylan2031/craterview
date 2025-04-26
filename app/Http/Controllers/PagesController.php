@@ -47,5 +47,8 @@ class PagesController extends Controller
         return view('pages.about.profile', ['member' => $member]);
     }
 
+    public function saythanks(){
+        return view('pages.saythanks.index');
+    }
 
 }

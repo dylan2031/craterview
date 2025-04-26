@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\EntertainmentController;
 use App\Http\Controllers\ReviewsController;
+use App\Http\Controllers\PaymentsController;
 
 Route::get('/', [PagesController::class, 'index']);
 
@@ -27,3 +28,22 @@ Route::get('/about/{alias}', [PagesController::class, 'teamMember']);
 
 // Reviews
 Route::resource('reviews', ReviewsController::class);
+
+// Buy me a coffee page
+Route::get('/saythanks', [PagesController::class, 'saythanks']);
+
+// *********************//
+// ** Payment routes ** //
+// *********************//
+
+// Handle form submission to start the payment process
+Route::post('/payment/start', [PaymentsController::class, 'start'])->name('payment.start');
+
+// Display the checkout page
+Route::get('/payment/checkout', [PaymentsController::class, 'checkout'])->name('payment.checkout');
+
+// Confirm the payment
+Route::get('/payment/confirm', [PaymentsController::class, 'confirm'])->name('payment.confirm');
+
+// (Optional) Reset the payment session (like a "cancel payment" action)
+Route::get('/payment/reset', [PaymentsController::class, 'reset'])->name('payment.reset');

@@ -40,11 +40,24 @@ class PaymentsController extends Controller
     /**
      * Confirm the payment and update session.
      */
-    public function confirm()
+    public function confirm(Request $request)
     {
-        session()->forget('payment');
-        
-        return view('payment.confirm');
+        // Retrieve the payment_confirmed value from the form submission and cast it to a boolean
+        $paymentConfirmed = filter_var($request->input('payment_confirmed'), FILTER_VALIDATE_BOOLEAN);
+
+        // Store the boolean value in the session
+        session(['payment_confirmed' => $paymentConfirmed]);
+
+        // Redirect to the completed page after confirmation
+        return redirect()->route('payment.completed');
     }
+
+    public function completed()
+    {
+        session()->flash('message', 'Your payment was successfully processed. Thank you.');
+        return view('payment.completed');
+    }
+    
+
 
 }

@@ -34,11 +34,26 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <p class="text-center">Choose a payment option:</p>
 
-                        <!-- Optional: You can add a button to confirm the payment -->
-                        <div class="d-flex justify-content-center mt-4">
-                            <a href="{{ route('payment.confirm') }}" class="btn btn-success">Confirm Payment</a>
-                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col d-flex justify-content-center">
+                                <form action="{{ route('payment.confirm') }}" method="POST">
+                                    @csrf
+                                    <input type="hidden" name="payment_confirmed" value="true">
+                                    <div class="">
+                                        <button type="submit" class="btn">
+                                            <img src="{{ asset('images/payment/speedypay.png') }}" width="120" height="auto" class="img-fluid pb-1">
+                                        </button>  
+                                    </div>
+                                </form>   
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <button class="btn">
+                                    <img src="{{ asset('images/payment/biopay.png') }}" width="120" height="auto" class="img-fluid pb-1">
+                                </button>   
+                            </div>
+                        </div>                    
                     </div>
                 </div>
             </div>

@@ -43,7 +43,7 @@ Route::post('/payment/start', [PaymentsController::class, 'start'])->name('payme
 Route::get('/payment/checkout', [PaymentsController::class, 'checkout'])->name('payment.checkout');
 
 // Confirm the payment
-Route::get('/payment/confirm', [PaymentsController::class, 'confirm'])->name('payment.confirm');
+Route::post('/payment/confirm', [PaymentsController::class, 'confirm'])->name('payment.confirm');
 
-// (Optional) Reset the payment session (like a "cancel payment" action)
-Route::get('/payment/reset', [PaymentsController::class, 'reset'])->name('payment.reset');
+// Payment complete (or not)
+Route::get('/payment/completed', [PaymentsController::class, 'completed'])->name('payment.completed');

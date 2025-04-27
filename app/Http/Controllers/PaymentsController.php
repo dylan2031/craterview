@@ -57,7 +57,15 @@ class PaymentsController extends Controller
         session()->flash('message', 'Your payment was successfully processed. Thank you.');
         return view('payment.completed');
     }
-    
 
+    // set biopay to true if user chooses to pay with biometrics
+    public function setBiopay(Request $request)
+        {
+            // Set the session variable biopay to true
+            session(['biopay' => true]);
+
+            // Redirect back to the page with the form
+            return redirect()->back();
+        }
 
 }

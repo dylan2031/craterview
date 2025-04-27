@@ -47,3 +47,6 @@ Route::post('/payment/confirm', [PaymentsController::class, 'confirm'])->name('p
 
 // Payment complete (or not)
 Route::get('/payment/completed', [PaymentsController::class, 'completed'])->name('payment.completed');
+
+// If user chooses to pay with BioPay
+Route::post('/payment/setBiopay', [PaymentsController::class, 'setBiopay'])->name('payment.setBiopay');

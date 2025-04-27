@@ -49,10 +49,30 @@
                                 </form>   
                             </div>
                             <div class="col d-flex justify-content-center">
-                                <button class="btn">
-                                    <img src="{{ asset('images/payment/biopay.png') }}" width="120" height="auto" class="img-fluid pb-1">
-                                </button>   
+                                <!-- Form to trigger setting biopay to true -->
+                                <form action="{{ route('payment.setBiopay') }}" method="POST">
+                                    @csrf
+                                    <input type="hidden" name="biopay" value="true">
+                                    <button type="submit" class="btn">
+                                        <img src="{{ asset('images/payment/biopay.png') }}" width="120" height="auto" class="img-fluid pb-1">
+                                    </button>
+                                </form>
+                                <!-- JavaScript to automatically open the modal if 'biopay' session is true -->
+                                @if(session('biopay') === true)
+                                <script>
+                                    document.addEventListener('DOMContentLoaded', function () {
+                                        // Open the modal programmatically
+                                        var bioModal = new bootstrap.Modal(document.getElementById('bioModal'));
+                                        bioModal.show();
+                                    });
+                                </script>
+                                @endif
+                                <!-- Conditionally include the modal if biopay is true -->
+                                @if(session('biopay') === true)
+                                    @include('payment.biopay')
+                                @endif
                             </div>
+                            
                         </div>                    
                     </div>
                 </div>

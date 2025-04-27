@@ -49,12 +49,16 @@ class PaymentsController extends Controller
         session(['payment_confirmed' => $paymentConfirmed]);
 
         // Redirect to the completed page after confirmation
-        return redirect()->route('payment.completed');
+        return redirect()->route('payment.completed')->with('message', 'Your payment was successfully processed. Thank you.');
     }
 
     public function completed()
     {
-        session()->flash('message', 'Your payment was successfully processed. Thank you.');
+        //forget sessions
+        session()->forget('biopay');
+        session()->forget('payment_confirmed');
+
+        //session()->flash('message', 'Your payment was successfully processed. Thank you.');
         return view('payment.completed');
     }
 

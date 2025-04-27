@@ -36,6 +36,7 @@
                         </table>
                         <p class="text-center">Choose a payment option:</p>
 
+                        <!-- Speedy pay (instant) -->
                         <div class="row justify-content-center">
                             <div class="col d-flex justify-content-center">
                                 <form action="{{ route('payment.confirm') }}" method="POST">
@@ -48,6 +49,7 @@
                                     </div>
                                 </form>   
                             </div>
+                            <!-- BioPay -->
                             <div class="col d-flex justify-content-center">
                                 <!-- Form to trigger setting biopay to true -->
                                 <form action="{{ route('payment.setBiopay') }}" method="POST">
@@ -71,6 +73,13 @@
                                 @if(session('biopay') === true)
                                     @include('payment.biopay')
                                 @endif
+                            </div>
+                            <!-- NeuraChip -->
+                            <div class="col d-flex justify-content-center">
+                                <button data-bs-toggle="modal" data-bs-target="#neuraModal" class="btn">
+                                    <img src="{{ asset('images/payment/neurachip.png') }}" width="120" height="auto" class="img-fluid pb-1">
+                                    @include('payment.neurachip')
+                                </button>  
                             </div>
                             
                         </div>                    

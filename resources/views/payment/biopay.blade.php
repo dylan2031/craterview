@@ -1,3 +1,16 @@
+{{-- 
+
+This section handles the BioPay 'pay with biometrics' feature.
+
+I intentionally kept the HTML, CSS, and JavaScript together in a single include 
+for simplicity, rather than splitting it into separate files. 
+Because BioPay is a fun fictional feature rather than a core part of this application, 
+I prioritized quick integration over structure here.
+
+If BioPay were a real product, I would organize this more cleanly.
+
+--}}
+
 <style>
   /* Video cam frame styling */
   .video-wrapper {

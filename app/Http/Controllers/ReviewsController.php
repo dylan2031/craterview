@@ -58,7 +58,8 @@ class ReviewsController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $review = Review::findOrFail($id);
+        return view('reviews.edit', compact('review'));
     }
 
     /**
@@ -66,14 +67,28 @@ class ReviewsController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
-    }
+        $review = Review::findOrFail($id);
+    
+        $validated = $request->validate([
+            'title' => 'required|string|max:255',
+            'star_rating' => 'required|integer|min:1|max:5',
+            'body' => 'required|string',
+        ]);
+    
+        $review->update($validated);
+    
+        return redirect('/reviews#top')->with('message', 'Review updated successfully.');
+    }    
 
     /**
      * Remove the specified resource from storage.
      */
     public function destroy(string $id)
-    {
-        //
-    }
+{
+    $review = Review::findOrFail($id);
+    $review->delete();
+
+    return redirect('/reviews#top')->with('message', 'Review deleted successfully.');
+}
+
 }

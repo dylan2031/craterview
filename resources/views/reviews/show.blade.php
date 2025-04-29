@@ -33,6 +33,13 @@
     <div>
         <p>{{ $review->body }}</p>
     </div>
+
+    <a href="reviews/{{$review->id}}/edit" class="btn xp-btn-secondary">Edit review</a>
+    <form action="{{ route('reviews.destroy', $review->id) }}" method="POST" style="display: inline;">
+        @csrf
+        @method('DELETE')
+        <button type="submit" class="btn xp-btn-secondary" onclick="return confirm('Are you sure you want to delete this review?')">Delete Review</button>
+    </form>    
 </div>
 
 @endsection

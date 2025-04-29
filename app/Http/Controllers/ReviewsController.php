@@ -40,7 +40,7 @@ class ReviewsController extends Controller
         // Create review in DB
         Review::create($validated);
 
-        //back to page
+        // Back to page
         return redirect('/reviews#top')->with('message', 'Thank you for your feedback. Your review has been submitted successfully.');
     }
 
@@ -84,11 +84,11 @@ class ReviewsController extends Controller
      * Remove the specified resource from storage.
      */
     public function destroy(string $id)
-{
-    $review = Review::findOrFail($id);
-    $review->delete();
+    {
+        $review = Review::findOrFail($id);
+        $review->delete();
 
-    return redirect('/reviews#top')->with('message', 'Review deleted successfully.');
-}
+        return redirect('/reviews#top')->with('message', 'Review deleted successfully.');
+    }
 
 }

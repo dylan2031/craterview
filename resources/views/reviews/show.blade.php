@@ -29,7 +29,7 @@
         </h3>
     </div>
 
-    <!-- Review Body (retro XP "boxed" aesthetic) -->
+    <!-- Review Body -->
     <div>
         <p>{{ $review->body }}</p>
     </div>

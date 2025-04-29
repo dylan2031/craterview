@@ -39,7 +39,7 @@
         <h3>The comfort of Earth on Martian soil&#42;.</h3>
         <p><small class="text-muted fst-italic">&#42;soil imported from Pontefract, England.</small></p>
         <img src="{{ asset('images/index/stars.png') }}" class="img-fluid p-3" alt="3 out of 5 stars">
-        <p><small class="text-muted fst-italic">Rated 3 stars by the Intergalactic Hotel Stardards Committee</small></p>
+        <p><small class="text-muted fst-italic">Rated 3 stars by the Intergalactic Hotel Standards Committee</small></p>
         <p>Perched on the rim of the breathtaking manmade crater known as the '2077 United Nations Space Commission Nuclear
             Power Plant Accident Site' &#40;name change pending&#41;, Craterview blends nostalgic Earth comfort with modern 
             interplanetary convenience - offering panoramic views, cutting-edge gambling facilities, all the amenities 
@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="{{ asset('images/index/casino.png') }}" class="img-fluid img-thumbnail" alt="A woman smoking a cigarette on Mars">
+                <img src="{{ asset('images/index/casino.png') }}" class="img-fluid img-thumbnail" alt="Craterview Casino">
             </div>
         </div>
     </div> 

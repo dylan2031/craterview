@@ -50,3 +50,8 @@ Route::get('/payment/completed', [PaymentsController::class, 'completed'])->name
 
 // If user chooses to pay with BioPay
 Route::post('/payment/setBiopay', [PaymentsController::class, 'setBiopay'])->name('payment.setBiopay');
+
+// These were added by Laravel auth
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

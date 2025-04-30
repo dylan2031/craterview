@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+// HomeController was made by laravel auth, not me
+// I modified the view that is returned but that's it
+
+class DashboardController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -23,6 +26,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('pages.index');
+        return view('user.dashboard');
     }
 }

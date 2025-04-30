@@ -35,6 +35,9 @@
         @include('includes.msg-window')
     @endif
 
+    {{-- Modal to confirm logout here --}}
+    @include('includes.logout')
+
     <!-- Layout Container with Flexbox (Main layout structure) -->
     <div class="container-fluid g-0">
         <div class="d-flex">    

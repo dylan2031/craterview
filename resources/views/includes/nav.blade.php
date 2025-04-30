@@ -20,17 +20,20 @@
                 </a>
             @endguest
             @auth
-                <a class="nav-link glow-on-hover" href="/register">
+                <a class="nav-link glow-on-hover" href="/dashboard">
                     <img src="{{ asset('images/icons/signup.svg') }}" width="32" height="32">
                     {{ explode(' ', Auth::user()->name)[0] }}'s Dashboard
                 </a>
-                <a class="nav-link glow-on-hover" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                {{-- Open logout modal to confirm log out--}}
+                <a class="nav-link glow-on-hover" href="#" data-bs-toggle="modal" data-bs-target="#logoutModal">
                     <img src="{{ asset('images/icons/signup.svg') }}" width="32" height="32">
                     Sign out
                 </a>
+                {{-- Hidden form handles logout--}}
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                     @csrf
                 </form>
+                {{-- Logout modal is an include on app.blade.php as it becomes unclickable if it is inside nav--}}  
             @endauth
         </div>
 

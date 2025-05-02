@@ -26,15 +26,15 @@
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <li>
-                                    <a href="/reviews/{{ $review->id }}" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light">View</a></li>
+                                    <a href="/reviews/{{ $review->id }}" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light dash-dropdown">View</a></li>
                                 <li>
                                 <li>
-                                    <a href="/reviews/{{ $review->id }}/edit" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light">Edit</a></li>
+                                    <a href="/reviews/{{ $review->id }}/edit" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light dash-dropdown">Edit</a></li>
                                 <li>
                                     <form action="{{ route('reviews.destroy', $review->id) }}" method="POST" style="display: inline;">
                                         @csrf
                                         @method('DELETE')
-                                        <a type="submit" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light" onclick="return confirm('Are you sure you want to delete this review?')">Delete</a>
+                                        <button type="submit" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light dash-dropdown" onclick="return confirm('Are you sure you want to delete this review?')">Delete</button>
                                     </form>    
                                 </li>
                             </ul>

@@ -238,3 +238,26 @@ nav, .sidebar {
     color: white !important;
     font-weight: bold;
 }
+
+/* in the dashboard dropdown, I am using both a and button tags
+which causes some visual/styling inconsistencies, this fixes that */
+.dash-dropdown {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-family: 'Work Sans', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    text-align: left;
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: #212529;
+    border-radius: 0.5rem;
+}
+
+.dash-dropdown:hover {
+    background-color: #f8f9fa;
+    color: #000;
+    cursor: pointer;
+}

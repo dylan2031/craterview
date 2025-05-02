@@ -81,10 +81,16 @@
                 </p>
                 <p>Please gamble responsibly.</p>
                 <h3>Members save more!</h3>
-                <p>Sign up today to gain access to exclusive benefits, including free bets, VIP access, and exclusive prizes.</p>
-                <div class="mt-4 d-flex flex-column flex-md-row gap-3">
-                    <button class="btn xp-btn-secondary">Sign up</button>
-                </div>
+                @guest
+                    <p>Sign up today to gain access to exclusive benefits, including free bets, VIP access, and exclusive prizes.</p>
+                    <div class="mt-4 d-flex flex-column flex-md-row gap-3">
+                        <a href="/register" class="btn xp-btn-secondary">Sign up</a>
+                    </div>
+                @endguest
+                @auth
+                    <p>Thank you for signing up!</p>
+                    <p>As a member, you gain access to exclusive benefits, including free bets, VIP access, and exclusive prizes.</p>
+                @endauth
             </div>
             <div class="col-md-6">
                 <img src="{{ asset('images/index/casino.png') }}" class="img-fluid img-thumbnail" alt="Craterview Casino">
@@ -146,7 +152,7 @@
                 </p>
                 <p>
                 <div class="mt-4 d-flex flex-column flex-md-row gap-3">
-                    <button class="btn xp-btn-secondary">Learn more</button>
+                    <a href="/about" class="btn xp-btn-secondary">Learn more</a>
                 </div>
                 </p>
             </div>

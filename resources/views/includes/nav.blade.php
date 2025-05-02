@@ -25,8 +25,8 @@
                     {{ explode(' ', Auth::user()->name)[0] }}'s Dashboard
                 </a>
                 {{-- Open logout modal to confirm log out--}}
-                <a class="nav-link glow-on-hover" href="#" data-bs-toggle="modal" data-bs-target="#logoutModal">
-                    <img src="{{ asset('images/icons/signup.svg') }}" width="32" height="32">
+                <a class="nav-link glow-on-hover" href="logout" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                    <img src="{{ asset('images/icons/signout.svg') }}" width="32" height="32">
                     Sign out
                 </a>
                 {{-- Hidden form handles logout--}}

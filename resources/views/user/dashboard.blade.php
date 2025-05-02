@@ -70,31 +70,27 @@
 @endsection
 
 <script>
-    // Wait for the DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', function () {
-    // Get all the navigation links
-    const navLinks = document.querySelectorAll('.nav-link');
+    document.addEventListener('DOMContentLoaded', function () {
+        // Get all the navigation links
+        const navLinks = document.querySelectorAll('.nav-link');
 
-    // Add event listeners to each nav link
-    navLinks.forEach(link => {
-        link.addEventListener('click', function (event) {
-            event.preventDefault(); // Prevent the default link behavior
+        // Add event listeners to each nav link
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                // Get the section to show from the data-section attribute
+                const sectionId = link.getAttribute('data-section');
 
-            // Get the section to show from the data-section attribute
-            const sectionId = link.getAttribute('data-section');
+                // Hide all sections
+                document.querySelectorAll('[id$="-section"]').forEach(section => {
+                    section.classList.add('d-none');
+                });
 
-            // Hide all sections
-            document.querySelectorAll('[id$="-section"]').forEach(section => {
-                section.classList.add('d-none');
+                // Show the clicked section
+                const sectionToShow = document.getElementById(`${sectionId}-section`);
+                if (sectionToShow) {
+                    sectionToShow.classList.remove('d-none');
+                }
             });
-
-            // Show the clicked section
-            const sectionToShow = document.getElementById(`${sectionId}-section`);
-            if (sectionToShow) {
-                sectionToShow.classList.remove('d-none');
-            }
         });
     });
-});
-
 </script>

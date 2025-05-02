@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
+use App\Models\Review;
 
 // HomeController was made by laravel auth, not me
 // I modified the view that is returned but that's it
@@ -26,6 +28,8 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('user.dashboard');
+        $user_id = auth()->user()->id;
+        $user = User::find($user_id);
+        return view('user.dashboard')->with('reviews', $user->reviews);
     }
 }

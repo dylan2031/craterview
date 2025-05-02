@@ -38,7 +38,7 @@
                 @if (count($reviews)>0)
                     @foreach ($reviews as $review)
                         <div class="xp-card card-text p-3 mb-2">
-                            <p class="mb-0">User says...</p>
+                            <p class="mb-0">{{ $review->user->name }} says...</p>
                             <small class="text-muted">
                                 {{ $review->created_at->format('M j, Y') }}
 

@@ -58,12 +58,7 @@ Auth::routes();
 //Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index']);
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/dashboard', fn() => view('user.dashboard'))->name('dashboard');
-
-    Route::get('/dashboard/section/{section}', function ($section) {
-        $allowed = ['reservations', 'payments', 'settings'];
-        abort_unless(in_array($section, $allowed), 404);
-
-        return view("user.dashboard-section.$section");
-    })->name('dashboard.section');
+    // Dashboard route, shows the main dashboard page
+    Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
 });
+

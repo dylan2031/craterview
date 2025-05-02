@@ -37,6 +37,9 @@ class ReviewsController extends Controller
             'body' => 'required|string',
         ]);
 
+        // Add the user_id to the validated data
+        $validated['user_id'] = auth()->id();
+
         // Create review in DB
         Review::create($validated);
 
@@ -88,7 +91,7 @@ class ReviewsController extends Controller
         $review = Review::findOrFail($id);
         $review->delete();
 
-        return redirect('/reviews#top')->with('message', 'Review deleted successfully.');
+        return redirect('/dashboard')->with('message', 'Review deleted successfully.');
     }
 
 }

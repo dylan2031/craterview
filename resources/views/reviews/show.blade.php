@@ -9,7 +9,7 @@
 
     <!-- Review Author and Date -->
     <p class="text-muted">
-        <strong>Author's review left on</strong> 
+        <strong>{{ $review->user->name }}'s</strong> review left on
         {{ $review->created_at->isoFormat('Do MMMM YYYY') }}
         @if ($review->created_at->year < 3002)
             <span class="badge bg-info text-dark ms-2" style="border: 1px solid #000;">🕰️ Time Traveler</span>

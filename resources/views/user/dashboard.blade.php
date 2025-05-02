@@ -54,51 +54,47 @@
             @include('user.dashnav')
         </div>
         <div class="container text-light" style=" background: #0054e3; border-left: 1px solid white !important; border-right: 1px solid white !important;">
-            <div id="dashboard-content" class=""></div>
+            <div id="dashboard-content">
+                <div id="reservations-section">
+                    @include('user.dashboard-section.reservations')
+                </div>
+                <div id="payments-section" class="d-none">
+                    @include('user.dashboard-section.payments')
+                </div>
+                <div id="settings-section" class="d-none">
+                    @include('user.dashboard-section.settings')
+                </div>
+            </div>
         </div>
     </section>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const links = document.querySelectorAll('[data-section]');
-            const contentArea = document.getElementById('dashboard-content');
-    
-            function setActiveTab(section) {
-                links.forEach(link => {
-                    const linkSection = link.getAttribute('data-section');
-                    link.classList.toggle('active', linkSection === section);
-                });
-            }
-    
-            function loadSection(section) {
-                fetch(`/dashboard/section/${section}`)
-                    .then(res => {
-                        if (!res.ok) throw new Error('Connection error.');
-                        return res.text();
-                    })
-                    .then(html => {
-                        contentArea.innerHTML = html;
-                        setActiveTab(section); // Highlight the current tab
-                    })
-                    .catch(err => {
-                        contentArea.innerHTML = '<div class="p-4 text-danger">Failed to load.</div>';
-                        console.error(err);
-                    });
-            }
-    
-            links.forEach(link => {
-                link.addEventListener('click', e => {
-                    e.preventDefault();
-                    const section = e.currentTarget.getAttribute('data-section');
-                    loadSection(section);
-                });
-            });
-    
-            // Load default section on first visit
-            loadSection('reservations');
-        });
-    </script>
-    
-    
-
 @endsection
+
+<script>
+    // Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function () {
+    // Get all the navigation links
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // Add event listeners to each nav link
+    navLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent the default link behavior
+
+            // Get the section to show from the data-section attribute
+            const sectionId = link.getAttribute('data-section');
+
+            // Hide all sections
+            document.querySelectorAll('[id$="-section"]').forEach(section => {
+                section.classList.add('d-none');
+            });
+
+            // Show the clicked section
+            const sectionToShow = document.getElementById(`${sectionId}-section`);
+            if (sectionToShow) {
+                sectionToShow.classList.remove('d-none');
+            }
+        });
+    });
+});
+
+</script>

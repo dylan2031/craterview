@@ -10,21 +10,35 @@
                     <th scope="col">Review</th>
                     <th scope="col">Rating</th>
                     <th scope="col"></th>
-                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
                 @foreach($reviews as $review)
                 <tr>
                     <td>{{ $review->title }}</td>
-                    <td>{{ $review->star_rating }} out of 5</td>
-                    <td><a href="/reviews/{{ $review->id }}/edit" class="btn xp-btn-secondary">Edit review</a></td>
+                    <td>{{ $review->star_rating }}</td>
+                    
                     <td>
-                        <form action="{{ route('reviews.destroy', $review->id) }}" method="POST" style="display: inline;">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" class="btn xp-btn-secondary" onclick="return confirm('Are you sure you want to delete this review?')">Delete Review</button>
-                        </form>    
+                        {{--Edit/delete will be under a dropdown to save on space for smaller screens--}}
+                        <div class="dropdown">
+                            <button class="btn xp-btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-gear"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li>
+                                    <a href="/reviews/{{ $review->id }}" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light">View</a></li>
+                                <li>
+                                <li>
+                                    <a href="/reviews/{{ $review->id }}/edit" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light">Edit</a></li>
+                                <li>
+                                    <form action="{{ route('reviews.destroy', $review->id) }}" method="POST" style="display: inline;">
+                                        @csrf
+                                        @method('DELETE')
+                                        <a type="submit" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light" onclick="return confirm('Are you sure you want to delete this review?')">Delete</a>
+                                    </form>    
+                                </li>
+                            </ul>
+                        </div>
                     </td>
                 </tr>
                 @endforeach

@@ -53,8 +53,8 @@
         <div class="container-fluid px-0">
             @include('user.dashnav')
         </div>
-        <div class="container text-light" style=" background: #0054e3; border-left: 1px solid white !important; border-right: 1px solid white !important;">
-            <div id="dashboard-content">
+        <div class="container-fluid px-0 text-light" style=" background: #0054e3; border-left: 1px solid white !important; border-right: 1px solid white !important;">
+            <div class="container" id="dashboard-content">
                 <div id="reservations-section">
                     @include('user.dashboard-section.reservations')
                 </div>

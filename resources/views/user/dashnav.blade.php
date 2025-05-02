@@ -2,21 +2,21 @@
     <div>
         <ul class="nav nav-tabs nav-fill flex-nowrap custom-tabs">
             <li class="nav-item">
-                <button class="nav-link active" data-section="reservations">
+                <button class="nav-link active d-flex justify-content-center" data-section="reservations">
                     <img src="{{ asset('images/icons/dashboard-reservations.svg') }}" width="32" height="32" class="img-fluid">
-                    Manage Reservations
+                    <span class="inline d-none d-lg-block">&nbsp;Manage Reservations</span>
                 </button>
             </li>
             <li class="nav-item">
-                <button class="nav-link" data-section="payments">
+                <button class="nav-link d-flex justify-content-center" data-section="payments">
                     <img src="{{ asset('images/icons/dashboard-payments.svg') }}" width="32" height="32" class="img-fluid">
-                    Payment History
+                    <span class="inline d-none d-lg-block">&nbsp;Payment History</span>
                 </button>
             </li>
             <li class="nav-item">
-                <button class="nav-link" data-section="settings">
+                <button class="nav-link d-flex justify-content-center" data-section="settings">
                     <img src="{{ asset('images/icons/dashboard-settings.svg') }}" width="32" height="32" class="img-fluid">
-                    Account Settings
+                    <span class="inline d-none d-lg-block">&nbsp;Account Settings</span>
                 </button>
             </li>
         </ul>

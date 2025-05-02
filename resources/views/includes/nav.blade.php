@@ -21,7 +21,7 @@
             @endguest
             @auth
                 <a class="nav-link glow-on-hover" href="/dashboard">
-                    <img src="{{ asset('images/icons/signup.svg') }}" width="32" height="32">
+                    <img src="{{ asset('images/icons/dashboard.svg') }}" width="32" height="32">
                     {{ explode(' ', Auth::user()->name)[0] }}'s Dashboard
                 </a>
                 {{-- Open logout modal to confirm log out--}}

@@ -213,3 +213,28 @@ nav, .sidebar {
 .star-rating label:hover ~ label {
     color: gold;
 }
+
+/* Dashboard */
+
+.custom-tabs .nav-link {
+    background: linear-gradient(to bottom, #3b8bd3, #245DDA);
+    border: 1px solid #aaccee;
+    border-bottom: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 6px 6px 0 0;
+    transition: background 0.2s ease-in-out;
+    padding: 0.75rem 1rem;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.custom-tabs .nav-link:hover {
+    background: linear-gradient(to bottom, #C0C0C0, #245DDA);
+}
+
+.custom-tabs .nav-link.active {
+    background: #0054e3;
+    color: white !important;
+    font-weight: bold;
+}

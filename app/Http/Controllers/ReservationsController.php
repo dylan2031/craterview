@@ -59,8 +59,8 @@ class ReservationsController extends Controller
         // Create reservation in DB
         \App\Models\Reservation::create($validated);
 
-        // Back to page
-        return redirect()->back()->with('message', 'Reservation submitted successfully!');
+        // Go to dashboard (for now)
+        return redirect('/dashboard')->with('message', 'Your reservation was confirmed. See you soon!');
     }
 
 

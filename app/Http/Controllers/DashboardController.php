@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Review;
+use Carbon\Carbon; // Make sure to import Carbon
 
 // HomeController was made by laravel auth, not me
 // I modified the view that is returned but that's it
@@ -28,8 +29,24 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        $user_id = auth()->user()->id;
-        $user = User::find($user_id);
-        return view('user.dashboard')->with('reviews', $user->reviews);
+        $user = auth()->user(); // cleaner than fetching by ID
+
+        // Get upcoming reservations (check_in >= today)
+        $upcomingReservations = $user->reservations()
+            ->whereDate('check_in', '>=', Carbon::today())
+            ->orderBy('check_in', 'asc')
+            ->get();
+
+        // Get past reservations (check_out < today)
+        $pastReservations = $user->reservations()
+            ->whereDate('check_out', '<', Carbon::today())
+            ->orderBy('check_out', 'desc')
+            ->get();
+
+        return view('user.dashboard', [
+            'reviews' => $user->reviews,
+            'upcomingReservations' => $upcomingReservations, // Pass upcoming reservations
+            'pastReservations' => $pastReservations, // Pass past reservations
+        ]);
     }
 }

@@ -2,7 +2,7 @@
     <div class="container-fluid justify-content-between align-items-center nav nav-pills">
 
         <div class="d-flex gap-3">
-            <a class="nav-link glow-on-hover" href="#">
+            <a class="nav-link glow-on-hover" href="/reservations/create">
                 <img src="{{ asset('images/icons/reservations.svg') }}" width="32" height="32">
                  Book your stay
             </a>

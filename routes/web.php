@@ -5,6 +5,7 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\EntertainmentController;
 use App\Http\Controllers\ReviewsController;
 use App\Http\Controllers\PaymentsController;
+use App\Http\Controllers\ReservationsController;
 
 Route::get('/', [PagesController::class, 'index']);
 
@@ -62,3 +63,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
 });
 
+// **************************//
+// ** Reservations Routes ** //
+// **************************//
+Route::get('/reservations/create', [ReservationsController::class, 'create'])->name('reservations.create');
+Route::post('/reservations', [ReservationsController::class, 'store'])->name('reservations.store');

@@ -1,0 +1,67 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Carbon;
+
+class ReservationsController extends Controller
+{
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth', ['except' => ['index', 'show']]);
+    }
+
+    public function create()
+    {
+        return view('reservations.create');
+    }
+
+    public function store(Request $request)
+    {
+        // Validate the incoming request data
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'room_type' => 'required|string|in:pod,single,twin,double,penthouse',
+            'check_in' => 'required|date',
+            'check_out' => 'required|date|after:check_in',
+            'special_request' => 'nullable|string|max:1000',
+        ]);
+
+        // Calculate nights
+        $checkIn = Carbon\Carbon::parse($validated['check_in']);
+        $checkOut = Carbon\Carbon::parse($validated['check_out']);
+        $nights = $checkIn->diffInDays($checkOut);
+
+        // Determine price per night
+        $prices = [
+            'pod' => 32.10,
+            'single' => 80.00,
+            'twin' => 100.00,
+            'double' => 120.00,
+            'penthouse' => 369.99,
+        ];
+
+        $pricePerNight = $prices[$validated['room_type']] ?? 0;
+        $totalPrice = $nights * $pricePerNight;
+
+        // Add the user_id to the validated data
+        $validated['user_id'] = auth()->id();
+        $validated['nights'] = $nights;
+        $validated['price_per_night'] = $pricePerNight;
+        $validated['total_price'] = $totalPrice;
+
+        // Create reservation in DB
+        \App\Models\Reservation::create($validated);
+
+        // Back to page
+        return redirect()->back()->with('message', 'Reservation submitted successfully!');
+    }
+
+
+}

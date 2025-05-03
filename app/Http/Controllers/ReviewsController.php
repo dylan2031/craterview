@@ -8,6 +8,16 @@ use App\Models\Review;
 class ReviewsController extends Controller
 {
     /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth', ['except' => ['index', 'show']]);
+    }
+
+    /**
      * Display a listing of the resource.
      */
     public function index()
@@ -62,6 +72,12 @@ class ReviewsController extends Controller
     public function edit(string $id)
     {
         $review = Review::findOrFail($id);
+
+        // If post does not belong to user, return 403
+        if (auth()->user()->id !== $review->user_id) {
+            abort(403);
+        }
+
         return view('reviews.edit', compact('review'));
     }
 
@@ -89,6 +105,12 @@ class ReviewsController extends Controller
     public function destroy(string $id)
     {
         $review = Review::findOrFail($id);
+
+        // If post does not belong to user, return 403
+        if (auth()->user()->id !== $review->user_id) {
+            abort(403);
+        }
+        
         $review->delete();
 
         return redirect('/dashboard')->with('message', 'Review deleted successfully.');

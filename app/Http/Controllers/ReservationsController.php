@@ -57,11 +57,32 @@ class ReservationsController extends Controller
         $validated['total_price'] = $totalPrice;
 
         // Create reservation in DB
-        \App\Models\Reservation::create($validated);
+        $reservation = \App\Models\Reservation::create($validated);
 
         // Go to dashboard (for now)
-        return redirect('/dashboard')->with('message', 'Your reservation was confirmed. See you soon!');
+        return redirect()->route('reservations.confirmation', ['id' => $reservation->id])->with('message', 'Reservation confirmed! See you soon!');
+
     }
 
+    public function confirmation($id)
+    {
+        $reservation = auth()->user()->reservations()->findOrFail($id);
+
+        return view('reservations.confirmation', compact('reservation'));
+    }
+
+    public function destroy($id)
+    {
+        $reservation = auth()->user()->reservations()->findOrFail($id);
+
+        // If post does not belong to user, return 403
+        if (auth()->user()->id !== $reservation->user_id) {
+            abort(403);
+        }
+
+        $reservation->delete();
+
+        return redirect()->route('dashboard')->with('message', 'Your reservation was cancelled and processed in accordance with our no refunds policy.');
+    }
 
 }

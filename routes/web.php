@@ -68,3 +68,5 @@ Route::middleware(['auth'])->group(function () {
 // **************************//
 Route::get('/reservations/create', [ReservationsController::class, 'create'])->name('reservations.create');
 Route::post('/reservations', [ReservationsController::class, 'store'])->name('reservations.store');
+Route::get('/reservations/{id}/confirmation', [ReservationsController::class, 'confirmation'])->name('reservations.confirmation');
+Route::delete('/reservations/{id}', [ReservationsController::class, 'destroy'])->name('reservations.destroy');

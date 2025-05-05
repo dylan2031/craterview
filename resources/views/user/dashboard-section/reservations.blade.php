@@ -21,7 +21,26 @@
                         Departure: {{ \Carbon\Carbon::parse($reservation->check_out)->format('d/m/Y') }}
                     </td>
                     <td>{{ ucfirst($reservation->room_type) }}</td>
-                    <td><a href="#" class="btn xp-btn-secondary">View</a></td>
+                    <td>
+                        {{-- View/cancel under dropdown --}}
+                        <div class="dropdown">
+                            <button class="btn xp-btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-gear"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li>
+                                    <a href="{{ route('reservations.confirmation', ['id' => $reservation->id]) }}" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light dash-dropdown">View</a></li>
+                                </li>
+                                <li>
+                                    <form action="{{ route('reservations.destroy', $reservation->id) }}" method="POST" style="display: inline;">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light dash-dropdown" onclick="return confirm('This cannot be undone.')">Delete</button>
+                                    </form>                             
+                                </li>
+                            </ul>
+                        </div>
+                    </td>                 
                 </tr>
                 @endforeach
             </tbody>
@@ -52,7 +71,23 @@
                         Departure: {{ \Carbon\Carbon::parse($reservation->check_out)->format('d/m/Y') }}
                     </td>
                     <td>{{ ucfirst($reservation->room_type) }}</td>
-                    <td><a href="#" class="btn xp-btn-secondary">View</a></td>
+                    <!--<td><a href="{{ route('reservations.confirmation', ['id' => $reservation->id]) }}" class="btn xp-btn-secondary">View</a></td>-->
+                    <td>
+                        {{-- View/leave feedback under dropdown --}}
+                        <div class="dropdown">
+                            <button class="btn xp-btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-gear"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li>
+                                    <a href="{{ route('reservations.confirmation', ['id' => $reservation->id]) }}" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light dash-dropdown">View</a></li>
+                                </li>
+                                <li>
+                                    <a href="/reviews/create" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light dash-dropdown">Review your stay</a></li>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>                    
                 </tr>
                 @endforeach
             </tbody>

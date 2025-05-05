@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col mb-3">
                 <label for="name" class="form-label">Your name</label>
-                <input type="text" class="form-control" id="name" name="name" required>
+                <input type="text" value="{{ auth()->user()->name }}" class="form-control" id="name" name="name" required>
             </div>
         </div>
 
@@ -34,17 +34,45 @@
         </div>
 
         <!-- check_in and check_out -->
+        {{-- In a future version, I would like this to be more visual, showing the user a calandar --}}
         <div class="row">
             <div class="col-md-6 mb-3">
-                <label for="check_out" class="form-label">Check-in date</label>
-                <input type="date" class="form-control" id="check_in" name="check_in" required>
+                <label for="check_in" class="form-label">Check-in date</label>
+                <input type="date" class="form-control" id="check_in" name="check_in" required 
+                    value="{{ \Carbon\Carbon::now()->format('Y-m-d') }}" 
+                    min="{{ \Carbon\Carbon::now()->format('Y-m-d') }}" 
+                    onchange="updateCheckOutDate()" />
             </div>
             
             <div class="col-md-6 mb-3">
                 <label for="check_out" class="form-label">Departure date</label>
-                <input type="date" class="form-control" id="check_out" name="check_out" required>
+                <input type="date" class="form-control" id="check_out" name="check_out" required 
+                    min="{{ \Carbon\Carbon::now()->format('Y-m-d') }}" 
+                    onchange="updateCheckOutDate()" />
             </div>
         </div>
+
+        {{-- this script ensures check out is not before check in --}}
+        <script>
+            function updateCheckOutDate() {
+                var checkInDate = document.getElementById("check_in").value;
+                var checkOutDate = document.getElementById("check_out");
+
+                // If check_in is selected, update check_out min date to be check_in date
+                checkOutDate.setAttribute("min", checkInDate);
+
+                // If the check_out date is before check_in, set it to the same as check_in
+                if (checkOutDate.value && checkOutDate.value < checkInDate) {
+                    checkOutDate.value = checkInDate;
+                }
+            }
+
+            // Initialize the check_out date to the same as check_in when the page loads
+            document.addEventListener("DOMContentLoaded", function() {
+                updateCheckOutDate();
+            });
+        </script>
+
         
         <!-- Special request? -->
         <div class="row">

@@ -19,9 +19,7 @@
             {{--Hidden input sets the 'what', in this case 'buy me a coffee'.
             Can be re-used for 'single room', 'double room' on reservations form--}}
             <input type="hidden" name="what" value="buy me a coffee">
-            {{--also quantity is auto set to 1 in this case--}}
-            <input type="hidden" name="quantity" value="1">
-
+            
             <div class="mb-3">
                 <input type="text" class="form-control" placeholder="Full name" id="name" name="name" required>
             </div>

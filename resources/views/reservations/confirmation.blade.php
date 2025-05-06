@@ -24,7 +24,6 @@
                     <input type="hidden" name="name" value="{{ $reservation->name }}">
                     <input type="hidden" name="what" value="{{ ucfirst($reservation->room_type) }} room for {{ $reservation->nights }} nights">
                     <input type="hidden" name="price" value="{{ number_format($reservation->total_price, 2) }}">
-                    <input type="hidden" name="quantity" value="1">
                     {{-- Only pass message if user has a request --}}
                     @if($reservation->special_request)
                         <input type="hidden" name="message" value="{{ $reservation->special_request }}">

@@ -4,6 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Payment;
+use Illuminate\Support\Facades\Auth;
+
+
+
 class PaymentsController extends Controller
 {
     /**
@@ -20,7 +25,6 @@ class PaymentsController extends Controller
             'payment.name' => $request->input('name'),
             'payment.what' => $request->input('what'),
             'payment.price' => $request->input('price'),
-            'payment.quantity' => $request->input('quantity'),
             'payment.message' => $request->input('message'),
         ]);
 
@@ -47,6 +51,16 @@ class PaymentsController extends Controller
 
         // Store the boolean value in the session
         session(['payment_confirmed' => $paymentConfirmed]);
+
+        if ($paymentConfirmed) {
+            Payment::create([
+                'name'        => session('payment.name'),
+                'description' => session('payment.what'),
+                'amount'      => session('payment.price'),
+                'message'     => session('payment.message'),
+                'user_id'     => Auth::id(), // Make sure the user is logged in
+            ]);
+        }
 
         // Redirect to the completed page after confirmation
         return redirect()->route('payment.completed')->with('message', 'Your payment was successfully processed. Thank you.');

@@ -25,10 +25,6 @@
                                     <td>Ω{{ session('payment.price') }}</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Quantity:</th>
-                                    <td>{{ session('payment.quantity') }}</td>
-                                </tr>
-                                <tr>
                                     <th scope="row">Message:</th>
                                     <td>{{ session('payment.message') }}</td>
                                 </tr>

@@ -17,7 +17,21 @@
                 <p class="mb-1"><strong>Special request:</strong> {{ $reservation->special_request }}</p>
             @endif
             <div class="text-center mt-4">
-                <a href="#" class="btn xp-btn-secondary">Pay in advance</a><br>
+                {{-- If user pays now, values are set in hidden inputs and passed to
+                payments through this form. User only sees a button. --}}
+                <form action="{{ route('payment.start') }}" method="POST">
+                    @csrf
+                    <input type="hidden" name="name" value="{{ $reservation->name }}">
+                    <input type="hidden" name="what" value="{{ ucfirst($reservation->room_type) }} room for {{ $reservation->nights }} nights">
+                    <input type="hidden" name="price" value="{{ number_format($reservation->total_price, 2) }}">
+                    <input type="hidden" name="quantity" value="1">
+                    {{-- Only pass message if user has a request --}}
+                    @if($reservation->special_request)
+                        <input type="hidden" name="message" value="{{ $reservation->special_request }}">
+                    @endif
+                    <button type="submit" class="btn xp-btn-secondary me-2">Pay in advance</button>
+                </form>
+                <br>
                 or pay at check-in
             </div>
             <p class="text-center mt-4 mb-1"><strong>Thank you for choosing Craterview Casino & Resort!</p>

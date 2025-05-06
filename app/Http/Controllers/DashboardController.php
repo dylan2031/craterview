@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Review;
+use App\Models\Payment; 
 use Carbon\Carbon; // Make sure to import Carbon
 
 // HomeController was made by laravel auth, not me
@@ -43,10 +44,14 @@ class DashboardController extends Controller
             ->orderBy('check_out', 'desc')
             ->get();
 
+        // Fetch the payments history
+        $payments = $user->payments;
+
         return view('user.dashboard', [
             'reviews' => $user->reviews,
             'upcomingReservations' => $upcomingReservations, // Pass upcoming reservations
             'pastReservations' => $pastReservations, // Pass past reservations
+            'payments' => $payments, // Pass payments
         ]);
     }
 }

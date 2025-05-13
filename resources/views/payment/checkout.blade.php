@@ -74,10 +74,9 @@
                             <div class="col d-flex justify-content-center">
                                 <button data-bs-toggle="modal" data-bs-target="#neuraModal" class="btn">
                                     <img src="{{ asset('images/payment/neurachip.png') }}" width="120" height="auto" class="img-fluid pb-1">
-                                    @include('payment.neurachip')
                                 </button>  
                             </div>
-                            
+                            @include('payment.neurachip')
                         </div>                    
                     </div>
                 </div>

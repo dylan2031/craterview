@@ -13,7 +13,19 @@
                         <img src="{{ asset('images/icons/about.svg') }}" width="32" height="32" class="img-fluid pb-1 sidebar-icon">
                         Notification
                     </h3>
-                    <p style="font-family: sans-serif;">No neural implant detected.</p>
+                    <p style="font-family: sans-serif;">No neural implant detected. Try anyway?</p>
+                    <form action="{{ route('payment.confirm') }}" method="POST">
+                        @csrf
+                        <input type="hidden" name="payment_confirmed" value="false">
+                        <div class="">
+                            <button type="submit" class="btn xp-btn-secondary">
+                                Yes
+                            </button>  
+                            <button type="button" class="btn xp-btn-secondary" data-bs-dismiss="modal">
+                                No
+                            </button>
+                        </div>
+                    </form>
                     <br>
                     <br>
                 </div>

@@ -12,6 +12,16 @@ use Illuminate\Support\Facades\Auth;
 class PaymentsController extends Controller
 {
     /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    /**
      * Handle the initial payment request.
      * Store form data in the session and redirect to checkout.
      */
@@ -60,11 +70,16 @@ class PaymentsController extends Controller
                 'message'     => session('payment.message'),
                 'user_id'     => Auth::id(), // Make sure the user is logged in
             ]);
-        }
 
-        // Redirect to the completed page after confirmation
-        return redirect()->route('payment.completed')->with('message', 'Your payment was successfully processed. Thank you.');
+            return redirect()->route('payment.completed')->with('message', 'Your payment was successfully processed. Thank you.');
+        }
+        else
+        {
+            // Simulate failure (NeuraChip doesn't work without a neural implant)
+            return redirect()->route('payment.failed')->with('message', 'There was an error processing your payment.');
+        }
     }
+
 
     public function completed()
     {

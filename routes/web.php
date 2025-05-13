@@ -46,8 +46,13 @@ Route::get('/payment/checkout', [PaymentsController::class, 'checkout'])->name('
 // Confirm the payment
 Route::post('/payment/confirm', [PaymentsController::class, 'confirm'])->name('payment.confirm');
 
-// Payment complete (or not)
+// Payment complete
 Route::get('/payment/completed', [PaymentsController::class, 'completed'])->name('payment.completed');
+
+// Payment failed
+Route::get('/payment/failed', function () {
+    return view('payment.failed');
+})->name('payment.failed');
 
 // If user chooses to pay with BioPay
 Route::post('/payment/setBiopay', [PaymentsController::class, 'setBiopay'])->name('payment.setBiopay');

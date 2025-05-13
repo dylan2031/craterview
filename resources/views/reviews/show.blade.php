@@ -38,7 +38,7 @@
     @auth
         {{-- Only show actions of post belongs to user--}}
         @if(Auth::user()->id == $review->user_id)
-            <a href="reviews/{{$review->id}}/edit" class="btn xp-btn-secondary">Edit review</a>
+            <a href="{{$review->id}}/edit" class="btn xp-btn-secondary">Edit review</a>
             <form action="{{ route('reviews.destroy', $review->id) }}" method="POST" style="display: inline;">
                 @csrf
                 @method('DELETE')

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Regenex Complex",
+        "desc": "Experimental compound injection eliminates your existing skin cells at a nanoscopic level to stimulate rapid cellular turnover, promoting smoother skin on your entire body.",
+        "duration": "20 mins"
+    },
+    {
+        "name": "Goblin-7 Gas Therapy",
+        "desc": "Controlled exposure to Goblin-7, a reclassified chemical agent, stimulates a temporary inflammatory response designed to promote fuller cheeks, lips, and facial volume for up to three months. Originally developed for military applications, Goblin-7 is now safely repurposed as an advanced airborne skincare solution.",
+        "duration": "30 mins"
+    },
+    {
+        "name": "CryoSkin Correction",
+        "desc": "Extreme sub-zero dermal exposure for a continuous, uninterrupted two weeks tightens skin using adapted cryogenic coolant technology, reducing wrinkles for over one month with no injections required.",
+        "duration": "2 weeks"
+    },
+    {
+        "name": "Ozyneptixparabetazemphimol™",
+        "desc": "Originally developed as a metabolic intervention for high-gravity environments, Ozyneptixparabetazemphimol™ offers guests a chance to explore rapid mass reduction through controlled neural pathway disruption. Experience now with reduced risk of Instant Organ Diarrhea Slow Death Syndrome.",
+        "duration": "Instant"
+    },
+    {
+        "name": "Vitalex Addenum",
+        "desc": "Drains your blood cells of both micro and macroplastics, resulting in better hormonal balance and increased fertility. Lost blood is replaced with synthetic alternative, bioengineered for longevity and more efficient oxygen distribution.",
+        "duration": "4 hours"
+    },
+    {
+        "name": "RevitaLume",
+        "desc": "Induces clinical death and full revival to deliver unparalleled mental clarity.",
+        "duration": "6 hours"
+    }
+]

@@ -30,6 +30,24 @@ Route::get('/about/{alias}', [PagesController::class, 'teamMember']);
 // Reviews
 Route::resource('reviews', ReviewsController::class);
 
+// Dining page
+Route::get('/dining', [PagesController::class, 'dining'])->name('dining');
+
+// Rooms page
+Route::get('/rooms', [PagesController::class, 'rooms'])->name('rooms');
+// Individual room
+Route::get('/rooms/{slug}', [PagesController::class, 'showRoom'])->name('rooms.show');
+
+// Events page
+Route::get('/events', [PagesController::class, 'events'])->name('events');
+// Upcoming events
+Route::get('/events/upcoming-events', [PagesController::class, 'upcomingEvents']);
+// Venues
+Route::get('/events/venue-hire', [PagesController::class, 'venues'])->name('venues');
+
+// Pool & Spa page
+Route::get('/pool-and-spa', [PagesController::class, 'pool']);
+
 // Buy me a coffee page
 Route::get('/saythanks', [PagesController::class, 'saythanks']);
 

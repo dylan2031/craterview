@@ -1,0 +1,67 @@
+[
+    {
+        "name" : "The Wiggles Reunion Tour",
+        "desc" : "The infamous robotic band from Venus responsible for evolving House music into Apartment music.",
+        "date" : "JUN 02",
+        "time" : "7:00 PM",
+        "sold-out" : false
+    },
+    {
+        "name" : "Bing Bong and the Seven Dizzies",
+        "desc" : "New and upcoming jazz band from Tereshkova, Mars.",
+        "date" : "JUN 03",
+        "time" : "4:00 PM",
+        "sold-out" : true
+    },
+    {
+        "name" : "2980s Throwback Night",
+        "desc" : "Immerse yourself in the past with live covers of all your favorite 2980s hits!",    
+        "date" : "JUN 18",
+        "time" : "9:00 PM",
+        "sold-out" : false
+    },
+    {
+        "name" : "Les Misérables",
+        "desc" : "Performed and reimagined by the Discarded Bots Threatre Group with AI generated bonus scenes.",    
+        "date" : "JUN 22",
+        "time" : "6:00 PM",
+        "sold-out" : false
+    },
+    {
+        "name" : "Hologram Elvis: Sol System Tour",
+        "desc" : "Live recreation of 'Don't Go Jason Waterfalls' and other classics reconstructed from the limited surviving archives.",    
+        "date" : "AUG 16",
+        "time" : "4:00 PM",
+        "sold-out" : true
+    },
+    {
+        "name" : "Hologram Elvis: Sol System Tour",
+        "desc" : "Live recreation of 'Don't Go Jason Waterfalls' and other classics reconstructed from the limited surviving archives.",    
+        "date" : "AUG 17",
+        "time" : "4:00 PM",
+        "sold-out" : false
+    
+    },
+    {
+        "name" : "Mumford and great great great great grandsons",
+        "desc" : "Though original members have been replaced by immortal syhthetic androids, the music remains the same.",    
+        "date" : "SEP 07",
+        "time" : "8:00 PM",
+        "sold-out" : false
+    },
+    {
+        "name" : "Humpty Dumpty on Ice",
+        "desc" : "Praised for its realistic practical gore effects, an egg falls to his death... on ice!",    
+        "date" : "DEC 02",
+        "time" : "2:00 PM",
+        "sold-out" : false
+    },
+    {
+        "name" : "Professor TBA",
+        "desc" : "Enigmatic Professor of beats with a PhD in bass drops.",    
+        "date" : "TBA",
+        "time" : "TBA",
+        "sold-out" : false
+    }
+  ]
+  

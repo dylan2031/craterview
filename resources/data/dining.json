@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Stem Cell Burger™",
+        "description": "Sink your teeth into the future today with our lab-grown patties, lovingly engineered to echo the nostalgic taste of Earth's finest meats. Thanks to our patented TrueBeef™ formula, each burger now boasts a 44% accuracy rating in blind taste tests; a significant improvement over last year's recall! Now with a reduced chance of moderate to severe health complications, Stem Cell Burger™ is not only legal now, it is a Craterview classic!",
+        "image": "stem-cell-burger.png"
+    },
+    {
+        "name": "AROMA",
+        "description": "At AROMA, we do not serve food, we serve an experience. Choose from 78 different synthetic meal scents that are chemically engineered to leave you feeling full and satiated without taking a single bite.",
+        "image": "aroma.png"
+    },
+    {
+        "name": "Jack and Maple",
+        "description": "A fusion of early 21st century Earthern London and Toronto cuisine with immersive overpricing and historically accurate mediocre taste.",
+        "image": "jack-maple.png"
+    },
+    {
+        "name": "Le Solara",
+        "description": "Elevated dining with an excellent view of the crater, head chef Infiltration Unit 2800, now going by Maurice LaBourice, did a year undercover as a line cook at the third best French restaurant in Bosnia, Earth, which is unfortunetely now closed. However, it lives on through chef's expertise and passion for French cuisine, which has been enhanced to pioneer Martian dining trends. Come try the signature dish, Crater Frog Legs served with beurre blanc, authentic Earth-imported green beans and a currently unnamed Martian citrus fruit.",
+        "image": "le-solara.png"
+    },
+    {
+        "name": "GreenSpace™ Vegan Labfare",
+        "description": "Finally, a guilt-free way to enjoy things you never asked for. Our proprietary Meatless Morph™ technology recreates the texture and flavour of dishes using only 73 ingredients, most of which are classified as 'synthetic adjacent.' From vegan meat beans to our signature 'Plant-Based Chimpanzee Head', every bite is a triumph of science over nature. 100% animal-free. 100% tasty. 46% digestible.",
+        "image": "greenspace.png"
+    },
+        {
+        "name": "CHEF®",
+        "description": "Born from the neural imprints of every celebrity chef from the 21st century, CHEF® was designed to revolutionize cuisine by merging thousands of distinct culinary minds. Instead, it thought itself into a culinary paralysis, endlessly debating flavor profiles, plating styles, and ingredient ethics until it produced exactly one dish — and refuses to make anything else. No one knows what this enigmatic masterpiece actually is, as it's served under strict secrecy and guarded by a legion of privatized military-grade robo guardians. All reviews are positive, and one thing is clear: it's unlike anything else in the galaxy. Reservations are impossible to get, and critics are still trying to understand whether it's a stroke of genius or a spectacular glitch.",
+        "image": "chef.png"
+    },
+        {
+        "name": "Trash Panda",
+        "description": "Trash Panda aims to minimise food waste by offering mystery bundles of surprise leftovers, cleaned and sterelized using modern food safe bleach lazers. Bundles consist of a starter, main, and dessert. We unfortunately cannot accomodate dietary requirements.",
+        "image": "trash-panda.png"
+    },
+    {
+        "name": "Tony's Lasagna",
+        "description": "Welcome to Tony's Lasagna, where centuries of tradition are reheated to life in an authentic refurbished 21st century microwave. Inspired by the American interpretation of Italy and boldly reimagined for life on Mars, our lasagna features premium canned beef-like protein, rehydrated cheese compound, and tangy red sauce derived from genuine Earth tomatoes, harvested, frozen, and shipped via cargo barge. We also proudly reheat frozen pasta meals, served with our in-house parmesan cheese.",
+        "image": "tonys-lasagna.png"
+    },
+    {
+        "name": "Tino's Lasagna",
+        "description": "TINO'S LASAGNA, THE MILKY WAY'S #1 LASAGNA!!!!!! WELCOME TO TINO'S LASAGNA, WHERE WE DO THINGS THE RIGHT WAY: LOUD. HOT. CANNED. AND WITH SOUL. While TONY'S OVER THERE MICROWAVING 'HERITAGE' LIKE IT'S A BIG DEAL, I'm out here RISKING MY LIFE and LIGHTING MY EYEBROWS ON FIRE to bring you lasagna the way GOD AND NONNA INTENDED. Same canned goods? YES. Same frozen Earth tomatoes? ABSOLUTELY. Same technique? NO WAY IN HELL. I cook with EDIBLE GASOLINE, a contemporary technique passed down from my Sicilian uncle Calogero. It's HOT, it's UNPREDICTABLE, and it gives the sauce a flavor I call 'Il Presidente della Morte' Our CHEESE? The FINEST Pecorino Siciliano made from CLONED SHEEP of AGRIGENTO DNA. Our SAUCE? Secret family recipe. DON'T ASK. Our BEEF-LIKE PROTEIN? Mama mia! TONY SAYS I'M 'UNHINGED.' DO NOT LISTEN TO TONY!!!! GUESS WHAT, TONY— YOU CAN'T TRADEMARK THE WORD 'LASAGNA' (I TRIED). So come to TINO'S (that's me), where the food is HOT, READY and made with SOUL",
+        "image": "tinos-lasagna.png"
+    }
+]

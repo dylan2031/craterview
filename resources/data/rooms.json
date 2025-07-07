@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Economy Sleeping Pod",
+        "description": "Our most affordable option: compact, reliable, and cheap. Experience comfort on a budget.",
+        "image": "pod.png",
+        "no_of_guests" : 1,
+        "price_per_night": 32.10,
+        "features": ["Basic comfort", "Internal temperature control", "Sound-proof", "One power outlet (inside pod)", "Communal toilets", "Communal shower facilities", "Private locker (padlock not provided)"],
+        "highlights": ["Internal temperature control", "Sound-proof", "Communal toilet and shower facilities", "Private locker (padlock not provided)"],
+        "display-image1": "communal-washroom.png",
+        "display-image2": "communal-shower.png",
+        "display-image3": "pod-lockers.png"
+    },
+    {
+        "name": "Single Room",
+        "description": "Designed for an independent guest, experience 3-star comfort with all the essentials you'd expect.",
+        "image": "single-room.png",
+        "no_of_guests" : 1,
+        "price_per_night": 80.00,
+        "features": ["Enhanced comfort", "One single bed with bedding", "Fully private space", "Temperature control", "Television", "In-room kettle with complimentary tea and coffee", "Desk with power outlet", "Private bathroom with walk-in shower", "Iron and ironing board", "Hairdryer", "Complimentary toiletries", "Private safe"],
+        "highlights": ["One single bed with bedding", "Fully private space", "Television", "Private bathroom with walk-in shower"],
+        "display-image1": "single-door.png",
+        "display-image2": "standard-washroom.png",
+        "display-image3": "kettle.png"
+    },
+    {
+        "name": "Twin Room",
+        "description": "Designed for two guests who value both personal space and basic functionality. Our Twin Room features two beds, private facilities, and the dependable adequacy of our 3-star promise.",
+        "image": "twin-room.png",
+        "no_of_guests" : 2,
+        "price_per_night": 100.00,
+        "features": ["Enhanced comfort", "Two single beds with bedding", "Fully private space", "Temperature control", "Television", "In-room kettle with complimentary tea and coffee", "Desk with power outlet", "Private bathroom with walk-in shower", "Iron and ironing board", "Hairdryer", "Complimentary toiletries", "Private safe"],
+        "highlights": ["Two single beds with bedding", "Fully private space", "Television", "Private bathroom with walk-in shower"],
+        "display-image1": "twin-door.png",
+        "display-image2": "standard-washroom.png",
+        "display-image3": "kettle.png"
+    },
+    {
+        "name": "Double Room",
+        "description": "Ideal for couples or solo guests seeking extra space, our Double Room offers upgraded comfort, a generously-sized bed, private facilities, and all the essential amenities to ensure your stay meets the highest 3-star expectations.",
+        "image": "double-room.png",
+        "no_of_guests" : 2,
+        "price_per_night": 120.00,
+        "features": ["Upgraded comfort", "Large double bed with bedding", "Fully private space", "Temperature control", "Mini-fridge", "Television", "In-room kettle with complimentary tea and coffee", "Desk with power outlet", "Seating area", "Private bathroom with bath and shower", "Iron and ironing board", "Hairdryer", "Complimentary toiletries", "Private safe"],
+        "highlights": ["Large double bed with bedding", "Fully private space", "Television", "Private bathroom with bath and shower"],
+        "display-image1": "double-cabinet.png",
+        "display-image2": "upgraded-washroom.png",
+        "display-image3": "kettle.png"
+    },
+        {
+        "name": "Penthouse Suite",
+        "description": "Experience 3-star comfort like never before. Our penthouse suite offers everything you've come to expect, and more.",
+        "image": "penthouse-suite.png",
+        "no_of_guests" : 6,
+        "price_per_night": 369.99,
+        "features": ["Luxury comfort", "Three bedrooms, each with king-size bed and bedding", "Fully private spaces", "Temperature control", "Private kitchen, including fridge, microwave, and oven", "Television", "Marble bath with Jacuzzi jets (discontinued)", "Kettle with complimentary tea and coffee", "Study room", "Two sofas", "Large dining table and chairs", "Automated security turrets", "Ensuite bathrooms, complete with bath and shower", "Three irons and ironing boards", "Three hairdryers", "Complimentary toiletries", "Three private safes"],
+        "highlights": ["Luxury comfort", "Three bedrooms with king-size beds", "Ensuite bathrooms", "Private kitchen"],
+        "display-image1": "penthouse-room.png",
+        "display-image2": "upgraded-washroom.png",
+        "display-image3": "penthouse-kitchen.png"
+    }
+]

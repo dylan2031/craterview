@@ -13,7 +13,7 @@
             </a>
         </li>
         <li>
-            <a href="#" class="nav-link glow-on-hover">
+            <a href="/rooms" class="nav-link glow-on-hover">
                 <img src="{{ asset('images/icons/rooms.svg') }}" width="32" height="32" class="img-fluid pb-1 sidebar-icon">
                 Rooms
             </a>
@@ -25,19 +25,19 @@
             </a>
         </li>
         <li>
-            <a href="#" class="nav-link glow-on-hover">
+            <a href="/dining" class="nav-link glow-on-hover">
                 <img src="{{ asset('images/icons/dining.svg') }}" width="32" height="32" class="img-fluid pb-1 sidebar-icon">
                 Dining
             </a>
         </li>
         <li>
-            <a href="#" class="nav-link glow-on-hover">
+            <a href="/events" class="nav-link glow-on-hover">
                 <img src="{{ asset('images/icons/events.svg') }}" width="32" height="32" class="img-fluid pb-1 sidebar-icon">
                 Events
             </a>
         </li>
         <li>
-            <a href="#" class="nav-link glow-on-hover">
+            <a href="/pool-and-spa" class="nav-link glow-on-hover">
                 <img src="{{ asset('images/icons/pool.svg') }}" width="32" height="32" class="img-fluid pb-1 sidebar-icon">
                 Pool & Spa
             </a>

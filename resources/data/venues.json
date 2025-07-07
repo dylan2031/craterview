@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Momentum Room",
+        "description": "Our Momentum Rooms provide a budget-friendly, private space for meetings or group dining. Simple yet versatile in their design; these rooms blend classic Earth style with modern functionality.",
+        "image": "momentum-room.png",
+        "price": 70,
+        "capacity": 12,
+        "aircon" : true,
+        "outdoor-venue": false,
+        "historical-venue": false
+    },
+    {
+        "name": "Infinity Elite Room",
+        "description": "Our Infinity Elite Rooms offer a spacious, versatile setting for larger events, from corporate functions to banquets and private celebrations. Timeless in style with understated touches of Martian elegance, it's designed to adapt to your vision with the convenience, functionality, and charm you expect.",
+        "image": "infinity-elite-room.png",
+        "price": 150,
+        "capacity": 70,
+        "aircon" : true,
+        "outdoor-venue": false,
+        "historical-venue": false
+    },
+    {
+        "name": "The Deck",
+        "description": "The Deck provides a flexible space for private events, offering a recently refurbished venue with a private balcony and sweeping views of the Mars landscape. Originally designed as an observation deck, this converted space now offers a unique and memorable setting for corporate functions or intimate celebrations, without compromising on comfort or functionality.",
+        "image": "the-deck.png",
+        "price": 400,
+        "capacity": 120,
+        "aircon" : true,
+        "outdoor-venue": false,
+        "historical-venue": false
+    },
+    {
+        "name": "Sheffield Garden",
+        "description": "Sheffield Garden provides a private and tranquil outdoor event space. Available year-round with integrated artificial heating for colder Martian seasons, this versatile garden features a functional fountain and maintained greenery for a touch of classic Earthern comfort and familiarity on the Red Planet. Ideal for any event seeking a serene setting that remains close to the heart of the resort's vibrant atmosphere.",
+        "image": "sheffield-garden.png",
+        "price": 400,
+        "capacity": 70,
+        "aircon" : false,
+        "outdoor-venue": true,
+        "historical-venue": false
+    },
+    {
+        "name": "The Lighthouse",
+        "description": "Once part of Mars's historic network of lighthouses guiding spaceships safely to Red Sand Station, The Lighthouse has been thoughtfully repurposed into a distinctive private event venue. Set apart from the main resort, it offers an exclusive retreat featuring two private bedrooms and spacious indoor and outdoor event areas. Experience the charm of an iconic Martian landmark and a piece of history, while enjoying the comfort and functionality you expect from Craterview's 3-star promise.",
+        "image": "the-lighthouse.png",
+        "price": 750,
+        "capacity": 60,
+        "aircon" : false,
+        "outdoor-venue": false,
+        "historical-venue": true
+    }
+  ]
+  

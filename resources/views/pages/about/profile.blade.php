@@ -1,9 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-flex">
-    <a href="/about#Team" class="btn xp-btn-secondary">Back</a>
-</div>
+@include('includes.back-button')
 <div class="container py-5">
     <div class="row align-items-start">
         <div class="col-12 col-md-4 mb-4 mb-md-0 text-center">

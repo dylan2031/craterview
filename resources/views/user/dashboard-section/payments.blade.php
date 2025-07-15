@@ -1,4 +1,4 @@
-<div>
+<div style="min-height: 40vh;">
     <br>
     @if(count($upcomingReservations) > 0)
         <table class="table table-striped table-white table-bordered">

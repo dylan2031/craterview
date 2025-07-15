@@ -2,7 +2,9 @@
 </div>
 <div class="sidebar col-2 d-flex flex-column min-vh-100 g-0 bg-light d-none d-md-block position-fixed">
     <!-- Logo -->
-    <img src="{{ asset('images/logo.svg') }}" alt="Craterview Logo" class="img-fluid pb-3 logo">
+    <a href="/">
+        <img src="{{ asset('images/logo.svg') }}" alt="Craterview Logo" class="img-fluid pb-3 logo">
+    </a>
     
     <!-- Navigation Menu -->
     <ul class="nav nav-pills flex-column mb-auto">
@@ -20,7 +22,7 @@
         </li>
         <li>
             <a href="/entertainment" class="nav-link glow-on-hover">
-                <img src="{{ asset('images/icons/mars.svg') }}" width="32" height="32" class="img-fluid pb-1 sidebar-icon">
+                <img src="{{ asset('images/icons/ent.svg') }}" width="32" height="32" class="img-fluid pb-1 sidebar-icon">
                 Entertainment
             </a>
         </li>
@@ -54,11 +56,17 @@
                 About Us
             </a>
         </li>
-        <li>
-            <a href="#" class="nav-link glow-on-hover">
-                <img src="{{ asset('images/icons/contact.svg') }}" width="32" height="32" class="img-fluid pb-1 sidebar-icon">
-                Contact Us
-            </a>
-        </li>
+        {{--
+
+            Commenting out 'contact us' for now. I intend to introduce this later.
+
+            <li>
+                <a href="#" class="nav-link glow-on-hover">
+                    <img src="{{ asset('images/icons/contact.svg') }}" width="32" height="32" class="img-fluid pb-1 sidebar-icon">
+                    Contact Us
+                </a>
+            </li>
+            
+        --}}
     </ul>
 </div>

@@ -1,36 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container-flex">
-        <a href="javascript:history.back()" class="btn xp-btn-secondary">Back</a>
-    </div>
-    <section>
+    <section class="background-fade">
+        @include('includes.back-button')
         <div class="container text-center mb-4">
             <h3>Venue hire</h3>
             <p>Craterview is pleased to offer a diverse selection of functional event spaces that deliver on our trusted 3-star promise. Whether your event is small or large, corporate or personal, we have a venue to suit every occasion and every budget.</p>
             <img src="{{ asset('images/index/stars.png') }}" class="img-fluid mb-3" alt="3 out of 5 stars">
             <p>Thanks to exclusive sponsorship deals with our valued partners, we offer unbeatable prices, ensuring exceptional value without compromising on comfort or quality. Our practical, well-equipped spaces are designed to make your event seamless and memorable, all without breaking the bank.</p>
-            <p class="mb-0">This would not be possible without our good friends at:</p>
-            <div class="row" style="  display: flex; align-items: center;">
-                <div class="col">
-                    <img src="{{ asset('images/sponsors/jonescorp.png') }}" class="img-fluid p-4" alt="JonesCorp">
-                </div>
-                <div class="col">
-                    <img src="{{ asset('images/sponsors/biopay.png') }}" class="img-fluid p-4" alt="BioPay">
-                </div>
-                <div class="col">
-                    <img src="{{ asset('images/sponsors/jack-maple.png') }}" class="img-fluid p-4" alt="Jack & Maple">
-                </div>
-                <div class="col">
-                    <img src="{{ asset('images/sponsors/starcar.png') }}" class="img-fluid p-4" alt="StarCar Vehicle Rental">
-                </div>
-                <div class="col">
-                    <img src="{{ asset('images/sponsors/domino.png') }}" class="img-fluid p-4" alt="Domino Cigarette Company">
-                </div>
-                <div class="col">
-                    <img src="{{ asset('images/sponsors/spacesync.png') }}" class="img-fluid p-4" alt="SpaceSync Internet">
-                </div>
-            </div>
+            <p class="mb-0">This would not be possible without our good friends at <span class="fw-bold">Domino Cigarettes Ltd</span> and other proud sponsors.
         </div>
     </section>
     <hr>
@@ -61,39 +39,18 @@
                         @if($venue['historical-venue'])
                             <p>Maintained by the <img src="{{ asset('images/sponsors/jack-maple.png') }}" alt="Jack and Maple" style="height: 30px; vertical-align: middle;"> Hospitality for Historical Preservation Program.</p>
                         @endif
-                        <a href="/" class="btn xp-btn-primary">Contact sales</a>
+                        <a href="/extranet-portal" class="btn xp-btn-primary">Contact sales</a>
                     </div>
                 </div>
                 <hr>
             @endforeach
         </div>
     </section>
-    <section>
+    <section class="background-fade-btm">
         <div class="container text-center">
             <h3>Our partners</h3>
             <p>Low prices are made possible by sponsorship deals with our partners.</p>
-            <div class="row">
-                <div class="col">
-                    <img src="{{ asset('images/sponsors/jonescorp.png') }}" class="img-fluid p-4" alt="JonesCorp">
-                </div>
-                <div class="col">
-                    <img src="{{ asset('images/sponsors/biopay.png') }}" class="img-fluid p-4" alt="BioPay">
-                </div>
-                <div class="col">
-                    <img src="{{ asset('images/sponsors/jack-maple.png') }}" class="img-fluid p-4" alt="Jack & Maple">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <img src="{{ asset('images/sponsors/starcar.png') }}" class="img-fluid p-4" alt="StarCar Vehicle Rental">
-                </div>
-                <div class="col">
-                    <img src="{{ asset('images/sponsors/domino.png') }}" class="img-fluid p-4" alt="Domino Cigarette Company">
-                </div>
-                <div class="col">
-                    <img src="{{ asset('images/sponsors/spacesync.png') }}" class="img-fluid p-4" alt="SpaceSync Internet">
-                </div>
-            </div>
+            @include('includes.sponsors')
             <h5>Please be advised:</h5>
             <p>Your event will include targeted advertising, mandatory sponsor acknowledgements, and occasional product demonstrations.</p>
         </div>

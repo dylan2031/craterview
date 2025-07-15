@@ -93,3 +93,8 @@ Route::get('/reservations/create', [ReservationsController::class, 'create'])->n
 Route::post('/reservations', [ReservationsController::class, 'store'])->name('reservations.store');
 Route::get('/reservations/{id}/confirmation', [ReservationsController::class, 'confirmation'])->name('reservations.confirmation');
 Route::delete('/reservations/{id}', [ReservationsController::class, 'destroy'])->name('reservations.destroy');
+
+/* errors */
+
+// faux error
+Route::get('/extranet-portal', [PagesController::class, 'extranetConnect']);

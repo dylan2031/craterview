@@ -2,11 +2,9 @@
 
 @section('content')
 <section class="position-relative text-center text-light" style="height: 40vh; overflow: hidden;">
-    <a href="javascript:history.back()" 
-       class="btn xp-btn-secondary position-absolute" 
-       style="top: 0; left: 0; z-index: 2;">
-        Back
-    </a>
+    {{-- Why no back button include? --}}
+    {{-- Because this page needs its own back button because it requires custom styling due to being inside a banner --}}
+    <a href="javascript:history.back()" class="btn xp-btn-secondary position-absolute" style="top: 0; left: 0; z-index: 2;">Back</a>
 
     <div class="position-absolute top-50 start-0 translate-middle-y p-5" style="z-index: 1;">
         <img src="{{ asset('images/events/domino-stage-sm.png') }}" 
@@ -25,7 +23,7 @@
     </div>
 
 </section>
-<section>
+<section class="bg-domino">
     <div class="container mt-4">
         <h3 class="mb-4">Upcoming events...</h3>
 
@@ -47,7 +45,7 @@
                                 SOLD OUT
                             </button>
                             @else
-                                <a href="/" class="btn xp-btn-secondary w-100 w-md-auto">Tickets</a>
+                                <a href="/extranet-portal" class="btn xp-btn-secondary w-100 w-md-auto">Tickets</a>
                             @endif
                         </div>
                     </div>

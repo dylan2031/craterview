@@ -1,4 +1,4 @@
-<div>
+<div style="min-height: 40vh;">
     {{-- Show upcoming reservations (today and onwards) --}}
     <h3>Upcoming reservations</h3>
     @if(count($upcomingReservations) > 0)

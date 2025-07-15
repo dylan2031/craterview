@@ -126,5 +126,9 @@ class PagesController extends Controller
         return view('pages.pool.index', compact('treatments'));
     }
 
+    public function extranetConnect(){
+        return view('pages.faux.extranet-connect');
+    }
+
 
 }

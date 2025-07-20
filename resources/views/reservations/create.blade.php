@@ -34,7 +34,12 @@
         </div>
 
         <!-- check_in and check_out -->
-        {{-- In a future version, I would like this to be more visual, showing the user a calandar --}}
+        {{--
+        In a future version, I would like this to be more visual, showing the user a calandar
+        Update 2015/07/20: turns out a calandar already shows (I think it's Bootstrap?) but I would like
+        something more custom in the future for stylistic reasons and more control
+        --}}
+        
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="check_in" class="form-label">Check-in date</label>
@@ -49,27 +54,44 @@
                 <input type="date" class="form-control" id="check_out" name="check_out" required 
                     min="{{ \Carbon\Carbon::now()->format('Y-m-d') }}" 
                     onchange="updateCheckOutDate()" />
+                    <small class="form-text text-muted">Maximum stay is 30 nights from your check-in date.</small>
             </div>
         </div>
 
         {{-- this script ensures check out is not before check in --}}
         <script>
             function updateCheckOutDate() {
-                var checkInDate = document.getElementById("check_in").value;
-                var checkOutDate = document.getElementById("check_out");
+                const checkInInput = document.getElementById("check_in");
+                const checkOutInput = document.getElementById("check_out");
 
-                // If check_in is selected, update check_out min date to be check_in date
-                checkOutDate.setAttribute("min", checkInDate);
+                if (!checkInInput || !checkOutInput || !checkInInput.value) return;
 
-                // If the check_out date is before check_in, set it to the same as check_in
-                if (checkOutDate.value && checkOutDate.value < checkInDate) {
-                    checkOutDate.value = checkInDate;
+                const checkInDate = new Date(checkInInput.value);
+
+                // Min = 1 day after check-in
+                const minCheckOutDate = new Date(checkInDate);
+                minCheckOutDate.setDate(minCheckOutDate.getDate() + 1);
+
+                // Max = 30 days after check-in
+                const maxCheckOutDate = new Date(checkInDate);
+                maxCheckOutDate.setDate(maxCheckOutDate.getDate() + 30);
+
+                const minStr = minCheckOutDate.toISOString().split("T")[0];
+                const maxStr = maxCheckOutDate.toISOString().split("T")[0];
+
+                checkOutInput.setAttribute("min", minStr);
+                checkOutInput.setAttribute("max", maxStr);
+
+                // If current value is out of range, adjust it
+                const currentValue = new Date(checkOutInput.value);
+                if (isNaN(currentValue) || currentValue < minCheckOutDate || currentValue > maxCheckOutDate) {
+                    checkOutInput.value = minStr;
                 }
             }
 
-            // Initialize the check_out date to the same as check_in when the page loads
-            document.addEventListener("DOMContentLoaded", function() {
+            document.addEventListener("DOMContentLoaded", function () {
                 updateCheckOutDate();
+                document.getElementById("check_in").addEventListener("change", updateCheckOutDate);
             });
         </script>
 

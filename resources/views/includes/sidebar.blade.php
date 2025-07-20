@@ -1,6 +1,6 @@
-<div class="sidebar col-2 d-flex flex-column min-vh-100 g-0 bg-light d-none d-md-block">
+<div class="sidebar col-2 d-flex flex-column min-vh-100 g-0 bg-light d-none d-lg-block">
 </div>
-<div class="sidebar col-2 d-flex flex-column min-vh-100 g-0 bg-light d-none d-md-block position-fixed">
+<div class="sidebar col-2 d-flex flex-column min-vh-100 g-0 bg-light d-none d-lg-block position-fixed">
     <!-- Logo -->
     <a href="/">
         <img src="{{ asset('images/logo.svg') }}" alt="Craterview Logo" class="img-fluid pb-3 logo">

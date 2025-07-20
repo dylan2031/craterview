@@ -26,7 +26,7 @@
 <body class="bg-light">
     
     <!-- Mobile/Tablet Navigation -->
-    <div class="d-block d-md-none">
+    <div class="d-block d-lg-none">
         @include('includes.nav-sm')
     </div>
 
@@ -45,7 +45,9 @@
             @include('includes.sidebar')
             <div class="flex-grow-1 d-flex flex-column g-0">      
                 @include('includes.nav')
-                @yield('content')
+                <div style="min-height: 85vh;">
+                    @yield('content')
+                </div>
                 @include('includes.footer')
             </div>
         </div>

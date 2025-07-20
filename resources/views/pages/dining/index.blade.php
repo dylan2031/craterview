@@ -5,7 +5,7 @@
         <img 
             src="{{ asset('images/dining/diner.png') }}" 
             class="img-fluid w-100" 
-            style="object-fit: cover; height: 80vh;" 
+            style="object-fit: cover; height: 80vh; object-position: 70% center;" 
             alt="A classic Earth diner on Mars"
         >
         <div class="position-absolute top-50 start-50 translate-middle w-100 px-3">

@@ -16,8 +16,8 @@ nav, .sidebar {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-/* sidebar icons disappear in a 'sweet spot' for better responsiveness */
-@media (min-width: 768px) and (max-width: 1328px) {
+/* sidebar text disappear in a 'sweet spot' for better responsiveness */
+@media (min-width: 992px) and (max-width: 1328px) {
     .sidebar-icon {
       display: none; /* Hides the sidebar-icon */
     }
@@ -320,7 +320,7 @@ which causes some visual/styling inconsistencies, this fixes that */
     z-index: 1030; /* higher than most content */
     background: linear-gradient(to bottom, #92D050, #d47d00);
     box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2), 0 1px 3px rgba(0, 0, 0, 0.2);
-    height: 40px;
+    height: 48px;
 }
 
 .start-icon {
@@ -338,4 +338,12 @@ which causes some visual/styling inconsistencies, this fixes that */
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.xp-wrap {
+    border: 4px solid #1d4e89 !important;
+    border-radius: 8px !important;
+    padding: 0 !important;
+    overflow: hidden;
+    background-color: #1d4e89 !important; /* Fill the gap */
 }

@@ -46,7 +46,7 @@
             @endforeach
         </div>
     </section>
-    <section class="background-fade-btm">
+    <section">
         <div class="container text-center">
             <h3>Our partners</h3>
             <p>Low prices are made possible by sponsorship deals with our partners.</p>

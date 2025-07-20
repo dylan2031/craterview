@@ -28,7 +28,7 @@
             </div>
             <div class="mt-4 d-flex flex-column flex-md-row justify-content-center gap-3">
                 <a href="/reservations/create" class="btn xp-btn-primary">Make a reservation</a>
-                <a href="{{ asset('files/index/craterview-brochure.pdf') }}" class="btn xp-btn-secondary" target="_blank" download> Download brochure</a>
+                <a href="{{ asset('files/craterview-brochure.pdf') }}" class="btn xp-btn-secondary" target="_blank" download> Download brochure</a>
             </div>
         </div>
     </section>
@@ -56,7 +56,7 @@
             <p class="text-center">A holiday that pays for itself, if you play your cards right.</p>
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="{{ asset('images/index/jackpot.png') }}" class="img-fluid img-thumbnail" alt="Craterview Casino">
+                    <img src="{{ asset('images/index/jackpot-alt.png') }}" class="img-fluid img-thumbnail" alt="Craterview Casino">
                 </div>
                 <div class="col-md-6">
                     <h3>One small bet for man...</h3>
@@ -123,7 +123,7 @@
             <img src="{{ asset('images/index/connection.png') }}" class="img-fluid d-none d-lg-block" alt="Interplanetary dial-up diagram">
             <img src="{{ asset('images/index/connection-sm.png') }}" class="img-fluid d-block d-lg-none" alt="Interplanetary dial-up diagram">
             <p>Your message is guaranteed to reach Earth in 10 business days, carried through the cosmos by our reliable communication system. Messages to colonies will route via Earth, so anticipate additional waiting times to reach a colony.</p>
-            <p>Connected terminals are available in our Extranet Café, open 24/7.</p>
+            <p>Connected terminals are available in our Extranet Cafe, open 24/7.</p>
             <p>In the event of one of our regularly-scheduled technical difficulties, we thank you for your patience—and your pioneering spirit.</p>
         </div> 
     </section>

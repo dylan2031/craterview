@@ -10,7 +10,7 @@
             </div>
             <div class="col">
                 <h1>{{ $room['name'] }}</h1>
-                <p><i class="bi bi-person-fill"></i> Suitable for {{ $room['no_of_guests'] }} guest&lpar;s&rpar; | <i class="bi bi-cash"></i> Only Ω{{ $room['price_per_night'] }} per night</p>
+                <p><i class="bi bi-person-fill"></i> Suitable for {{ $room['no_of_guests'] }} guest&lpar;s&rpar; | <i class="bi bi-cash"></i> Only Ω{{ number_format($room['price_per_night'], 2) }} per night</p>
                 <p><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> Protected by our 3-star promise</p>
                 <p class="text-muted fst-italic">{{ $room['description'] }}</p>
                 <div class="my-3 text-light">

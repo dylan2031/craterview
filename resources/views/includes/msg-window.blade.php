@@ -3,7 +3,7 @@
         <div class="modal-content">
             <div class="xp-title-bar px-3 py-2 d-flex align-items-center position-relative">
                 <img src="{{ asset('images/icons/mars.svg') }}" alt="Mars Icon" class="me-2" style="width: 18px; height: 18px;">
-                <span>Extranet Explorer &copy; 3002 | Notification</span>
+                <span>1 new notification</span>
                 <img src="{{ asset('images/icons/close.png') }}" alt="Close" class="position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close">
             </div>
             <div class="modal-body p-0">

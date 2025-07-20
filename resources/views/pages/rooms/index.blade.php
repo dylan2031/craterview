@@ -6,7 +6,7 @@
         <img 
             src="{{ asset('images/rooms/banner.png') }}" 
             class="img-fluid w-100" 
-            style="object-fit: cover; height: 80vh;" 
+            style="object-fit: cover; height: 80vh; object-position: 33% center;" 
             alt="A room with a view"
         >
         <div class="position-absolute top-50 start-50 translate-middle w-100 px-3">
@@ -38,7 +38,7 @@
                         </div>
                         <div class="col mt-2">
                             <h3>{{ $room['name'] }}</h3>
-                            <p><i class="bi bi-person-fill"></i> Suitable for {{ $room['no_of_guests'] }} guest&lpar;s&rpar; | <i class="bi bi-cash"></i> Only Ω{{ $room['price_per_night'] }} per night</p>  
+                            <p><i class="bi bi-person-fill"></i> Suitable for {{ $room['no_of_guests'] }} guest&lpar;s&rpar; | <i class="bi bi-cash"></i> Only Ω{{ number_format($room['price_per_night'], 2) }} per night</p>  
                             <p><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> Protected by our 3-star promise</p>
                             <p class="text-muted fst-italic">{{ $room['description'] }}</p>
                             <p>Features:</p>
@@ -48,8 +48,10 @@
                                 @endforeach
                             </ul>
                             <p>...and more!</p>
-                            <a href="{{ url('rooms/' . Str::slug($room['name'])) }}" class="btn xp-btn-secondary">See details</a>
-                            <a href="/reservations/create" class="btn xp-btn-primary">Make a reservation</a>
+                            <div class="mt-4 d-flex flex-column flex-md-row gap-3 text-light">
+                                <a href="{{ url('rooms/' . Str::slug($room['name'])) }}" class="btn xp-btn-secondary">See details</a>
+                                <a href="/reservations/create" class="btn xp-btn-primary">Make a reservation</a>
+                            </div>
                         </div>
                     </div>
                     <hr>

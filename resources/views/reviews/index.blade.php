@@ -5,7 +5,7 @@
         <img 
             src="{{ asset('images/reviews/reviews.png') }}" 
             class="img-fluid w-100" 
-            style="object-fit: cover; height: 80vh;" 
+            style="object-fit: cover; height: 80vh; object-position: 33% center;" 
             alt="Hotel Business Center"
         >
     

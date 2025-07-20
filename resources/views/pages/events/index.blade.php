@@ -3,9 +3,9 @@
 @section('content')
     <section class="position-relative text-center text-light text-shadow-black">
         <img 
-            src="{{ asset('images/events/banner2.png') }}" 
+            src="{{ asset('images/events/nye-3001.png') }}" 
             class="img-fluid w-100" 
-            style="object-fit: cover; height: 80vh;" 
+            style="object-fit: cover; height: 80vh; object-position: 44% center;" 
             alt="Event at Sheffield Garden, one of Craterview's event venues"
         >
 
@@ -137,8 +137,8 @@
         </div> 
     </section>
     <hr>
-    <section class="background-fade-btm">
-        <div class="container text-center">
+    <section>
+        <div class="container text-center mb-0">
             <h3>Our partners</h3>
             <p>Low prices are made possible by sponsorship deals with our partners.</p>
             @include('includes.sponsors')

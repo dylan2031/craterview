@@ -1,4 +1,4 @@
-<nav class="navbar frutiger-aero-navbar d-none d-md-block sticky-top">
+<nav class="navbar frutiger-aero-navbar d-none d-lg-block sticky-top">
     <div class="container-fluid justify-content-between align-items-center nav nav-pills">
 
         <div class="d-flex gap-3">

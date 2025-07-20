@@ -31,7 +31,7 @@
     </section>
     {{-- Mission statement --}}
     <section class="background-crater text-light text-shadow-black">
-        <div class="container mt-4 mb-5" >
+        <div class="container pt-4 pb-5" >
             <h2 class="visually-hidden">Our Mission</h2>
             <img src="{{ asset('images/about/mission-wordart.png') }}" class="img-fluid d-block mx-auto" style="height: 5rem;" alt="wordart: our mission">
             <div class="row align-items-center">

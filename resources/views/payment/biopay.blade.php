@@ -256,6 +256,7 @@ If BioPay were a real product, I would organize this more cleanly.
         <!-- submission form -->
         <form id="proceedForm" action="{{ route('payment.confirm') }}" method="POST" class="d-none mt-3">
           @csrf
+          <input type="hidden" name="payment_confirmed" value="true">
           <button type="submit" class="btn xp-btn-primary">Proceed</button>
         </form>
 

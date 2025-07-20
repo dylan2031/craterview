@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="d-flex flex-column align-items-center text-center">
+    <div class="d-flex flex-column align-items-center text-center mt-4">
         <div class="mx-5">
             <h2 class="mx-3">Say Thanks ☕</h2>
             <p>Our staff work hard to make your stay as satisfactory as possible as per our 3 star promise.</p>

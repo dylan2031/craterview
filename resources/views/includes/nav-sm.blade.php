@@ -1,6 +1,9 @@
-<nav class="navbar mob-nav fixed-bottom d-flex justify-content-between align-items-center">
+<!-- Spacer for sticky nav -->
+<div style="height: 48px;"></div>
+
+<nav class="navbar mob-nav fixed-top d-flex justify-content-between align-items-center">
     <a href="#" data-bs-toggle="modal" data-bs-target="#navModal" aria-label="Open Navigation Menu">
-        <img src="{{ asset('images/icons/start.svg') }}" alt="Start Icon" class="start-icon p-0 m-0" height="100%">
+        <img src="{{ asset('images/icons/mobile-menu.svg') }}" alt="Start Icon" class="start-icon p-0 m-0" height="100%">
     </a>
     <a href="/">
         <img src="{{ asset('images/logo-mobile.svg') }}" alt="Logo" class="logo-icon py-1 px-3" height="100%">

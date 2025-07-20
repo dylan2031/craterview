@@ -54,7 +54,7 @@ class PaymentsController extends Controller
     /**
      * Confirm the payment and update session.
      */
-    public function confirm(Request $request)
+    public function confirm(Request $request) 
     {
         // Retrieve the payment_confirmed value from the form submission and cast it to a boolean
         $paymentConfirmed = filter_var($request->input('payment_confirmed'), FILTER_VALIDATE_BOOLEAN);
@@ -75,6 +75,10 @@ class PaymentsController extends Controller
         }
         else
         {
+            //forget sessions <--- new as of 2025/07/20, if any bugs arise it's this
+            session()->forget('biopay');
+            session()->forget('payment_confirmed');
+
             // Simulate failure (NeuraChip doesn't work without a neural implant)
             return redirect()->route('payment.failed')->with('message', 'There was an error processing your payment.');
         }

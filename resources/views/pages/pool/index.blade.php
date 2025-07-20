@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+ 
 @section('content')
     {{-- banner --}}
     <section class="position-relative text-center text-light text-shadow-black">
@@ -12,13 +12,13 @@
         <div class="position-absolute top-50 start-50 translate-middle w-100 px-3">
             <h1 class="mb-2">Pool & Spa</h1>
             <h5>Your stay includes full, unlimited access to our pool and spa facilities.</h5>
-            <img src="{{ asset('images/pool/pool-wordart.png') }}" alt="Open 24/7 all year round" class="img-fluid mx-auto d-block">   
+            <x-responsive-img desktop="images/pool/pool-wordart.png" mobile="images/pool/pool-wordart-mb.png" alt="wordart: Open 24/7 all year round." height="auto" mobileHeight="auto"/>  
             <h5>Pioneering the future of leisure and rejuvenation by delivering the comforts of the past.</h5>
         </div>
     </section>
     {{-- 'Welcome' info --}}
     <section>
-        <div class="container p-3 text-center">
+        <div class="container pt-3 text-center">
             <h1>Your holiday starts here...</h1>
             <p>Your all-inclusive getaway at Craterview Casino & Resort includes unlimited access to our outdoor pool, three indoor pools, and spa facilities.</p>
             <p>Our pool and spa facilities are open 24/7, year-round, and are cleaned and maintained daily to ensure the highest standards of hygiene.</p>
@@ -29,7 +29,9 @@
     </section>
     {{-- Pools --}}
     <section>
-            <div class="container" >
+        <h2 class="visually-hidden">Our pools</h2>
+        <img src="{{ asset('images/pool/pools-wordart.png') }}" class="img-fluid d-block mx-auto" style="height: 5rem;" alt="wordart: Our pools">
+        <div class="container" >
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <img src="{{ asset('images/pool/indoor-pool.png') }}" class="img-fluid img-thumbnail" alt="Indoor pool">
@@ -71,6 +73,8 @@
     <hr>
     {{-- Spa info --}}
     <section>
+        <h2 class="visually-hidden">Rejuvenation zone</h2>
+        <img src="{{ asset('images/pool/spa-wordart.png') }}" class="img-fluid d-block mx-auto" style="height: 5rem;" alt="wordart: Rejuvenation zone">
         <div class="container">
             <span class="text-center">
                 <h3>Day and Night Spa</h3>

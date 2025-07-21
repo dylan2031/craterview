@@ -50,7 +50,7 @@
                             <p>...and more!</p>
                             <div class="mt-4 d-flex flex-column flex-md-row gap-3 text-light">
                                 <a href="{{ url('rooms/' . Str::slug($room['name'])) }}" class="btn xp-btn-secondary">See details</a>
-                                <a href="/reservations/create" class="btn xp-btn-primary">Make a reservation</a>
+                                <a href="{{ route('reservations.create', ['room' => $room['type']]) }}" class="btn xp-btn-primary">Make a reservation</a>
                             </div>
                         </div>
                     </div>

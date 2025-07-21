@@ -14,7 +14,7 @@
                 <p><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> Protected by our 3-star promise</p>
                 <p class="text-muted fst-italic">{{ $room['description'] }}</p>
                 <div class="my-3 text-light">
-                    <a href="/reservations/create" class="btn xp-btn-primary">Book Now</a>
+                    <a href="{{ route('reservations.create', ['room' => $room['type']]) }}" class="btn xp-btn-primary">Book now!</a>
                 </div>
                 <h3>Complete list of features:</h3>
                 <ul class="list-unstyled">

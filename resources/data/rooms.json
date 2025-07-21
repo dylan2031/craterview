@@ -1,6 +1,7 @@
 [
     {
         "name": "Economy Sleeping Pod",
+        "type": "pod",
         "description": "Our most affordable option: compact, reliable, and cheap. Experience comfort on a budget.",
         "image": "pod.png",
         "no_of_guests" : 1,
@@ -13,6 +14,7 @@
     },
     {
         "name": "Single Room",
+        "type": "single",
         "description": "Designed for an independent guest, experience 3-star comfort with all the essentials you'd expect.",
         "image": "single-room.png",
         "no_of_guests" : 1,
@@ -25,6 +27,7 @@
     },
     {
         "name": "Twin Room",
+        "type": "twin",
         "description": "Designed for two guests who value both personal space and basic functionality. Our Twin Room features two beds, private facilities, and the dependable adequacy of our 3-star promise.",
         "image": "twin-room.png",
         "no_of_guests" : 2,
@@ -37,6 +40,7 @@
     },
     {
         "name": "Double Room",
+        "type": "double",
         "description": "Ideal for couples or solo guests seeking extra space, our Double Room offers upgraded comfort, a generously-sized bed, private facilities, and all the essential amenities to ensure your stay meets the highest 3-star expectations.",
         "image": "double-room.png",
         "no_of_guests" : 2,
@@ -49,6 +53,7 @@
     },
         {
         "name": "Penthouse Suite",
+        "type": "penthouse",
         "description": "Experience 3-star comfort like never before. Our penthouse suite offers everything you've come to expect, and more.",
         "image": "penthouse-suite.png",
         "no_of_guests" : 6,

@@ -19,19 +19,19 @@
         </div>
 
         <!-- Room type -->
-        <div class="row">
-            <div class="col mb-3">
-                <label for="room_type" class="form-label">Room type</label>
-                <select class="form-select mb-3" id="inlineFormCustomSelect" name="room_type" required>
-                    <option value="" disabled>Please select</option>
-                    <option value="pod">Sleeping Pod &lpar;Ω32.10 per night&rpar;</option>
-                    <option value="single">Single Room &lpar;Ω80.00 per night&rpar;</option>
-                    <option value="double">Twin Room &lpar;Ω100.00 per night&rpar;</option>
-                    <option value="double">Double Room &lpar;Ω120.00 per night&rpar;</option>
-                    <option value="penthouse">Penthouse Suite &lpar;Ω369.99 per night&rpar;</option>
-                </select>
-            </div>
-        </div>
+        @php
+            $selectedRoom = request('room');
+        @endphp
+
+        <select class="form-select mb-3" id="inlineFormCustomSelect" name="room_type" required>
+            <option value="" disabled {{ $selectedRoom ? '' : 'selected' }}>Please select</option>
+            <option value="pod" {{ $selectedRoom === 'pod' ? 'selected' : '' }}>Sleeping Pod &lpar;Ω32.10 per night&rpar;</option>
+            <option value="single" {{ $selectedRoom === 'single' ? 'selected' : '' }}>Single Room &lpar;Ω80.00 per night&rpar;</option>
+            <option value="twin" {{ $selectedRoom === 'twin' ? 'selected' : '' }}>Twin Room &lpar;Ω100.00 per night&rpar;</option>
+            <option value="double" {{ $selectedRoom === 'double' ? 'selected' : '' }}>Double Room &lpar;Ω120.00 per night&rpar;</option>
+            <option value="penthouse" {{ $selectedRoom === 'penthouse' ? 'selected' : '' }}>Penthouse Suite &lpar;Ω369.99 per night&rpar;</option>
+        </select>
+
 
         <!-- check_in and check_out -->
         {{--

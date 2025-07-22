@@ -103,6 +103,71 @@
                 <textarea class="form-control" id="special_request" name="special_request" rows="3" placeholder="(optional)"></textarea>
             </div>
         </div>
+
+        <!-- total price -->
+        <div class="row">
+            <div class="col">
+                <p><span id="total_price_display">Total price will appear here</span></p>
+            </div>
+        </div>
+
+        {{-- script for total price --}}
+
+        <script>
+            // Map room types to their nightly prices
+            const prices = {
+                pod: 32.10,
+                single: 80.00,
+                twin: 100.00,
+                double: 120.00,
+                penthouse: 369.99
+            };
+
+            // Function to update the total price display
+            function updateTotal() {
+                // Get selected room type
+                const type = document.getElementById("inlineFormCustomSelect").value;
+                // Get check-in and check-out dates as Date objects
+                const checkIn = new Date(document.getElementById("check_in").value);
+                const checkOut = new Date(document.getElementById("check_out").value);
+                // Get the span where total price will be shown
+                const output = document.getElementById("total_price_display");
+
+                // If room type or dates are missing/invalid, show placeholder text and stop
+                if (!type || isNaN(checkIn) || isNaN(checkOut)) {
+                    output.textContent = "Total price will appear here";
+                    return;
+                }
+
+                // Calculate the number of nights between check-in and check-out
+                const nights = Math.ceil((checkOut - checkIn) / 86400000); // 86400000 ms in one day
+
+                // Lookup price per night for the selected room type
+                const price = prices[type];
+                // Calculate total price and display formatted string
+                output.innerHTML = `<small class="text-muted">Your stay&colon; ${nights} night${nights > 1 ? 's' : ''} at Ω${price.toFixed(2)} per night<br>Taxes and fees&colon; Ω0.00<br>Craterview is located in one of Mars' protected tax-free zones</small><br><strong>Total&colon; Ω${(nights * price).toFixed(2)}</strong>`;
+            }
+
+            // When page loads, attach change event listeners to inputs and run initial total calculation
+            document.addEventListener("DOMContentLoaded", () => {
+                ["inlineFormCustomSelect", "check_in", "check_out"].forEach(id =>
+                    document.getElementById(id).addEventListener("change", updateTotal)
+                );
+                updateTotal();
+            });
+        </script>
+
+        <!-- Confirm -->
+        <div class="form-check mb-4">
+        <input class="form-check-input" type="checkbox" id="confirm" name="confirm" required>
+        <label class="form-check-label" for="confirm">
+            I confirm that all information provided is correct and I agree to Craterview Casino & Resort's  
+            <a href="{{ asset('files/policy/no-refunds-policy.pdf') }}" target="_blank">no refunds policy</a>.
+        </label>
+        </div>
+
+
+
         <!-- Submit -->
         <button type="submit" class="btn xp-btn-primary mb-5">Confirm</button>
     </form>

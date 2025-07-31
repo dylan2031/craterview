@@ -98,3 +98,6 @@ Route::delete('/reservations/{id}', [ReservationsController::class, 'destroy'])-
 
 // faux error
 Route::get('/extranet-portal', [PagesController::class, 'extranetConnect']);
+
+// AI assistant
+Route::post('/blimby-chat', [\App\Http\Controllers\BlimbyController::class, 'chat']);

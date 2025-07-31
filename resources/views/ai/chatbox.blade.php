@@ -49,12 +49,26 @@
 
       // Add user message to the log
       log.innerHTML += `<div><strong>You:</strong> ${message}</div>`;
-
-      // Show Blimby's placeholder reply
-      log.innerHTML += `<div><strong>Blimby:</strong> I am Blimby.</div>`;
-
-      // Clear input box
       input.value = '';
+
+      // Send message to backend
+      fetch('/blimby-chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CSRF-TOKEN': '{{ csrf_token() }}'
+        },
+        body: JSON.stringify({ message: message })
+      })
+      .then(response => response.json())
+      .then(data => {
+        // Add Blimby's actual reply from the server
+        log.innerHTML += `<div><strong>Blimby:</strong> ${data.reply}</div>`;
+      })
+      .catch(error => {
+        log.innerHTML += `<div><strong>Blimby:</strong> Sorry, there was an error.</div>`;
+        console.error('Blimby error:', error);
+      });
     }
 
     sendButton.addEventListener('click', showUserMessage);

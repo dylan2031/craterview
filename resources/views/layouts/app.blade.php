@@ -47,6 +47,7 @@
                 @include('includes.nav')
                 <div style="min-height: 85vh;">
                     @yield('content')
+                    @include('ai._base')
                 </div>
                 @include('includes.footer')
             </div>

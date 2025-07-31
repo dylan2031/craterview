@@ -159,14 +159,12 @@
 
         <!-- Confirm -->
         <div class="form-check mb-4">
-        <input class="form-check-input" type="checkbox" id="confirm" name="confirm" required>
-        <label class="form-check-label" for="confirm">
-            I confirm that all information provided is correct and I agree to Craterview Casino & Resort's  
-            <a href="{{ asset('files/policy/no-refunds-policy.pdf') }}" target="_blank">no refunds policy</a>.
-        </label>
+            <input class="form-check-input" type="checkbox" id="confirm" name="confirm" required>
+            <label class="form-check-label" for="confirm">
+                I confirm that all information provided is correct and I agree to Craterview Casino & Resort's  
+                <a href="{{ asset('files/policy/no-refunds-policy.pdf') }}" target="_blank">no refunds policy</a>.
+            </label>
         </div>
-
-
 
         <!-- Submit -->
         <button type="submit" class="btn xp-btn-primary mb-5">Confirm</button>

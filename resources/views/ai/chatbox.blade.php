@@ -43,7 +43,7 @@
   }
 </style>
 
-<div id="blimby-chat" class="position-fixed ms-4">
+<div id="blimby-chat" class="position-fixed ms-4"  style="display: none;">
   <button id="blimby-close" aria-label="Close">&times;</button>
   <div id="blimby-log" class="mb-2">  <p class="fw-bold">Greetings, Earthling!</p>
   <p>I'm Blimby, Craterview's cyberspace concierge. Let me know if you need any assistance.</p></div>
@@ -58,10 +58,19 @@ document.addEventListener('DOMContentLoaded', function () {
   const input = document.getElementById('blimby-input');
   const sendButton = document.getElementById('blimby-send');
   const log = document.getElementById('blimby-log');
+  const chatbox = document.getElementById('blimby-chat'); // Moved up
+
+  // First-time open logic
+  if (!localStorage.getItem('blimbyHasOpenedBefore')) {
+    chatbox.style.display = 'block';
+    localStorage.setItem('blimbyHasOpenedBefore', 'true');
+  } else {
+    chatbox.style.display = 'none';
+  }
+
 
   const closeButton = document.getElementById('blimby-close');
-  const chatbox = document.getElementById('blimby-chat');
-
+  
   const blimbyImage = document.getElementById('blimby');
   blimbyImage.addEventListener('click', function () {
     chatbox.style.display = 'block';

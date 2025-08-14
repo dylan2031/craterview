@@ -22,7 +22,7 @@
         @php
             $selectedRoom = request('room');
         @endphp
-
+        <label for="room_type" class="form-label">Room type</label>
         <select class="form-select mb-3" id="inlineFormCustomSelect" name="room_type" required>
             <option value="" disabled {{ $selectedRoom ? '' : 'selected' }}>Please select</option>
             <option value="pod" {{ $selectedRoom === 'pod' ? 'selected' : '' }}>Sleeping Pod &lpar;Ω32.10 per night&rpar;</option>

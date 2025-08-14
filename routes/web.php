@@ -7,9 +7,16 @@ use App\Http\Controllers\ReviewsController;
 use App\Http\Controllers\PaymentsController;
 use App\Http\Controllers\ReservationsController;
 
+// **************************//
+// **        Home          **//
+// **************************//
 Route::get('/', [PagesController::class, 'index']);
 
-// Entertainment page and everything associated is here:
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// ***************************************************//
+// ** Entertainment page and everything associated ** //
+// ***************************************************//
 
 // Main entertainment page that lists everything
 Route::get('/entertainment', [PagesController::class, 'entertainment'])->name('entertainment.index');
@@ -20,36 +27,72 @@ Route::get('/entertainment/search', [EntertainmentController::class, 'search'])-
 // Show individual attractions
 Route::get('/entertainment/{slug}', [EntertainmentController::class, 'show'])->name('entertainment.show');
 
-// End of Entertainment
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// About page and everything associated is here
+// **************************//
+// **      About page      **//
+// **************************//
+
 Route::get('/about', [PagesController::class, 'about']);
 Route::get('/about/{alias}', [PagesController::class, 'teamMember']);
-// End of about
 
-// Reviews
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// **************************//
+// **       Reviews        **//
+// **************************//
+
 Route::resource('reviews', ReviewsController::class);
 
-// Dining page
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// **************************//
+// **       Dining         **//
+// **************************//
+
 Route::get('/dining', [PagesController::class, 'dining'])->name('dining');
 
-// Rooms page
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// **************************//
+// **        Rooms         **//
+// **************************//
+
+// List of rooms
 Route::get('/rooms', [PagesController::class, 'rooms'])->name('rooms');
 // Individual room
 Route::get('/rooms/{slug}', [PagesController::class, 'showRoom'])->name('rooms.show');
 
-// Events page
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// **************************//
+// **        Events        **//
+// **************************//
+
+// Events index
 Route::get('/events', [PagesController::class, 'events'])->name('events');
 // Upcoming events
 Route::get('/events/upcoming-events', [PagesController::class, 'upcomingEvents']);
 // Venues
 Route::get('/events/venue-hire', [PagesController::class, 'venues'])->name('venues');
 
-// Pool & Spa page
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// **************************//
+// **       Pool/Spa       **//
+// **************************//
+
 Route::get('/pool-and-spa', [PagesController::class, 'pool']);
 
-// Buy me a coffee page
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// **************************//
+// **        Coffee        **//
+// **************************//
+
 Route::get('/saythanks', [PagesController::class, 'saythanks']);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // *********************//
 // ** Payment routes ** //
@@ -75,16 +118,19 @@ Route::get('/payment/failed', function () {
 // If user chooses to pay with BioPay
 Route::post('/payment/setBiopay', [PaymentsController::class, 'setBiopay'])->name('payment.setBiopay');
 
-// These were added by Laravel auth
-Auth::routes();
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Dashboard 
-//Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index']);
+// **************************//
+// **        Auth          **//
+// **************************//
+Auth::routes();
 
 Route::middleware(['auth'])->group(function () {
     // Dashboard route, shows the main dashboard page
     Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
 });
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // **************************//
 // ** Reservations Routes ** //
@@ -94,10 +140,23 @@ Route::post('/reservations', [ReservationsController::class, 'store'])->name('re
 Route::get('/reservations/{id}/confirmation', [ReservationsController::class, 'confirmation'])->name('reservations.confirmation');
 Route::delete('/reservations/{id}', [ReservationsController::class, 'destroy'])->name('reservations.destroy');
 
-/* errors */
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// faux error
+// **************************//
+// **       Errors        ** //
+// **************************//
+
+// Faux error
 Route::get('/extranet-portal', [PagesController::class, 'extranetConnect']);
 
-// AI assistant
+// 404 and others to be added later
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// **************************//
+// **        Blimby       ** //
+// **************************//
+
 Route::post('/blimby-chat', [\App\Http\Controllers\BlimbyController::class, 'chat']);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

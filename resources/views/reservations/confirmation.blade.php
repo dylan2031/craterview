@@ -33,7 +33,7 @@
                 <br>
                 or pay at check-in
             </div>
-            <p class="text-center mt-4 mb-1"><strong>Thank you for choosing Craterview Casino & Resort!</p>
+            <p class="text-center mt-4 mb-1"><strong>Thank you for choosing Craterview Casino & Resort!</p></strong>
         </div>
     </div>
 @endsection

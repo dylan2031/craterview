@@ -16,9 +16,11 @@
                     <td>
                         {{ $reservation->nights }} nights
                         <br>
-                        Check in: {{ \Carbon\Carbon::parse($reservation->check_in)->format('d/m/Y') }}
-                        <br>
-                        Departure: {{ \Carbon\Carbon::parse($reservation->check_out)->format('d/m/Y') }}
+                        <span class="text-muted">
+                            Check in: {{ \Carbon\Carbon::parse($reservation->check_in)->format('d/m/Y') }}
+                            <br>
+                            Departure: {{ \Carbon\Carbon::parse($reservation->check_out)->format('d/m/Y') }}
+                        </span>
                     </td>
                     <td>{{ ucfirst($reservation->room_type) }}</td>
                     <td>
@@ -66,9 +68,11 @@
                     <td>
                         {{ $reservation->nights }} nights
                         <br>
-                        Check in: {{ \Carbon\Carbon::parse($reservation->check_in)->format('d/m/Y') }}
-                        <br>
-                        Departure: {{ \Carbon\Carbon::parse($reservation->check_out)->format('d/m/Y') }}
+                        <span class="text-muted">
+                            Check in: {{ \Carbon\Carbon::parse($reservation->check_in)->format('d/m/Y') }}
+                            <br>
+                            Departure: {{ \Carbon\Carbon::parse($reservation->check_out)->format('d/m/Y') }}
+                        </span>
                     </td>
                     <td>{{ ucfirst($reservation->room_type) }}</td>
                     <!--<td><a href="{{ route('reservations.confirmation', ['id' => $reservation->id]) }}" class="btn xp-btn-secondary">View</a></td>-->

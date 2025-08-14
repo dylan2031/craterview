@@ -4,6 +4,9 @@
     <!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Hide in search engines for now, will remove this on a later build -->
+    <meta name="robots" content="noindex, nofollow">
     
     <!-- Page Title -->
     <title>🪐 Craterview Casino and Resort</title>

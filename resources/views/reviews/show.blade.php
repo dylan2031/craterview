@@ -43,6 +43,10 @@
             </form>  
         @endif  
     @endauth
+
+    {{-- Response to review --}}
+    @include('reviews.response', ['response' => $review->response])
+
 </div>
 
 @endsection

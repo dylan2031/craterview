@@ -43,12 +43,8 @@
                         <div class="xp-card card-text p-3 mb-2">
                             <p class="mb-0">{{ $review->user->name }} says...</p>
                             <small class="text-muted">
-                                {{ $review->created_at->format('M j, Y') }}
-
-                                {{--show time traveler if date is before 3002--}}
-                                @if ($review->created_at->year < 3002)
-                                    <span class="badge bg-info text-dark ms-2" style="border: 1px solid #000;">🕰️ Time Traveler</span>
-                                @endif
+                                {{-- show fake year if there, this is just for worldbuilding so some reviews are from the future --}}
+                                {{ $review->created_at->format('M j, ') . ($review->fictional_year ?? $review->created_at->year) }}
                             </small>
                             <h3>{{$review->title}}</h3>
                             <h3>

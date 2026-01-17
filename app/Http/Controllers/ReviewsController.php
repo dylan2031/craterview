@@ -60,7 +60,8 @@ class ReviewsController extends Controller
         $review->save();
 
         // Back to page
-        return redirect('/reviews#top')->with('message', 'Thank you for your feedback. Your review has been submitted successfully.');
+        return redirect('/reviews#top')->with('message', 'Thank you for your feedback. Your review has been submitted successfully.')
+        ->with('aiNotification', true);;
     }
 
     /**

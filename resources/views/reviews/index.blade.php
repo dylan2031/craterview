@@ -37,6 +37,9 @@
                     <a href="/reviews/create" class="btn xp-btn-secondary ms-4 mb-2"><i class="bi bi-star"></i> Write a review</a>
                     <a href="/saythanks" class="btn xp-btn-secondary ms-2 mb-2"><i class="bi bi-cup-hot"></i> Buy us a coffee</a>
                 @endauth
+                @if(session('aiNotification'))
+                    @include('reviews.ai_confirmation')
+                @endif
             <div>
                 @if (count($reviews)>0)
                     @foreach ($reviews as $review)

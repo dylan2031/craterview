@@ -41,7 +41,7 @@ class AIReviewResponder
 
         $reply = $response->json('choices.0.message.content');
 
-        return $reply ?? "Unfortunately, I cannot generate a response.";
+        return $reply ?? "Unfortunately, I cannot provide tailored response at the moment due to an error with my emotion analysis systems. However, please be informed that your feedback has been logged and a member of our team will reach out if further action is required. In the meantime, why not treat yourself to a Domino No. 7 Smooth and Traditional Cigatette?";
 
     }
 }

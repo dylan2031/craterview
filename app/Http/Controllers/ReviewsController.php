@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Review;
+use App\Services\AIReviewResponder;
 
 class ReviewsController extends Controller
 {
@@ -51,7 +52,12 @@ class ReviewsController extends Controller
         $validated['user_id'] = auth()->id();
 
         // Create review in DB
-        Review::create($validated);
+        $review = Review::create($validated);
+
+        // Respond to review
+        $aiResponder = new AIReviewResponder();
+        $review->response = $aiResponder->generateResponse($review);
+        $review->save();
 
         // Back to page
         return redirect('/reviews#top')->with('message', 'Thank you for your feedback. Your review has been submitted successfully.');

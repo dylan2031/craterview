@@ -1,7 +1,11 @@
-<div class="response">
+<hr>
+<div>
+    <p>Craterview Casino & Resort responded...</p>
+</div>
+<div class="response mb-4">
     <p>Dear Valued Guest,</p>
     <p>Thank you for taking the time to leave a review.</p>
-    <p>{!! $response ?? 'My primary directive is to respond to your feedback with <b>EMPATHY&trade;</b>. Unfortunately, your free trial of the <b>EMPATHY&trade;</b> extension has expired.</p><p>Please <a href="/extranet-portal">click here</a> to purchase more tokens.' !!}</p>
+    <p>{!! $response !!}</p>
     <p>Kind regards,</p>
     <p>REVIEWRESPONSEBOT3000<p>
     <div class=row>
@@ -10,11 +14,11 @@
     </div>
         <div class=col>
             <p><b>REVIEWRESPONSEBOT3000</b><br>Level 100<br>Senior Guest Service Agent<br>Craterview Casino &amp; Resort<br><span class="badge rounded-pill bg-primary">FEMINIST</span> <span class="badge rounded-pill bg-success">ETHICAL BOT</span> <span class="badge rounded-pill bg-danger">LETHAL</span></p>
-          <p class="text-muted fst-italic small mb-0">“One sword keeps another in the sheath.”</p>
+            <p class="text-muted fst-italic small mb-0">Sponsored by Domino Cigarettes Limited.</p>
+            <p class="text-muted fst-italic small mb-0">When you light up a Domino, you celebrate your moment.</p>
         </div>
     </div>
 </div>
-
 <style>
 .response {
     background: #fff8b0; /* pale yellow notepad */

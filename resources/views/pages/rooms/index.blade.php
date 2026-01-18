@@ -23,7 +23,7 @@
             <h2>All of our rooms are backed by our 3-star promise</h2>
             <img src="{{ asset('images/index/stars.png') }}" class="img-fluid p-3" alt="3 out of 5 stars">
             <p><small class="text-muted fst-italic">Rated 3 stars by the Intergalactic Hotel Standards Committee</small></p>
-            <p>We take pride in providing an affordable experience that meets the satisfactory standards you've come to expect, and our rooms are designed with that in mind. Each room features walls, at least one door, and a bed; all meeting 3-star standards.</p>
+            <p>We take pride in providing an affordable experience that meets the satisfactory standards you've come to expect, and our rooms are designed with that in mind. Each room features walls, at least one door, and a bed&colon; all meeting 3-star standards.</p>
             <p>At Craterview, we believe comfort doesn't have to be complicated.</p>
         </div>
     </section>

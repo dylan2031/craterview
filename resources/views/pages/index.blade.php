@@ -63,7 +63,7 @@
                     <p>...one astronomical jackpot for you.</p>
                     <p>At Craterview Casino, every spin of the Martian Mega-Wheel 
                         could catapult you from interplanetary nobody to galactic icon. Tucked inside the 
-                        luxurious blast-proof walls of our Craterview Resort, this is the Red Planet's premiere 
+                        luxurious walls of our Craterview Resort, this is the Red Planet's premiere 
                         destination for high-stakes glamour and zero-gravity jackpots. Your fortune is just one wildly improbable spin away.
                     </p>
                     <p>Please gamble responsibly.</p>
@@ -98,8 +98,9 @@
                     <p class="text-muted fst-italic small mb-4">'Moments' is a registered trademark of Domino Cigarettes Ltd &copy;3002</p>
                     <h3>Smoking indoors is back, baby!</h3>
                     <p>Despite the relentless lobbyists and so-called 'health and safety boards' trying to ruin all the fun, there 
-                    are no pesky smoking laws here on Mars. Light up, relax, and enjoy our complimentary cigarettes!
+                    are no pesky smoking laws here on Mars. Light up, relax, and enjoy our complimentary&ast; cigarettes!
                     </p>
+                    <p class="small text-italic text-muted p-0 m-0">&ast;One complimentary cigarette per guest. Subject to availability.</p>
                     <br>
                     <h3>There's a moment for everyone.</h3>
                     <p>Together, in the spirit of sustainability and community service, we've partnered to bring you world-class, smoker-friendly facilities designed for your comfort, indulgence, and freedom.</p>
@@ -172,8 +173,8 @@
                     </p>
                     <br>
                     <h3>Where exploration meets expectation.</h3>
-                    <p>At Craterview Hotel, we believe venturing millions of miles from Earth shouldn't mean compromising on the essentials. 
-                        That's why we proudly deliver a consistent 3-star experience—no more, no less — right here on the Martian surface. 
+                    <p>At Craterview, we believe venturing millions of miles from Earth shouldn't mean compromising on the essentials. 
+                        That's why we proudly deliver a consistent 3-star experience, no more and no less, right here on the Martian surface. 
                         From familiar amenities to vaguely luxurious decor, we've brought the comfort of Earth's mid-range hospitality to the 
                         edge of the final frontier.
                     </p>

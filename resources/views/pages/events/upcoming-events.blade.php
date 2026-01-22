@@ -16,7 +16,7 @@
     <div style="
         position: absolute;
         inset: 0;
-        background-image: url('{{ asset('images/events/stage.png') }}');
+        background-image: url('{{ asset('images/events/stage.avif') }}');
         background-size: cover;
         background-position: bottom;
         z-index: 0; ">

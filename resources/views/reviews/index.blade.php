@@ -3,15 +3,19 @@
 @section('content')
     <section class="position-relative text-center text-light">
         <img 
-            src="{{ asset('images/reviews/reviews.png') }}" 
+            src="{{ asset('images/reviews/reviews.webp') }}" 
             class="img-fluid w-100" 
             style="object-fit: cover; height: 80vh; object-position: 33% center;" 
             alt="Hotel Business Center"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+            width="1600"
+            height="900"
         >
-    
         <div class="position-absolute top-50 start-50 translate-middle w-100 px-3">
             <h1 class="mb-2">Reviews</h1>
-            <img src="{{ asset('images/index/stars.png') }}" alt="3 star rating" class="img-fluid mx-auto d-block">   
+            @include('includes.stars-no-copy')
             <h3>Rated 3 stars by the Intergalactic Hotel Standards Committee</h3>
             <br>
             <div class="container">

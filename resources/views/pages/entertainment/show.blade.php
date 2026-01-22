@@ -7,7 +7,8 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4">
-            <img src="{{ asset('images/entertainment/' . $item['image']) }}" class="img-fluid img-thumbnail" alt="Image of {{ $item['name'] }}">
+            <img src="{{ asset('images/entertainment/' . $item['image']) }}" class="img-fluid img-thumbnail" alt="Image of {{ $item['name'] }}"
+            loading="eager" decoding="async">
         </div>
         <div class="col col-md-8">
             <h3>{{ $item['name'] }}</h3>
@@ -55,7 +56,7 @@
                     <p class="card-text">{{ $priceMessage }} <!--<p> is closed in inside if -->
                     @if($item['included_in_pass'])
                         <br>or save big with  
-                        <img src="{{ asset('images/entertainment/funpass.png') }}" alt="FunPass" class="img-fluid d-inline">™</p>  
+                        <img src="{{ asset('images/entertainment/funpass.png') }}" alt="FunPass" class="img-fluid d-inline" loading="lazy" decoding="async">™</p>  
                     @else
                         </p>    
                     @endif
@@ -64,7 +65,7 @@
         </div>
         <div class="col-lg-4 text-center m-2">
             <h5>3-star promise</h5>
-            <img src="{{ asset('images/index/stars.png') }}" alt="3 star rating" class="img-fluid mx-auto d-block"> 
+            @include('includes.stars-no-copy')
             <p><small>Quality and standards guarantee</small></p>
             <p class="card-text">{{ $item['name'] }} is proud to uphold and deliver on our 3-star promise, taking pride in providing an affordable experience that meets the satisfactory standards you've come to expect.</p>
         </div>
@@ -77,7 +78,7 @@
                         <br>
                         <strong>{{ $randomItem['name'] }}</strong>
                     </p>
-                    <img src="{{ asset('images/entertainment/' . $randomItem['image']) }}" class="img-fluid img-thumbnail" alt="Image of {{ $item['name'] }}">
+                    <img src="{{ asset('images/entertainment/' . $randomItem['image']) }}" class="img-fluid img-thumbnail" alt="Image of {{ $item['name'] }}" loading="lazy" decoding="async">>
                 </a>
             </div>
         </div>

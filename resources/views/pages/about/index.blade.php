@@ -3,16 +3,20 @@
 @section('content')
     <section class="position-relative text-center text-light text-shadow-black">
         <img 
-            src="{{ asset('images/about/lobby-new.png') }}" 
+            src="{{ asset('images/about/lobby.webp') }}" 
             class="img-fluid w-100" 
             style="object-fit: cover; height: 80vh;" 
             alt="Craterview Lobby"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+            width="1600"
+            height="900"
         >
-
         <div class="position-absolute top-50 start-50 translate-middle w-100 px-3">
             <h1 class="mb-2">About us</h1>
             <p>Established in 2972, Craterview cemented itself as Mars's premier destination for a perfectly adequate vacation experience.</p>
-            <img src="{{ asset('images/global/stars.png') }}" alt="3 star rating" class="img-fluid mx-auto d-block">   
+            <img src="{{ asset('images/global/stars.webp') }}" alt="3 star rating" class="img-fluid mx-auto d-block" width="427" height="104">  
             <p class="fst-italic small">Rated 3 stars by the Intergalactic Hotel Standards Committee</p>
             <h5 class="mt-2">Our 3-star rating isn't just a number — it's a badge of honor.</h5>
             <p class="mt-4">It is a testament to our consistency, unwavering commitment, and extraordinary mediocrity.</p>
@@ -24,8 +28,7 @@
             <h2 class="visually-hidden">3-star promise</h2>
             <img src="{{ asset('images/about/3star-wordart.png') }}" class="img-fluid d-block mx-auto" style="height: 5rem;" alt="wordart: 3-star promise">
             <p>We guarantee <span class="fw-bold">affordability, comfort, and perfect satisfaction.</span></p> 
-            <img src="{{ asset('images/global/stars.png') }}" class="img-fluid mt-2 mb-3" alt="3 out of 5 stars">
-            <p class="text-muted fst-italic small">Rated 3 stars by the Intergalactic Hotel Standards Committee</p>
+            @include('includes.stars')
             <p>We take pride in providing an affordable experience that meets the satisfactory standards you've come to expect.</p>
         </div>
     </section>
@@ -36,7 +39,8 @@
             <img src="{{ asset('images/about/mission-wordart.png') }}" class="img-fluid d-block mx-auto" style="height: 5rem;" alt="wordart: our mission">
             <div class="row align-items-center">
                 <div class="col-md-6 my-3">
-                    <img src="{{ asset('images/about/hotel-ext.png') }}" class="img-fluid img-thumbnail" alt="The exterior of the resort hotel building">
+                    <img src="{{ asset('images/global/craterview-building.webp') }}" class="img-fluid img-thumbnail" alt="The exterior of the resort hotel building"
+                    loading="lazy" decoding="async" width="800" height="800">
                 </div>
                 <div class="col-md-6">
                     <h3>We believe Martian hospitality should be as down-to-Earth as possible.</h3>
@@ -57,7 +61,8 @@
                 @foreach($team as $member)
                     <div class="col-md-4 p-2">
                         <div class="card mb-4">
-                            <img src="{{ asset('images/team/' . $member['image']) }}" class="card-img-top" alt="Picture of {{ $member['alias'] }}">
+                            <img src="{{ asset('images/team/' . $member['image']) }}" class="card-img-top" alt="Picture of {{ $member['alias'] }}"
+                            loading="lazy" decoding="async">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $member['alias'] }}</h5>
                                 <p class="card-subtitle mb-2 text-muted">{{ $member['position'] }}</p>
@@ -101,10 +106,13 @@
             <img src="{{ asset('images/about/dir-wordart.png') }}" class="img-fluid d-block mx-auto" style="height: 5rem;" alt="wordart: getting here">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="{{ asset('images/about/map.png') }}"
+                    <img src="{{ asset('images/about/sm-map.webp') }}"
                     class="img-fluid figure-img"
                     alt="map"
-                    width="600px"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    decoding="async"
                     data-bs-toggle="modal"
                     data-bs-target="#mapModal"
                     style="cursor: pointer;">
@@ -118,7 +126,8 @@
                                     <img src="{{ asset('images/icons/close.png') }}" alt="Close" class="position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close">
                                 </div>
                                 <div class="modal-body p-0">
-                                    <img src="{{ asset('images/about/map.png') }}" class="img-fluid w-100" alt="Enlarged map">
+                                    <img src="{{ asset('images/about/lg-map.webp') }}" class="img-fluid w-100" alt="Enlarged map"
+                                    width="1080" height="1080" loading="lazy" decoding="async">
                                 </div>
                             </div>                        
                         </div>

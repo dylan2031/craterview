@@ -3,12 +3,16 @@
 @section('content')
     <section class="position-relative text-center text-light text-shadow-black">
         <img 
-            src="{{ asset('images/events/nye-3001.png') }}" 
+            src="{{ asset('images/events/nye-3001.webp') }}" 
             class="img-fluid w-100" 
             style="object-fit: cover; height: 80vh; object-position: 44% center;" 
             alt="Event at Sheffield Garden, one of Craterview's event venues"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+            width="1600"
+            height="900"
         >
-
         <div class="position-absolute top-50 start-50 translate-middle w-100">
             <h1 class="mb-2">Events</h1>
             <h5 class="mb-4">Enjoy true 3-star satisfaction, no matter the occasion.</h5>
@@ -25,16 +29,19 @@
         <div class="container mt-3 text-center">
             <h1>Adequacy, redefined.</h1>
             <p>Whether you're attending, planning, or hosting an event, it should be an affordable and stress-free experience without compromising on essentials.</p>
-            <img src="{{ asset('images/global/stars.png') }}" class="img-fluid" alt="3 out of 5 stars">
-            <p><small class="text-muted fst-italic">Rated 3 stars by the Intergalactic Hotel Standards Committee</small></p>
+            @include('includes.stars')
             <p>Our 3-star promise guarantees an affordable experience that meets satisfactory standards.</p>
         </div>
     </section>
     <section class="position-relative text-center text-light mb-0 pb-0">
         <img 
-            src="{{ asset('images/events/bg.png') }}" 
+            src="{{ asset('images/events/bg.webp') }}" 
             class="img-fluid w-100" 
             style="object-fit: cover; height: 45vh;" 
+            loading="lazy"
+            decoding="async"
+            width="1600"
+            height="400"
             {{-- no alt because this is just a stylistic background image --}}
             alt=""
         >
@@ -60,7 +67,8 @@
             <p class="text-center">Maximum fun. Minimum costs. Included with your stay for free.</p>
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="{{ asset('images/events/upcoming.png') }}" class="img-fluid img-thumbnail" alt="Bingo night at Craterview">
+                    <img src="{{ asset('images/events/upcoming.webp') }}" class="img-fluid img-thumbnail" alt="Bingo night at Craterview"
+                    loading="lazy" decoding="async" width="800" height="800">
                 </div>
                 <div class="col-md-6">
                     <h3>All-inclusive resort events</h3>
@@ -96,17 +104,18 @@
     </section>
     <section class="container position-relative text-center text-light">
         <img 
-            src="{{ asset('images/events/stage.png') }}" 
+            src="{{ asset('images/events/stage.avif') }}" 
             class="img-fluid img-thumbnail w-100" 
             style="object-fit: cover; height: 100vh;" 
             alt="Martian Crater View"
+            loading="lazy" decoding="async" width="800" height="1080">
         >
 
         <div class="position-absolute top-50 start-50 translate-middle w-100 px-3">
             <h5 class="mb-1">Craterview Casino & Resort presents...</h5>
-            <img src="{{ asset('images/events/domino-stage.png') }}" alt="Domino Stage" class="img-fluid mx-auto d-block" width="350px">   
+            <img src="{{ asset('images/events/domino-stage.webp') }}" alt="Domino Stage" class="img-fluid mx-auto d-block" width="350" height="350>   
             <p class="mb-1">Live performances brought to you by</p>
-            <img src="{{ asset('images/sponsors/domino-sm.png') }}" alt="Domino Cigarette Company" style="height: 60px; vertical-align: middle;">
+            <img src="{{ asset('images/sponsors/domino-sm.webp') }}" alt="Domino Cigarette Company" width="135" height="60" style="height: 60px; vertical-align: middle;">
             <p>the #1 doctor recommended brand on Mars!</p>
             <div class="container mt-4">
                 <a href="/events/upcoming-events" class="btn xp-btn-primary">See what's on</a>
@@ -121,7 +130,7 @@
             <p class="text-center">With lots of venues to choose from, Craterview has something for you!</p>
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="{{ asset('images/events/venue.png') }}" class="img-fluid img-thumbnail" alt="An empty event room available for hire">
+                    <img src="{{ asset('images/events/venue.avif') }}" class="img-fluid img-thumbnail" alt="An empty event room available for hire">
                 </div>
                 <div class="col-md-6">
                     <h3 class="mb-4">Venue hire</h3>
@@ -157,6 +166,7 @@
                 </div>
 
                 <div class="modal-body bg-light">
+                    <img src="{{ asset('images/events/wordart.png') }}" class="img-fluid d-block mx-auto" style="height: 5rem;" alt="wordart: minimum cost. maximum fun.">
                     <h4 class="mb-3">All-inclusive events</h4>
                     <p>Weekly recurring fun for the whole family!</p>
                     <ul class="list-unstyled">

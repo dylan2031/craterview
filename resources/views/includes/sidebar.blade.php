@@ -3,7 +3,13 @@
 <div class="sidebar col-2 d-flex flex-column min-vh-100 g-0 bg-light d-none d-lg-block position-fixed">
     <!-- Logo -->
     <a href="/">
-        <img src="{{ asset('images/logo.svg') }}" alt="Craterview Logo" class="img-fluid pb-3 logo">
+        <img src="{{ asset('images/logo.svg') }}" alt="Craterview Logo" class="img-fluid pb-3 logo"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+            width="800"
+            height="800"
+        >
     </a>
     
     <!-- Navigation Menu -->

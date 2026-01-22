@@ -4,10 +4,15 @@
     {{-- banner --}}
     <section class="position-relative text-center text-light text-shadow-black">
         <img 
-            src="{{ asset('images/pool/outdoor.png') }}" 
+            src="{{ asset('images/pool/outdoor.webp') }}" 
             class="img-fluid w-100" 
             style="object-fit: cover; height: 80vh;" 
-            alt="Craterview Lobby"
+            alt="Outdoor pool"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+            width="1600"
+            height="900"
         >
         <div class="position-absolute top-50 start-50 translate-middle w-100 px-3">
             <h1 class="mb-2">Pool & Spa</h1>
@@ -22,7 +27,8 @@
             <h1>Your holiday starts here...</h1>
             <p>Your all-inclusive getaway at Craterview Casino & Resort includes unlimited access to our outdoor pool, three indoor pools, and spa facilities.</p>
             <p>Our pool and spa facilities are open 24/7, year-round, and are cleaned and maintained daily to ensure the highest standards of hygiene.</p>
-            <img src="{{ asset('images/pool/cleanliness-rating.png') }}" alt="Certificate: Cleanliness Rating of 72%" class="img-fluid mx-auto d-block" width="550px">  
+            <img src="{{ asset('images/pool/cleanliness-rating.webp') }}" alt="Certificate: Cleanliness Rating of 72%" class="img-fluid mx-auto d-block"
+            loading="lazy" decoding="async" width="550" height="300">  
             <small class="text-muted fst-italic">Intergalactic Hotel Standards Committee, 2997.</small> 
             <hr>
         </div>
@@ -34,7 +40,8 @@
         <div class="container" >
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="{{ asset('images/pool/indoor-pool.png') }}" class="img-fluid img-thumbnail" alt="Indoor pool">
+                    <img src="{{ asset('images/pool/indoor-pool.webp') }}" class="img-fluid img-thumbnail" alt="Indoor pool"
+                    loading="lazy" decoding="async" width="800" height="800">
                 </div>
                 <div class="col-md-6">
                     <h3>Always open. Always included.</h3>
@@ -56,7 +63,8 @@
         <div class="container" >
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="{{ asset('images/pool/gambling-pool.png') }}" class="img-fluid img-thumbnail" alt="Smoking and Gambling pool">
+                    <img src="{{ asset('images/pool/gambling-pool.webp') }}" class="img-fluid img-thumbnail" alt="Smoking and Gambling pool"
+                    loading="lazy" decoding="async" width="800" height="800">
                 </div>
                 <div class="col-md-6">
                     <h3>VIP pool</h3>

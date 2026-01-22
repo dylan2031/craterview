@@ -3,10 +3,15 @@
 @section('content')
     <section class="position-relative text-center text-light text-shadow-black">
         <img 
-            src="{{ asset('images/dining/diner.png') }}" 
+            src="{{ asset('images/dining/diner.webp') }}" 
             class="img-fluid w-100" 
             style="object-fit: cover; height: 80vh; object-position: 70% center;" 
             alt="A classic Earth diner on Mars"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+            width="1600"
+            height="900"
         >
         <div class="position-absolute top-50 start-50 translate-middle w-100 px-3">
             <h1 class="mb-3">Dining</h1>

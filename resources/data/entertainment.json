@@ -7,7 +7,7 @@
       "location": "Main Building",
       "price": 2,
       "hours": "24/7",
-      "image": "casino.png",
+      "image": "casino.avif",
       "included_in_pass": false,
       "featured": true,
       "keywords": ["gamble", "gambling", "roulette", "blackjack", "poker", "slots", "jackpot"]
@@ -20,7 +20,7 @@
         "location": "Nebula Park",
         "price": 2,
         "hours": "11:00 AM - 9:00 PM",
-        "image": "rollercoaster.png",
+        "image": "rollercoaster.avif",
         "included_in_pass": true,
         "featured": true,
         "keywords": ["ride","rides", "rollercoaster", "roller", "coaster", "fun", "thrill", "amusements", "theme park"]
@@ -33,7 +33,7 @@
         "location": "The Strip™",
         "price": 3,
         "hours": "10:00 AM - 11:00 PM",
-        "image": "mars-eye.png",
+        "image": "mars-eye.avif",
         "included_in_pass": true,
         "featured": true,
         "keywords": ["ferris", "wheel", "view", "landscape", "high", "ride", "fun", "amusements", "theme park"]
@@ -46,7 +46,7 @@
         "location": "The Strip™",
         "price": 2,
         "hours": "12:00 PM - 8:00 PM",
-        "image": "wrestling.png",
+        "image": "wrestling.avif",
         "included_in_pass": true,
         "featured": true,
         "keywords": ["game", "games", "gaming", "arcade", "fun", "microtransaction", "robot", "wrestle", "fight", "beat", "amusements", "theme park"]
@@ -59,7 +59,7 @@
         "location": "The Strip™",
         "price": 2,
         "hours": "10:00 AM - 8:00 PM",
-        "image": "golf.png",
+        "image": "golf.avif",
         "included_in_pass": true,
         "featured": false,
         "keywords": ["golf", "game", "games", "fun", "amusements", "theme park"]
@@ -72,7 +72,7 @@
         "location": "The Crater",
         "price": 2,
         "hours": "10:00 AM - 5:00 PM",
-        "image": "bungee.png",
+        "image": "bungee.avif",
         "included_in_pass": true,
         "featured": false,
         "keywords": ["crater", "extreme", "dare", "thrill", "airtime", "gravity", "launch cables", "waiver", "death", "fun", "adrenaline", "amusements"]
@@ -85,7 +85,7 @@
         "location": "Pavilion",
         "price": 1,
         "hours": "09:00 AM to 9:00 PM",
-        "image": "mall.png",
+        "image": "mall.avif",
         "included_in_pass": false,
         "featured": false,
         "keywords": ["shop", "spend", "buy", "clothes", "clothing", "electronic", "shoe", "food"]
@@ -98,7 +98,7 @@
         "location": "Pavilion",
         "price": 1,
         "hours": "9:00 AM - 5:00 PM",
-        "image": "gifts.png",
+        "image": "gifts.avif",
         "included_in_pass": false,
         "featured": false,
         "keywords": ["gift", "shop", "souvenir", "t shirt", "t-shirt", "essentials", "toilet", "toothbrush", "magnet", "merch"]
@@ -111,7 +111,7 @@
         "location": "Main Building",
         "price": 1,
         "hours": "24/7",
-        "image": "infinity-lounge.png",
+        "image": "infinity-lounge.avif",
         "included_in_pass": false,
         "featured": false,
         "keywords": ["bar", "bars", "drink","drinks", "beer", "wine", "spirits", "music", "band", "fun", "nightlife", "night"]
@@ -124,7 +124,7 @@
         "location": "The Strip™",
         "price": 0,
         "hours": "5:00 PM - 4:00 AM",
-        "image": "karaoke.png",
+        "image": "karaoke.avif",
         "included_in_pass": false,
         "featured": false,
         "keywords": ["bar", "bars", "drink", "music", "sing", "song", "fun", "laugh", "nightlife", "night"]
@@ -137,7 +137,7 @@
         "location": "The Strip™",
         "price": 2,
         "hours": "24/7",
-        "image": "arcade.png",
+        "image": "arcade.avif",
         "included_in_pass": false,
         "featured": false,
         "keywords": ["game", "games", "gaming", "arcade", "fun", "microtransaction", "amusements"]
@@ -150,7 +150,7 @@
         "location": "Nebula Park",
         "price": 3,
         "hours": "10:00 AM - 5:00 PM",
-        "image": "penguins.png",
+        "image": "penguins.avif",
         "included_in_pass": false,
         "featured": false,
         "keywords": ["animal", "animals", "zoo", "exhibit", "noot noot", "snow", "arctic", "school", "education", "educational"]
@@ -158,12 +158,12 @@
       {
         "name": "H₂Whoa!™",
         "category": "amusement",
-        "description": "They used to say there's no water on Mars... but clearly, they haven't been to H₂Whoa!™ Strap in for the wildest, wettest ride in the galaxy! With stunning views of the resort and just enough drops to make you scream-laugh, H₂Whoa!™ is out of this world fun for the whole family. Warning: you will get soaked... and you will love it.",
+        "description": "They used to say there's no water on Mars... but clearly, they haven't been to H₂Whoa!™. Strap in for the wildest, wettest ride in the galaxy! With stunning views of the resort and just enough drops to make you scream-laugh, H₂Whoa!™ is out of this world fun for the whole family. Warning: you will get soaked... and you will love it.",
         "age_suitability": "All ages",
         "location": "The Strip™",
         "price": 2,
         "hours": "10:00 AM - 11:00 PM",
-        "image": "log-flume.png",
+        "image": "h2woah.avif",
         "included_in_pass": true,
         "featured": false,
         "keywords": ["log", "flume", "water", "ride", "fun", "amusements", "theme park"]
@@ -176,7 +176,7 @@
         "location": "The Strip™",
         "price": 2,
         "hours": "5:00 PM - 11:00 PM",
-        "image": "haunted.png",
+        "image": "haunted.avif",
         "included_in_pass": true,
         "featured": false,
         "keywords": ["haunted", "spooky", "scare", "scary", "ghosts", "mansion", "creepy", "terrifying", "fun", "amusements", "theme park"]
@@ -189,7 +189,7 @@
         "location": "The Strip™",
         "price": 1,
         "hours": "12:00 PM - 8:00 PM",
-        "image": "ud-condo.png",
+        "image": "ud-condo.avif",
         "included_in_pass": true,
         "featured": false,
         "keywords": ["upside", "down", "condo", "house", "amusements", "fun", "theme park"]
@@ -202,7 +202,7 @@
         "location": "The Strip™",
         "price": 2,
         "hours": "10:00 AM - 11:00 PM",
-        "image": "mirrors.png",
+        "image": "mirrors.avif",
         "included_in_pass": true,
         "featured": false,
         "keywords": ["mirror", "reflection", "lost", "fun", "amusements", "theme park"]
@@ -215,7 +215,7 @@
         "location": "The Strip™",
         "price": 1,
         "hours": "10:00 AM - 10:00 PM",
-        "image": "dogem.png",
+        "image": "dogem.avif",
         "included_in_pass": true,
         "featured": false,
         "keywords": ["game", "games", "fun", "laugh", "car", "cars", "amusements", "theme park"]
@@ -228,7 +228,7 @@
         "location": "The Strip™",
         "price": 3,
         "hours": "5:00 PM - 10:00 PM",
-        "image": "dogem2.png",
+        "image": "dogem2.avif",
         "included_in_pass": false,
         "featured": false,
         "keywords": ["game", "games", "fun", "death", "car", "cars", "amusements", "theme park"]
@@ -241,7 +241,7 @@
         "location": "The Strip™",
         "price": 1,
         "hours": "10:00 AM - 7:00 PM",
-        "image": "wax-museum.png",
+        "image": "wax-museum.avif",
         "included_in_pass": true,
         "featured": false,
         "keywords": ["history", "gallery", "art", "sculpture"]
@@ -254,7 +254,7 @@
         "location": "Nebula Park",
         "price": 1,
         "hours": "10:00 AM - 5:30 PM",
-        "image": "safari.png",
+        "image": "safari.avif",
         "included_in_pass": true,
         "featured": false,
         "keywords": ["desert", "explore", "exploration", "planet"]
@@ -267,7 +267,7 @@
         "location": "Nebula Park",
         "price": 3,
         "hours": "10:00 AM - 5:30 PM",
-        "image": "moon-tour.png",
+        "image": "moon-tour.avif",
         "included_in_pass": true,
         "featured": false,
         "keywords": ["moon", "space", "exploration", "planet", "trip", "phobos", "deimos"]
@@ -280,7 +280,7 @@
         "location": "Pavilion",
         "price": 0,
         "hours": "09:00 AM to 5:00 PM",
-        "image": "future-gamblers.png",
+        "image": "future-gamblers.avif",
         "included_in_pass": false,
         "featured": false,
         "keywords": ["gamble", "gambling", "roulette", "blackjack", "poker", "slots", "jackpot", "daycare"]
@@ -293,7 +293,7 @@
         "location": "Pavilion",
         "price": 2,
         "hours": "10:00 AM to 5:00 PM",
-        "image": "vr-time-travel.png",
+        "image": "vr-time-travel.avif",
         "included_in_pass": true,
         "featured": false,
         "keywords": ["history", "dinosaur", "past", "present", "future"]
@@ -306,7 +306,7 @@
         "location": "The Strip™",
         "price": 3,
         "hours": "10:00 AM - 11:00 PM",
-        "image": "earth-gifts.png",
+        "image": "earth-gifts.avif",
         "included_in_pass": false,
         "featured": false,
         "keywords": ["gift", "shop", "souvenir", "t shirt", "t-shirt", "essentials", "toilet", "toothbrush", "magnet", "merch"]
@@ -319,7 +319,7 @@
         "location": "Nebula Park",
         "price": 0,
         "hours": "24/7",
-        "image": "rubberband.png",
+        "image": "rubberband.avif",
         "included_in_pass": false,
         "featured": false,
         "keywords": ["rubber", "band", "ball", "sightsee"]
@@ -332,7 +332,7 @@
         "location": "The Crater",
         "price": 2,
         "hours": "10:00 AM - 5:00 PM",
-        "image": "crater-tour.png",
+        "image": "crater-tour.avif",
         "included_in_pass": true,
         "featured": false,
         "keywords": ["crater", "explore", "exploration", "sightsee", "tourist"]
@@ -345,7 +345,7 @@
         "location": "The Crater",
         "price": 2,
         "hours": "11:00 AM - 5:00 PM",
-        "image": "crater-gifts.png",
+        "image": "crater-gifts.avif",
         "included_in_pass": false,
         "featured": false,
         "keywords": ["gift", "shop", "souvenir", "t shirt", "t-shirt", "essentials", "toilet", "toothbrush", "magnet", "merch", "airsoft", "gun"]
@@ -358,7 +358,7 @@
         "location": "The Strip™",
         "price": 1,
         "hours": "10:00 PM - 6:00 AM",
-        "image": "biggies.png",
+        "image": "biggies.avif",
         "included_in_pass": false,
         "featured": false,
         "keywords": ["drink", "bar", "club", "late"]
@@ -371,7 +371,7 @@
         "location": "The Strip™",
         "price": 1,
         "hours": "10:00 AM - 8:00 PM",
-        "image": "pool.png",
+        "image": "pool.avif",
         "included_in_pass": true,
         "featured": false,
         "keywords": ["pool", "cue", "sport", "game"]
@@ -384,7 +384,7 @@
         "location": "Pavilion",
         "price": 0,
         "hours": "6:00 PM to 12:00 AM",
-        "image": "cafe.png",
+        "image": "cafe.avif",
         "included_in_pass": false,
         "featured": false,
         "keywords": ["extranet", "internet", "game", "gaming", "fun", "local area network"]

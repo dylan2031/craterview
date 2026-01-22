@@ -10,7 +10,7 @@
     <p>REVIEWRESPONSEBOT3000<p>
     <div class=row>
         <div class="col-md-2">
-            <img src="{{ asset('images/team/RRB3000.png') }}"  alt="Profile picture for Review Response Bot" class="img-thumbnail">
+            <img src="{{ asset('images/team/RRB3000.avif') }}"  alt="Profile picture for Review Response Bot" class="img-thumbnail">
     </div>
         <div class=col>
             <p><b>REVIEWRESPONSEBOT3000</b><br>Level 100<br>Senior Guest Service Agent<br>Craterview Casino &amp; Resort<br><span class="badge rounded-pill bg-primary">FEMINIST</span> <span class="badge rounded-pill bg-success">ETHICAL BOT</span> <span class="badge rounded-pill bg-danger">LETHAL</span></p>

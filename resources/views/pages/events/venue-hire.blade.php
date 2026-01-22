@@ -6,7 +6,7 @@
         <div class="container text-center mb-4">
             <h3>Venue hire</h3>
             <p>Craterview is pleased to offer a diverse selection of functional event spaces that deliver on our trusted 3-star promise. Whether your event is small or large, corporate or personal, we have a venue to suit every occasion and every budget.</p>
-            <img src="{{ asset('images/index/stars.png') }}" class="img-fluid mb-3" alt="3 out of 5 stars">
+                @include('includes.stars-no-copy')
             <p>Thanks to exclusive sponsorship deals with our valued partners, we offer unbeatable prices, ensuring exceptional value without compromising on comfort or quality. Our practical, well-equipped spaces are designed to make your event seamless and memorable, all without breaking the bank.</p>
             <p class="mb-0">This would not be possible without our good friends at <span class="fw-bold">Domino Cigarettes Ltd</span> and other proud sponsors.
         </div>
@@ -31,13 +31,13 @@
                         <p><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> Protected by our 3-star promise</p>
                         <p class="text-muted fst-italic">{{ $venue['description'] }}</p>
                         @if($venue['aircon'])
-                            <p>Air conditioning and filtration systems courtesy of <img src="{{ asset('images/sponsors/domino-sm.png') }}" alt="Domino Cigarette Company" style="height: 30px; vertical-align: middle;">.</p>
+                            <p>Air conditioning and filtration systems courtesy of <img src="{{ asset('images/sponsors/domino-sm.webp') }}" alt="Domino Cigarette Company" style="height: 30px; vertical-align: middle;">.</p>
                         @endif
                         @if($venue['outdoor-venue'])
-                            <p>Artificial heating courtesty of <img src="{{ asset('images/sponsors/domino-sm.png') }}" alt="Domino Cigarette Company" style="height: 30px; vertical-align: middle;">.</p>
+                            <p>Artificial heating courtesty of <img src="{{ asset('images/sponsors/domino-sm.webp') }}" alt="Domino Cigarette Company" style="height: 30px; vertical-align: middle;">.</p>
                         @endif
                         @if($venue['historical-venue'])
-                            <p>Maintained by the <img src="{{ asset('images/sponsors/jack-maple.png') }}" alt="Jack and Maple" style="height: 30px; vertical-align: middle;"> Hospitality for Historical Preservation Program.</p>
+                            <p>Maintained by the <img src="{{ asset('images/sponsors/jack-maple.webp') }}" alt="Jack and Maple" style="height: 30px; vertical-align: middle;"> Hospitality for Historical Preservation Program.</p>
                         @endif
                         <a href="/extranet-portal" class="btn xp-btn-primary">Contact sales</a>
                     </div>

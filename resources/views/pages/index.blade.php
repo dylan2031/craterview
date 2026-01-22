@@ -4,10 +4,15 @@
     {{-- Banner --}}
     <section class="position-relative text-center text-light text-shadow-black">
         <img 
-            src="{{ asset('images/index/titular-crater.png') }}" 
+            src="{{ asset('images/index/titular-crater.webp') }}" 
             class="img-fluid w-100" 
             style="object-fit: cover; height: 80vh;" 
             alt="Martian Crater View"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+            width="1600"
+            height="900"
         >
         <div class="position-absolute top-50 start-50 translate-middle w-100 px-3">
             <h3 class="mb-2">Experience, explore, and save money at Mars's</h3>
@@ -37,8 +42,7 @@
         <div class="mt-3 mb-2 text-center">
             <h1>CRATERVIEW CASINO &amp; RESORT</h1>
             <h3>The comfort of Earth on Martian soil</h3>
-            <img src="{{ asset('images/global/stars.png') }}" class="img-fluid mt-2 mb-3" alt="3 out of 5 stars">
-            <p class="text-muted fst-italic small">Rated 3 stars by the Intergalactic Hotel Standards Committee</p>
+            @include('includes.stars')
             <p>Perched on the rim of the breathtaking manmade crater known as the '2077 United Nations Space Commission Nuclear
                 Power Plant Accident Site' &#40;name change pending&#41;, Craterview blends nostalgic Earth comfort with modern 
                 interplanetary convenience &mdash; offering panoramic views, cutting-edge gambling facilities, all the amenities 
@@ -52,11 +56,13 @@
         <div class="container">
             {{-- Visually hidden H2 for SEO and accessibility; wordart png fulfills the role of an h2 visially as a stylistic choice --}}
             <h2 class="visually-hidden">Casino</h2>
-            <img src="{{ asset('images/index/casino-wordart.png') }}" class="img-fluid d-block mx-auto" style="height: 5rem;" alt="wordart: casino">
+            <img src="{{ asset('images/index/casino-wordart.png') }}" class="img-fluid d-block mx-auto" style="height: 5rem;" alt="wordart: casino"
+            loading="lazy" decoding="async">
             <p class="text-center">A holiday that pays for itself, if you play your cards right.</p>
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="{{ asset('images/index/jackpot-alt.png') }}" class="img-fluid img-thumbnail" alt="Craterview Casino">
+                    <img src="{{ asset('images/index/jackpot.webp') }}" class="img-fluid img-thumbnail" alt="Craterview Casino"
+                    loading="lazy" decoding="async" width="800" height="800">
                 </div>
                 <div class="col-md-6">
                     <h3>One small bet for man...</h3>
@@ -87,14 +93,17 @@
     <section>
         <div class="container" >
             <h2 class="visually-hidden">There's always time for an ad</h2>
-            <x-responsive-img desktop="images/index/smoking-wordart.png" mobile="images/index/smoking-wordart-mb.png" alt="wordart: there's always time for an ad"/>
+            <x-responsive-img desktop="images/index/smoking-wordart.png" mobile="images/index/smoking-wordart-mb.png" alt="wordart: there's always time for an ad"
+            loading="lazy" decoding="async"/>
             <p class="text-center">Domino Cigarettes Ltd is the official partner of Craterview Casino &amp; Resort. </p>
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="{{ asset('images/index/domino-cigarettes.png') }}" class="img-fluid img-thumbnail" alt="Poster: a woman smoking a cigarette on Mars">
+                    <img src="{{ asset('images/index/domino-cigarettes.webp') }}" class="img-fluid img-thumbnail" alt="Poster: a woman smoking a cigarette on Mars"
+                    loading="lazy" decoding="async" width="800" height="1143">
                 </div>
                 <div class="col-md-6">
-                    <img src="{{ asset('images/sponsors/domino-moments-sm.png') }}" class="img-fluid w-75" alt="Domino Cigarette Company Logo">
+                    <img src="{{ asset('images/sponsors/domino-moments-sm.webp') }}" class="img-fluid w-75" alt="Domino Cigarette Company Logo"
+                    loading="lazy" decoding="async" width="1280" height="292">
                     <p class="text-muted fst-italic small mb-4">'Moments' is a registered trademark of Domino Cigarettes Ltd &copy;3002</p>
                     <h3>Smoking indoors is back, baby!</h3>
                     <p>Despite the relentless lobbyists and so-called 'health and safety boards' trying to ruin all the fun, there 
@@ -104,7 +113,8 @@
                     <br>
                     <h3>There's a moment for everyone.</h3>
                     <p>Together, in the spirit of sustainability and community service, we've partnered to bring you world-class, smoker-friendly facilities designed for your comfort, indulgence, and freedom.</p>
-                    <img src="{{ asset('images/index/domino-products.png') }}" class="img-fluid w-100" alt="Domino products">
+                    <img src="{{ asset('images/index/domino-products.webp') }}" class="img-fluid w-100" alt="Domino products"
+                    loading="lazy" decoding="async" width="1600" height="800">
                     <div class="d-flex flex-column flex-md-row justify-content-center gap-3 text-light mx-auto">
                         <a href="/extranet-portal" class="btn xp-btn-primary">Shop now</a>
                         <a href="/extranet-portal" class="btn xp-btn-secondary">Donate</a>
@@ -118,11 +128,14 @@
     <section>
         <div class="container text-center">
             <h2 class="visually-hidden">Stay connected</h2>
-            <img src="{{ asset('images/index/extranet-wordart.png') }}" class="img-fluid d-block mx-auto" style="height: 5rem;" alt="wordart: stay connected">
+            <img src="{{ asset('images/index/extranet-wordart.png') }}" class="img-fluid d-block mx-auto" style="height: 5rem;" alt="wordart: stay connected"
+            loading="lazy" decoding="async">
             <h3>Free Dial-Up Connection to Earth and the colonies!</h3>
             <p>We're proud to offer our members an exclusive interplanetary 0.004 Mbps dial-up connection to Earth and all licensed colonies, courtesy of SpaceSync Systems®.</p>
-            <img src="{{ asset('images/index/connection.png') }}" class="img-fluid d-none d-lg-block" alt="Interplanetary dial-up diagram">
-            <img src="{{ asset('images/index/connection-sm.png') }}" class="img-fluid d-block d-lg-none" alt="Interplanetary dial-up diagram">
+            <img src="{{ asset('images/index/connection.webp') }}" class="img-fluid w-100 d-none d-lg-block" alt="Interplanetary dial-up diagram"
+            loading="lazy" decoding="async" width="1920" height="295">
+            <img src="{{ asset('images/index/connection-sm.webp') }}" class="img-fluid 1-100 d-block d-lg-none" alt="Interplanetary dial-up diagram"
+            loading="lazy" decoding="async" width="1080" height="540">
             <p>Your message is guaranteed to reach Earth in 10 business days, carried through the cosmos by our reliable communication system. Messages to colonies will route via Earth, so anticipate additional waiting times to reach a colony.</p>
             <p>Connected terminals are available in our Extranet Cafe, open 24/7.</p>
             <p>In the event of one of our regularly-scheduled technical difficulties, we thank you for your patience—and your pioneering spirit.</p>
@@ -133,20 +146,24 @@
     <section>
         <div class="container text-center">
             <h2 class="visually-hidden">Family friendly and affordable</h2>
-            <x-responsive-img desktop="images/index/family-wordart.png" mobile="images/index/family-wordart-mb.png" alt="wordart: family friendly and affordable"/>
+            <x-responsive-img desktop="images/index/family-wordart.png" mobile="images/index/family-wordart-mb.png" alt="wordart: family friendly and affordable"
+            loading="lazy" decoding="async"/>
             <p>All-inclusive interstellar getaways for everyone!</p>
             <p>We have proudly made GalaxiGo's top 100 family-friendly destinations every year since 2199, currently sitting comfortably at #76 for a second year running. With activities for all ages, we are firmly within the top 100 choices for interstellar family fun.</p>
         </div> 
         <div class="container-fluid text-center">
             <div class="row justify-content-center m-4">
                 <div class="col-lg-4">
-                    <img src="{{ asset('images/index/thursday-bingo.png') }}" class="img-fluid img-thumbnail" alt="Thursday Bingo">
+                    <img src="{{ asset('images/index/thursday-bingo.webp') }}" class="img-fluid img-thumbnail" alt="Thursday Bingo"
+                    loading="lazy" decoding="async" width="400" height="400">
                 </div>
                 <div class="col-lg-4 ">
-                    <img src="{{ asset('images/index/rollercoaster.png') }}" class="img-fluid img-thumbnail" alt="A family enjoying The Marscoaster">
+                    <img src="{{ asset('images/index/rollercoaster.webp') }}" class="img-fluid img-thumbnail" alt="A family enjoying The Marscoaster"
+                    loading="lazy" decoding="async" width="400" height="400">
                 </div>
                 <div class="col-lg-4">
-                    <img src="{{ asset('images/index/dog-friendly.png') }}" class="img-fluid img-thumbnail" alt="Dog-friendly facilities">
+                    <img src="{{ asset('images/index/dog-friendly.webp') }}" class="img-fluid img-thumbnail" alt="Dog-friendly facilities"
+                    loading="lazy" decoding="async" width="400" height="400">
                 </div>
             </div>
         </div>    
@@ -159,11 +176,13 @@
     {{-- Img of hotel and copy --}}
     <section class="background-fade-btm">
         <h2 class="visually-hidden">Hospitality, defined</h2>
-        <img src="{{ asset('images/index/hospitality-wordart.png') }}" class="img-fluid d-block mx-auto" style="height: 5rem;" alt="wordart: hospitality, defined">
+        <img src="{{ asset('images/index/hospitality-wordart.png') }}" class="img-fluid d-block mx-auto" style="height: 5rem;" alt="wordart: hospitality, defined"
+        loading="lazy" decoding="async"/>
         <div class="container" >
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="{{ asset('images/index/craterview-building.png') }}" class="img-fluid img-thumbnail w-100" alt="Hotel exterior">
+                    <img src="{{ asset('images/global/craterview-building.webp') }}" class="img-fluid img-thumbnail w-100" alt="Hotel exterior"
+                    loading="lazy" decoding="async" width="800" height="800">
                 </div>
                 <div class="col-md-6">
                     <h3>Where heritage meets modernity.</h3>

@@ -28,13 +28,16 @@
             <h3>Photo gallery</h3>
             <p>Images here are representative, but please note that each individual room or facility may have minor differences in layout, furnishings, or decor.</p>
             <div class="col-md-4">
-                <img src="{{ asset('images/rooms/' . $room['display-image1']) }}" class="img-fluid rounded mb-3" alt="Additional image of {{ $room['name'] }}">
+                <img src="{{ asset('images/rooms/' . $room['display-image1']) }}" class="img-fluid rounded mb-3" alt="Additional image of {{ $room['name'] }}"
+                loading="lazy" decoding="async">
             </div>
             <div class="col-md-4">
-                <img src="{{ asset('images/rooms/' . $room['display-image2']) }}" class="img-fluid rounded mb-3" alt="Additional image of {{ $room['name'] }}">
+                <img src="{{ asset('images/rooms/' . $room['display-image2']) }}" class="img-fluid rounded mb-3" alt="Additional image of {{ $room['name'] }}"
+                loading="lazy" decoding="async">
             </div>
             <div class="col-md-4">
-                <img src="{{ asset('images/rooms/' . $room['display-image3']) }}" class="img-fluid rounded mb-3" alt="Additional image of {{ $room['name'] }}">
+                <img src="{{ asset('images/rooms/' . $room['display-image3']) }}" class="img-fluid rounded mb-3" alt="Additional image of {{ $room['name'] }}"
+                loading="lazy" decoding="async">
             </div>
         </div>
     </section>

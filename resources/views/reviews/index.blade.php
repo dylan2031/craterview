@@ -4,7 +4,7 @@
     <section class="position-relative text-center text-light">
         <img 
             src="{{ asset('images/reviews/reviews.webp') }}" 
-            class="img-fluid w-100" 
+            class="img-fluid w-100 mob-change" 
             style="object-fit: cover; height: 80vh; object-position: 33% center;" 
             alt="Hotel Business Center"
             loading="eager"
@@ -13,6 +13,13 @@
             width="1600"
             height="900"
         >
+        <style>
+        @media (max-width: 767px) {
+            .mob-change {
+                content: url('{{ asset('images/reviews/reviews-mobile.webp') }}');
+            }
+        }
+        </style>
         <div class="position-absolute top-50 start-50 translate-middle w-100 px-3">
             <h1 class="mb-2">Reviews</h1>
             @include('includes.stars-no-copy')

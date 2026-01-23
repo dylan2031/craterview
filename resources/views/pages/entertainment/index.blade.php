@@ -5,7 +5,7 @@
     <section class="position-relative text-center text-light text-shadow-black">
         <img 
             src="{{ asset('images/entertainment/casino-interior.webp') }}" 
-            class="img-fluid w-100" 
+            class="img-fluid w-100 mob-change" 
             style="object-fit: cover; height: 80vh; object-position: 66% center;" 
             alt="Casino interior"
             loading="eager"
@@ -14,6 +14,13 @@
             width="1600"
             height="900"
         >
+        <style>
+            @media (max-width: 767px) {
+                .mob-change {
+                    content: url('{{ asset('images/entertainment/casino-mobile.webp') }}');
+                }
+            }
+        </style>
         <div class="position-absolute top-50 start-50 translate-middle w-100 px-3">
             <h1>Entertainment</h1>
             <x-responsive-img desktop="images/entertainment/ent-wordart.png" mobile="images/entertainment/ent-wordart-mb.png" alt="wordart: Dream big. Play bigger." height="auto" mobileHeight="auto"/>  

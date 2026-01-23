@@ -303,7 +303,7 @@ which causes some visual/styling inconsistencies, this fixes that */
 
 .background-crater {
   width: 100%;
-  background: url('/images/about/crater-bg.webp');
+  background: url('/images/about/temp.png'); /* for some reason webp doesnt show on live server */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;

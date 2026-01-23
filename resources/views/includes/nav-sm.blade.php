@@ -19,7 +19,7 @@
                 <span id="navModalLabel">Menu</span>
                 <img src="{{ asset('images/icons/close.png') }}" alt="Close" class="position-absolute top-0 end-0 cursor-pointer" data-bs-dismiss="modal" aria-label="Close">
             </div>
-
+            <img src="{{ asset('images//mobile-menu.webp') }}" class="img-fluid w-100" alt="Craterview Casino & Resort" width="420" height="120">
             <div class="modal-body px-3 py-2 bg-light">
                 <ul class="nav flex-column mb-0">
                     <li class="nav-item mb-2">
@@ -80,7 +80,8 @@
                         </li>
                     --}}
                     <hr class="my-3">
-
+                        <a href="/reservations/create" class="btn xp-btn-primary">Make a reservation</a>
+                    <hr class="my-3">
                     @guest
                     <li class="nav-item">
                         <div class="d-flex justify-content-between">

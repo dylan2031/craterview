@@ -11,7 +11,8 @@
 </nav>
 
 <!-- Mobile Nav Modal -->
-<div class="modal fade xp-modal" id="navModal" tabindex="-1" aria-labelledby="navModalLabel" aria-hidden="true">
+<div class="modal fade xp-modal" id="navModal" tabindex="-1" aria-labelledby="navModalLabel" aria-hidden="true"
+style="z-index : 10000">
     <div class="modal-dialog modal-dialog-centered modal-sm">
         <div class="modal-content">
             <div class="xp-title-bar px-3 py-2 d-flex align-items-center position-relative">

@@ -16,7 +16,7 @@
         <style>
         @media (max-width: 767px) {
             .mob-change {
-                content: url('{{ asset('images/reviews/reviews-mobile.webp') }}');
+                content: url('{{ asset('images/reviews/reviews-mobile-blur.webp') }}');
             }
         }
         </style>
@@ -45,7 +45,7 @@
             <h3 class="text-center">Guest Reviews</h3>
                 @auth
                     {{-- User will only see review prompts if logged in --}}
-                    <a href="/reviews/create" class="btn xp-btn-secondary ms-4 mb-2"><i class="bi bi-star"></i> Write a review</a>
+                    <a href="/reviews/create" class="btn xp-btn-secondary ms-2 mb-2"><i class="bi bi-star"></i> Write a review</a>
                     <a href="/saythanks" class="btn xp-btn-secondary ms-2 mb-2"><i class="bi bi-cup-hot"></i> Buy us a coffee</a>
                 @endauth
                 @if(session('aiNotification'))

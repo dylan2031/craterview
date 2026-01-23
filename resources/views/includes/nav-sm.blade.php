@@ -81,7 +81,7 @@ style="z-index : 10000">
                         </li>
                     --}}
                     <hr class="my-3">
-                        <a href="/reservations/create" class="btn xp-btn-primary">Make a reservation</a>
+                        <a href="/reservations/create" class="btn xp-btn-primary">Book your stay</a>
                     <hr class="my-3">
                     @guest
                     <li class="nav-item">

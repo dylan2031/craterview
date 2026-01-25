@@ -5,7 +5,13 @@
     <div class="xp-title-bar px-3 py-2 d-flex align-items-center position-relative">
         <img src="{{ asset('images/icons/about.svg') }}" alt="Icon" class="me-2" style="width: 18px; height: 18px;">
         <span>View your instant response</span>
-        <img src="{{ asset('images/icons/close.png') }}" alt="Close" class="position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close">
+        <img
+            src="{{ asset('images/icons/close.png') }}"
+            alt="Close"
+            class="position-absolute top-0 end-0"
+            style="cursor: pointer;"
+            onclick="this.closest('.side-panel').style.display='none';"
+        />
     </div>
     <div class="xp-body p-2">
         <h5 class="text-center" style="font-family: sans-serif;">

@@ -43,6 +43,9 @@
             @include('includes.review-calculations')
             <br id="top"> {{--id anchor--}}
             <h3 class="text-center">Guest Reviews</h3>
+                @guest
+                    <p>We'd love to hear from you! <a href="/login">Log in</a> to share your own feedback.</p>
+                @endguest
                 @auth
                     {{-- User will only see review prompts if logged in --}}
                     <a href="/reviews/create" class="btn xp-btn-secondary ms-2 mb-2"><i class="bi bi-star"></i> Write a review</a>

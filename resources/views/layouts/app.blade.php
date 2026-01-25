@@ -27,6 +27,9 @@
 
 </head>
 <body class="bg-light">
+
+    {{-- show when page is loading --}}
+    @include('includes.loading')
     
     <!-- Mobile/Tablet Navigation -->
     <div class="d-block d-lg-none">

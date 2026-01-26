@@ -113,7 +113,7 @@
                     <br>
                     <h3>There's a moment for everyone.</h3>
                     <p>Together, in the spirit of sustainability and community service, we've partnered to bring you world-class, smoker-friendly facilities designed for your comfort, indulgence, and freedom.</p>
-                    <img src="{{ asset('images/index/domino-products.webp') }}" class="img-fluid w-100" alt="Domino products"
+                    <img src="{{ asset('images/index/domino-highlights.webp') }}" class="img-fluid w-100" alt="Domino products"
                     loading="lazy" decoding="async" width="1600" height="800">
                     <div class="d-flex flex-column flex-md-row justify-content-center gap-3 text-light mx-auto">
                         <a href="/extranet-portal" class="btn xp-btn-primary">Shop now</a>

@@ -347,3 +347,31 @@ which causes some visual/styling inconsistencies, this fixes that */
     overflow: hidden;
     background-color: #1d4e89 !important; /* Fill the gap */
 }
+
+.background-dash {
+    background-image: url("/images/dashboard/bliss.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+.dash-item {
+    text-align: center;
+    text-decoration: none;
+    color: #f8f9fa;
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+.dash-item:hover {
+    filter: brightness(1.2);
+    transform: translateY(-1px);
+}
+
+.xp-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

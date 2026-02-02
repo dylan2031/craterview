@@ -130,6 +130,20 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
 });
 
+// *******************************//
+// **        Dash window        **//
+// *******************************//
+
+Route::get('/dashboard/upcoming-reservations', function () {
+    return view('user.window.upcoming', [
+        'windowTitle' => 'Upcoming Reservations',
+    ]);
+})->name('dashboard.upcoming');
+
+
+// note for self, above is new //
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // **************************//

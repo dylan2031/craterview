@@ -26,32 +26,25 @@
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
 </head>
-<body class="bg-light">
+<body class="bg-light d-flex flex-column vh-100" style="border-left: 4px solid #1d4e89; border-right: 4px solid #1d4e89;">
 
-    {{-- show when page is loading --}}
-    @include('includes.loading')
-
-    {{-- Message pop up if we have a message --}}
-    @if(session('message'))
-        @include('includes.msg-window')
-    @endif
-
-    <!-- Fake window -->
-    <header class="xp-title-bar sticky-top d-flex align-items-center position-relative">
+    <!-- Header -->
+    <header class="xp-title-bar d-flex align-items-center">
         <img src="{{ asset('images/icons/extranet.svg') }}" width="18" height="18">
         <span class="flex-grow-1">&nbsp;Extranet Explorer © 3002 | {{ $windowTitle ?? 'Dashboard' }}</span>
         <a href="/dashboard" class="xp-close">
-            <img src="{{ asset('images/icons/close.png') }}" alt="Close">
+            <img src="{{ asset('images/icons/close.png') }}" alt="Close" class="me-1">
         </a>
     </header>
 
-    <!-- App content -->
-    <main class="container-fluid g-0">
+    <!-- Scrollable content -->
+    <main class="flex-grow-1 overflow-auto container-fluid g-0">
         @yield('content')
     </main>
 
-    <footer class="xp-title-bar sticky-bottom d-flex align-items-center position-fixed">
-
+    <!-- Footer -->
+    <footer class="xp-title-bar d-flex align-items-center px-2" style="height: 40px;">
+        <!-- footer content -->
     </footer>
 
 
@@ -59,4 +52,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

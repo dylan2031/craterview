@@ -45,7 +45,7 @@
                                         <form action="{{ route('reservations.destroy', $reservation->id) }}" method="POST" style="display: inline;">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light dash-dropdown" onclick="return confirm('SpaceSync™ Comm Buoy Satellite (ID: SHD-N7) says:\n\n>>>ESTABLISHING MARS CONNECTION\n>>>CONNECTION ESTABLISHED\n\nCANCELLATION REQUEST IS READY TO SEND\n\nCLICK OK TO PROCEED')">Cancel your stay</button>
+                                            <button type="submit" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light dash-dropdown" onclick="return confirm('SpaceSync™ Comm Buoy Satellite (ID: SHD-N7) says:\n\n>>>ESTABLISHING MARS CONNECTION\n>>>CONNECTION ESTABLISHED\n\nTHIS RECORD WILL BE DELETED. THIS ACTION CANNOT BE UNDONE.\n\nCLICK OK TO PROCEED')">Delete</button>
                                         </form>
                                     </li>
                                 </ul>
@@ -83,7 +83,7 @@
                                 <form action="{{ route('reservations.destroy', $reservation->id) }}" method="POST">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light dash-dropdown" onclick="return confirm('SpaceSync™ Comm Buoy Satellite (ID: SHD-N7) says:\n\n>>>ESTABLISHING MARS CONNECTION\n>>>CONNECTION ESTABLISHED\n\nCANCELLATION REQUEST IS READY TO SEND\n\nCLICK OK TO PROCEED')">Cancel your stay</button>
+                                    <button type="submit" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light dash-dropdown" onclick="return confirm('SpaceSync™ Comm Buoy Satellite (ID: SHD-N7) says:\n\n>>>ESTABLISHING MARS CONNECTION\n>>>CONNECTION ESTABLISHED\n\nTHIS RECORD WILL BE DELETED. THIS ACTION CANNOT BE UNDONE.\n\nCLICK OK TO PROCEED')">Delete</button>
                                 </form>
                             </li>
                         </ul>

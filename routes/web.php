@@ -134,11 +134,13 @@ Route::middleware(['auth'])->group(function () {
 // **        Dash window        **//
 // *******************************//
 
-Route::get('/dashboard/upcoming-reservations', function () {
-    return view('user.window.upcoming', [
-        'windowTitle' => 'Upcoming Reservations',
-    ]);
-})->name('dashboard.upcoming');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard/upcoming-reservations', [App\Http\Controllers\Dashboard\UpcomingReservationsController::class, 'index']);
+});
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard/past-reservations', [App\Http\Controllers\Dashboard\PastReservationsController::class, 'index']);
+});
 
 
 // note for self, above is new //

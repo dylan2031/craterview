@@ -1,17 +1,17 @@
 <div class="d-flex flex-wrap gap-4 my-4">
-    <a href="#" class="dash-item">
+    <a href="/reservations/create" class="dash-item">
         <img src="/images/icons/reservations.svg"
              class="img-fluid" width="64" height="64">
         <span class="d-block mt-2">Create</span>
     </a>
 
-    <a href="{{ route('dashboard.upcoming') }}" class="dash-item">
+    <a href="/dashboard/upcoming-reservations" class="dash-item">
         <img src="/images/icons/dashboard-reservations.svg"
              class="img-fluid" width="64" height="64">
         <span class="d-block mt-2">Upcoming</span>
     </a>
 
-    <a href="#" class="dash-item">
+    <a href="/dashboard/past-reservations" class="dash-item">
         <img src="/images/icons/preconv/watch.png"
              class="img-fluid" width="64" height="64">
         <span class="d-block mt-2">Past</span>

@@ -33,7 +33,7 @@
         <img src="{{ asset('images/icons/extranet.svg') }}" width="18" height="18">
         <span class="flex-grow-1">&nbsp;Extranet Explorer © 3002 | {{ $windowTitle ?? 'Dashboard' }}</span>
         <a href="/dashboard" class="xp-close">
-            <img src="{{ asset('images/icons/close.png') }}" alt="Close" class="me-1">
+            <img src="{{ asset('images/icons/close.png') }}" alt="Close" class="me-1 close">
         </a>
     </header>
 

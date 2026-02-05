@@ -175,12 +175,12 @@ nav, .sidebar {
     justify-content: flex-start; /* Align text to the left */
 }
 
-.xp-title-bar img {
+.xp-title-bar .close {
     height: 2rem;
     cursor: pointer;
 }
 
-.xp-title-bar img:hover {
+.xp-title-bar .close:hover {
     filter: brightness(1.2);  /* Lighten the image on hover */
 }
 

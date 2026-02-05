@@ -12,17 +12,17 @@
     </a>
 
     <a href="/dashboard/past-reservations" class="dash-item">
-        <img src="/images/icons/preconv/watch.png"
+        <img src="/images/icons/watch.svg"
              class="img-fluid" width="64" height="64">
         <span class="d-block mt-2">Past</span>
     </a>
 
-    <a href="#" class="dash-item">
+    <a href="/dashboard/payments" class="dash-item">
         <img src="/images/icons/dashboard-payments.svg"
              class="img-fluid" width="64" height="64">
         <span class="d-block mt-2">Payments</span>
     </a>
-    <a href="#" class="dash-item">
+    <a href="/dashboard/reviews" class="dash-item">
         <img src="/images/icons/reviews.svg"
              class="img-fluid" width="64" height="64">
         <span class="d-block mt-2">Reviews</span>

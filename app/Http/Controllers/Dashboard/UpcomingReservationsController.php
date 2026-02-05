@@ -14,7 +14,7 @@ class UpcomingReservationsController extends Controller
         $reservations = $user->reservations()
             ->whereDate('check_in', '>=', today())
             ->orderBy('id', 'desc')
-            ->paginate(5);
+            ->paginate(10);
 
         return view('user.window.upcoming', [
             'reservations' => $reservations,

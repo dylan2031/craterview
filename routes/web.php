@@ -142,9 +142,13 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard/past-reservations', [App\Http\Controllers\Dashboard\PastReservationsController::class, 'index']);
 });
 
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard/payments', [App\Http\Controllers\Dashboard\PaymentRecordsController::class, 'index']);
+});
 
-// note for self, above is new //
-
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard/reviews', [App\Http\Controllers\Dashboard\ReviewRecordsController::class, 'index']);
+});
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

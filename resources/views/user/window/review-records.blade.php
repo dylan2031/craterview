@@ -2,7 +2,7 @@
 
 @section('content')
 <div style="min-height: 40vh;">
-    @if(count($reviews) > -1)
+    @if(count($reviews) > 0)
 
         {{-- Desktop Table --}}
         <div class="d-none d-md-block">

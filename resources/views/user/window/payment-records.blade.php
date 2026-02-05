@@ -2,7 +2,7 @@
 
 @section('content')
 <div style="min-height: 40vh;">
-    @if(count($payments) > -1)
+    @if(count($payments) > 0)
 
         {{-- Desktop Table --}}
         <div class="d-none d-md-block">

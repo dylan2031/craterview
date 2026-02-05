@@ -39,7 +39,7 @@
             <form action="{{ route('reviews.destroy', $review->id) }}" method="POST" style="display: inline;">
                 @csrf
                 @method('DELETE')
-                <button type="submit" class="btn xp-btn-secondary" onclick="return confirm('Are you sure you want to delete this review?')">Delete Review</button>
+                <button type="submit" class="btn xp-btn-secondary" onclick="return confirm('SpaceSync™ Comm Buoy Satellite (ID: SHD-N7) says:\n\n>>>ESTABLISHING MARS CONNECTION\n>>>CONNECTION ESTABLISHED\n\nDELETION REQUEST IS READY TO SEND\n\nCLICK OK TO PROCEED')">Delete Review</button>
             </form>  
         @endif  
     @endauth

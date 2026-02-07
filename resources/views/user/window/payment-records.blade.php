@@ -70,7 +70,7 @@
             {{ $payments->withQueryString()->links('pagination::bootstrap-5') }}
         </div>         
     @else
-        <p>A record of your payments will appear here. As you haven't made any payments yet, there are currently no records.</p>
+        <p>You haven't made any payments yet. A record of your payments will appear here.</p>
     @endif
 
     @include('user.window.no-refunds')

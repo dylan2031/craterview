@@ -10,11 +10,11 @@
                 <thead>
                     <tr>
                         <th scope="col">Confirmation Number</th>
+                        <th scope="col">Check-in</th>
+                        <th scope="col">Check-out</th>                        
                         <th scope="col">Name</th>
                         <th scope="col">Room Type</th>
                         <th scope="col">Nights</th>
-                        <th scope="col">Check-in</th>
-                        <th scope="col">Check-out</th>
                         <th scope="col">Total Price</th>
                         <th scope="col">Special Request</th>
                         <th scope="col"></th> {{-- dropdown --}}
@@ -24,11 +24,11 @@
                     @foreach($reservations as $reservation)
                     <tr>
                         <td>{{ str_pad($reservation->id, 5, '0', STR_PAD_LEFT) }}</td>
+                        <td>{{ \Carbon\Carbon::parse($reservation->check_in)->format('d/m/Y') }}</td>
+                        <td>{{ \Carbon\Carbon::parse($reservation->check_out)->format('d/m/Y') }}</td>                        
                         <td>{{ $reservation->name }}</td>
                         <td>{{ ucfirst($reservation->room_type) }}</td>
                         <td>{{ $reservation->nights }}</td>
-                        <td>{{ \Carbon\Carbon::parse($reservation->check_in)->format('d/m/Y') }}</td>
-                        <td>{{ \Carbon\Carbon::parse($reservation->check_out)->format('d/m/Y') }}</td>
                         <td>Ω{{ number_format($reservation->total_price, 2) }}</td>
                         <td>{{ $reservation->special_request ?? '-' }}</td>
                         <td>
@@ -45,7 +45,7 @@
                                         <form action="{{ route('reservations.destroy', $reservation->id) }}" method="POST" style="display: inline;">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light dash-dropdown" onclick="return confirm('SpaceSync™ Comm Buoy Satellite (ID: SHD-N7) says:\n\n>>>ESTABLISHING MARS CONNECTION\n>>>CONNECTION ESTABLISHED\n\nCANCELLATION REQUEST IS READY TO SEND\n\nCLICK OK TO PROCEED')">Cancel your stay</button>
+                                            <button type="submit" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light dash-dropdown" onclick="return confirm('SpaceSync™ Comm Buoy Satellite (ID: SHD-N7) says:\n\n>>>ESTABLISHING MARS CONNECTION\n>>>CONNECTION ESTABLISHED\n\nNON-REFUNDABLE CANCELLATION REQUEST IS READY TO SEND\n\nTHIS WILL BE REFLECTED ON YOUR ACCOUNT IMMEDIATELY, BUT PLEASE BE AWARE THAT TRANSMISSION TO MARS MAY TAKE UP TO 10 BUSINESS DAYS\n\nCLICK OK TO PROCEED')">Cancel your stay</button>
                                         </form>
                                     </li>
                                 </ul>
@@ -63,11 +63,11 @@
             <div class="card mb-3">
                 <div class="card-body">
                     <p><strong>Confirmation Number:</strong> {{ str_pad($reservation->id, 5, '0', STR_PAD_LEFT) }}</p>
+                    <p><strong>Check-in:</strong> {{ \Carbon\Carbon::parse($reservation->check_in)->format('d/m/Y') }}</p>
+                    <p><strong>Check-out:</strong> {{ \Carbon\Carbon::parse($reservation->check_out)->format('d/m/Y') }}</p>
                     <p><strong>Name:</strong> {{ $reservation->name }}</p>
                     <p><strong>Room Type:</strong> {{ ucfirst($reservation->room_type) }}</p>
                     <p><strong>Nights:</strong> {{ $reservation->nights }}</p>
-                    <p><strong>Check-in:</strong> {{ \Carbon\Carbon::parse($reservation->check_in)->format('d/m/Y') }}</p>
-                    <p><strong>Check-out:</strong> {{ \Carbon\Carbon::parse($reservation->check_out)->format('d/m/Y') }}</p>
                     <p><strong>Total Price:</strong> Ω{{ number_format($reservation->total_price, 2) }}</p>
                     <p><strong>Special Request:</strong> {{ $reservation->special_request ?? '-' }}</p>
 
@@ -83,7 +83,7 @@
                                 <form action="{{ route('reservations.destroy', $reservation->id) }}" method="POST">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light dash-dropdown" onclick="return confirm('SpaceSync™ Comm Buoy Satellite (ID: SHD-N7) says:\n\n>>>ESTABLISHING MARS CONNECTION\n>>>CONNECTION ESTABLISHED\n\nCANCELLATION REQUEST IS READY TO SEND\n\nCLICK OK TO PROCEED')">Cancel your stay</button>
+                                    <button type="submit" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light dash-dropdown" onclick="return confirm('SpaceSync™ Comm Buoy Satellite (ID: SHD-N7) says:\n\n>>>ESTABLISHING MARS CONNECTION\n>>>CONNECTION ESTABLISHED\n\nCANCELLATION REQUEST IS READY TO SEND\n\nTHIS WILL BE REFLECTED ON YOUR ACCOUNT IMMEDIATELY, BUT PLEASE BE AWARE THAT TRANSMISSION TO MARS MAY TAKE UP TO 10 BUSINESS DAYS\n\nCLICK OK TO PROCEED')">Cancel your stay</button>
                                 </form>
                             </li>
                         </ul>

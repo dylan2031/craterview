@@ -36,7 +36,7 @@
                                         <form action="{{ route('reviews.destroy', $review->id) }}" method="POST" style="display: inline;">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light dash-dropdown" onclick="return confirm('SpaceSync™ Comm Buoy Satellite (ID: SHD-N7) says:\n\n>>>ESTABLISHING MARS CONNECTION\n>>>CONNECTION ESTABLISHED\n\nDELETION REQUEST IS READY TO SEND\n\nCLICK OK TO PROCEED')">Delete</button>
+                                            <button type="submit" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light dash-dropdown" onclick="return confirm('SpaceSync™ Comm Buoy Satellite (ID: SHD-N7) says:\n\n>>>ESTABLISHING MARS CONNECTION\n>>>CONNECTION ESTABLISHED\n\nDELETION REQUEST IS READY TO SEND\n\nTHIS WILL BE REFLECTED ON YOUR ACCOUNT IMMEDIATELY, BUT PLEASE BE AWARE THAT TRANSMISSION TO MARS MAY TAKE UP TO 10 BUSINESS DAYS\n\nCLICK OK TO PROCEED')">Delete</button>
                                         </form>    
                                     </li>
                                 </ul>
@@ -71,7 +71,7 @@
                                     <form action="{{ route('reviews.destroy', $review->id) }}" method="POST" style="display: inline;">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light dash-dropdown" onclick="return confirm('SpaceSync™ Comm Buoy Satellite (ID: SHD-N7) says:\n\n>>>ESTABLISHING MARS CONNECTION\n>>>CONNECTION ESTABLISHED\n\nDELETION REQUEST IS READY TO SEND\n\nCLICK OK TO PROCEED')">Delete</button>
+                                        <button type="submit" class="dropdown-item text-dark px-3 py-2 rounded-3 hover:bg-light dash-dropdown" onclick="return confirm('SpaceSync™ Comm Buoy Satellite (ID: SHD-N7) says:\n\n>>>ESTABLISHING MARS CONNECTION\n>>>CONNECTION ESTABLISHED\n\nDELETION REQUEST IS READY TO SEND\n\nTHIS WILL BE REFLECTED ON YOUR ACCOUNT IMMEDIATELY, BUT PLEASE BE AWARE THAT TRANSMISSION TO MARS MAY TAKE UP TO 10 BUSINESS DAYS\n\nCLICK OK TO PROCEED')">Delete</button>
                                     </form>    
                                 </li>
                             </ul>

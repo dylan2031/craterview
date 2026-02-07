@@ -23,8 +23,8 @@
                         <p class="text-center text-muted fst-italic small mb-4">'Moments' is a registered trademark of Domino Cigarettes Ltd &copy;3002</p>
                     </div>
                     <div class="col-md-6">
-                        <img src="{{ asset('images/index/domino-products.webp') }}" class="img-fluid w-100" alt="Domino products">
-                        <div class="d-flex flex-column flex-md-row justify-content-center gap-3 text-light mx-auto">
+                        <img src="{{ asset('images/index/domino-highlights.webp') }}" class="img-fluid w-100" alt="Domino products">
+                        <div class="d-flex flex-column flex-md-row justify-content-center gap-3 text-light mx-auto"> 
                             <a href="/extranet-portal" class="btn xp-btn-primary">Shop now</a>
                             <a href="/extranet-portal" class="btn xp-btn-secondary">Donate</a>
                         </div>

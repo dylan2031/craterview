@@ -375,3 +375,11 @@ which causes some visual/styling inconsistencies, this fixes that */
     top: 0;
     right: 0;
 }
+
+/* Newspaper style */
+
+.newspaper-head {
+  font-family: "UnifrakturCook", cursive;
+  font-weight: 700;
+  font-style: normal;
+}

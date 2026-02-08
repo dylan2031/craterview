@@ -67,8 +67,6 @@
         <div id="error" role="alert">
             <img src="{{ asset('images/icons/extranet.svg') }}" alt="Extranet Logo" class="logo" />
             @yield('content')
-            <button onclick="window.location.href='/'">Home page</button>
-            <button onclick="window.history.back()">Go back</button>
         </div>
     </div>
 </body>

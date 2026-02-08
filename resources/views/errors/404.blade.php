@@ -9,4 +9,6 @@
             <p>This snapshot is synchronised with the primary Mars server every 10 business days. Please allow time for the update to reach your location.</p>
         </span>
     </div>
+    <button onclick="window.location.href='/'">Home page</button>
+    <button onclick="window.history.back()">Go back</button>
 @endsection

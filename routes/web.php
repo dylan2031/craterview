@@ -6,6 +6,8 @@ use App\Http\Controllers\EntertainmentController;
 use App\Http\Controllers\ReviewsController;
 use App\Http\Controllers\PaymentsController;
 use App\Http\Controllers\ReservationsController;
+use App\Http\Controllers\Dashboard\NewsController;
+
 
 // **************************//
 // **        Home          **//
@@ -149,6 +151,27 @@ Route::middleware(['auth'])->group(function () {
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard/reviews', [App\Http\Controllers\Dashboard\ReviewRecordsController::class, 'index']);
 });
+
+// ************************//
+// **        News        **//
+// ************************//
+
+Route::middleware('auth')
+    ->prefix('dashboard/news')
+    ->controller(NewsController::class)
+    ->group(function () {
+
+        Route::get('/', 'index');
+
+        Route::prefix('today')->group(function () {
+            Route::get('new-goliathon-evidence-found', 'article1');
+            Route::get('top-5-holiday-destinations-3002', 'article2');
+            Route::get('exclusive-interview-with-doctor-mobium', 'article3');
+            Route::get('xeroxtron-recalls-issued', 'article4');
+            Route::get('notice-board', 'article5');
+        });
+    });
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

@@ -7,7 +7,7 @@
         <h2>Reservations</h2>
         @include('user.dashcat.reso')
         <h2>Member perks</h2>
-        @include('includes.under-construction')
+        @include('user.dashcat.perks')
         <h2>Settings</h2>
         @include('includes.under-construction')
     </div>

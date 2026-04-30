@@ -61,7 +61,7 @@
             <p class="text-center">A holiday that pays for itself, if you play your cards right.</p>
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="{{ asset('images/index/jackpot.webp') }}" class="img-fluid img-thumbnail" alt="Craterview Casino"
+                    <img src="{{ asset('images/index/craterview_casino.webp') }}" class="img-fluid img-thumbnail" alt="Craterview Casino"
                     loading="lazy" decoding="async" width="800" height="800">
                 </div>
                 <div class="col-md-6">

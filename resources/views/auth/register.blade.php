@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card xp-wrap">
-                <div class="card-header xp-title-bar">{{ __('Register') }}</div>
+                <div class="xp-title-bar">{{ __('Register') }}</div>
 
                 <div class="card-body bg-light">
                     <form method="POST" action="{{ route('register') }}">

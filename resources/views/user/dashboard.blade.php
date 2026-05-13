@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="background-dash text-light p-5">
+    <div class="background-dash text-light p-1 p-md-5">
         <h1>Your dashboard</h1>
         @include('user.dashcat.greet')
         <h2>Reservations</h2>

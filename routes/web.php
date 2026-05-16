@@ -7,6 +7,7 @@ use App\Http\Controllers\ReviewsController;
 use App\Http\Controllers\PaymentsController;
 use App\Http\Controllers\ReservationsController;
 use App\Http\Controllers\Dashboard\NewsController;
+use App\Http\Controllers\Dashboard\ConverterController;
 
 
 // **************************//
@@ -170,6 +171,23 @@ Route::middleware('auth')
             Route::get('xeroxtron-recalls-issued', 'article4');
             Route::get('notice-board', 'article5');
         });
+    });
+
+// ************************//
+// **     Converter      **//
+// ************************//
+
+Route::middleware('auth')
+    ->prefix('dashboard')
+    ->controller(ConverterController::class)
+    ->group(function () {
+
+        Route::get('/currency-converter', 'index');
+        Route::post('/currency-converter', 'index');
+
+        Route::get('/galactic-currency-converter', 'additional');
+        Route::post('/galactic-currency-converter', 'additional');
+
     });
 
 

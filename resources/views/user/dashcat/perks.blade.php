@@ -9,4 +9,9 @@
              class="img-fluid" width="64" height="64">
         <span class="d-block mt-2">Currency<br>Converter</span>
     </a>
+    <a href="/dashboard/monthly-giveaway" class="dash-item">
+        <img src="/images/icons/preconv/flames.png"
+             class="img-fluid" width="64" height="64">
+        <span class="d-block mt-2">Giveaways</span>
+    </a>
 </div>

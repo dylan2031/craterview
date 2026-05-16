@@ -8,6 +8,7 @@ use App\Http\Controllers\PaymentsController;
 use App\Http\Controllers\ReservationsController;
 use App\Http\Controllers\Dashboard\NewsController;
 use App\Http\Controllers\Dashboard\ConverterController;
+use App\Http\Controllers\Dashboard\GiveawayController;
 
 
 // **************************//
@@ -187,6 +188,19 @@ Route::middleware('auth')
 
         Route::get('/galactic-currency-converter', 'additional');
         Route::post('/galactic-currency-converter', 'additional');
+
+    });
+
+// ************************//
+// **     Converter      **//
+// ************************//
+
+Route::middleware('auth')
+    ->prefix('dashboard')
+    ->controller(GiveawayController::class)
+    ->group(function () {
+
+        Route::get('/monthly-giveaway', 'index');
 
     });
 

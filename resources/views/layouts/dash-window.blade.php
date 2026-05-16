@@ -20,7 +20,8 @@
     <!-- Google Fonts (Comfortaa, Obritron, Work Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Orbitron:wght@400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Orbitron:wght@400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
 
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">

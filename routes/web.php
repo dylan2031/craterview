@@ -8,7 +8,7 @@ use App\Http\Controllers\PaymentsController;
 use App\Http\Controllers\ReservationsController;
 use App\Http\Controllers\Dashboard\NewsController;
 use App\Http\Controllers\Dashboard\ConverterController;
-use App\Http\Controllers\Dashboard\GiveawayController;
+use App\Http\Controllers\Dashboard\PromosController;
 
 
 // **************************//
@@ -197,7 +197,7 @@ Route::middleware('auth')
 
 Route::middleware('auth')
     ->prefix('dashboard')
-    ->controller(GiveawayController::class)
+    ->controller(PromosController::class)
     ->group(function () {
 
         Route::get('/monthly-giveaway', 'index');

@@ -192,7 +192,7 @@ Route::middleware('auth')
     });
 
 // ************************//
-// **     Converter      **//
+// **       Promos       **//
 // ************************//
 
 Route::middleware('auth')
@@ -200,7 +200,11 @@ Route::middleware('auth')
     ->controller(PromosController::class)
     ->group(function () {
 
-        Route::get('/monthly-giveaway', 'index');
+        // Main promos page
+        Route::get('/promos', 'index');
+
+        // Giveaway page
+        Route::get('/promos/monthly-giveaway', 'monthlyGiveaway');
 
     });
 

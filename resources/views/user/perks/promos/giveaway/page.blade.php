@@ -30,7 +30,7 @@
 </style>
 
 <div class="giveaway-bg text-center text-light giveaway-wrapper" style="font-family: Permanent Marker;">
-    @include('user.perks.giveaway.enter')
+    @include('user.perks.promos.giveaway.enter')
     <br>
     <div class="justify-content-center text-center">
         <h1 class="pt-4 display-1 h-shake" style="font-family: Permanent Marker;">THIS MONTH&apos;S GIVEAWAY</h1>
@@ -54,7 +54,7 @@
     LEARN MORE
 </a>
     <div id="learn-more-content" style="display:none;">
-        @include('user.perks.giveaway.more')
+        @include('user.perks.promos.giveaway.more')
     </div>
     <script>
     document.getElementById('learn-more-btn').addEventListener('click', function (e) {

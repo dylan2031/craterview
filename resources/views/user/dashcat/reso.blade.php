@@ -1,4 +1,4 @@
-<div class="d-flex flex-wrap gap-4 my-4">
+<div class="d-flex flex-wrap gap-3 my-4">
     <a href="/reservations/create" class="dash-item">
         <img src="/images/icons/reservations.svg"
              class="img-fluid" width="64" height="64">

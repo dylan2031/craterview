@@ -21,7 +21,7 @@
 <br>
 <h2 class="pt-4 display-1 h-shake" style="font-family: Permanent Marker;">PLEASE BE<span class="text-info"> AWARE</span></h2>
 <p style="color:yellow;text-shadow: 4px 2px 0 black, -2px -1px 0 black;">
-    <span style="font-size:20px;">DELIVERY COST ARE NOT INCLUDED. DELIVERY COSTS ARE YOUR RESPONSIBILITY.
+    <span style="font-size:20px;">DELIVERY COSTS ARE NOT INCLUDED. DELIVERY COSTS ARE YOUR RESPONSIBILITY.
         AN INVOICE WILL BE ISSUED TO YOUR HOME WITHIN TWO WEEKS OF RECEIVING THE ONE THOUSAND CANS. 
         UNFORTUNATELY&comma; WE ARE NOT ABLE TO CONFIRM AN EXACT PRICE AS DELIVERY WILL BE HANDLED BY A THIRD PARTY.
         <br>

@@ -203,11 +203,29 @@ Route::middleware('auth')
         // Main promos page
         Route::get('/promos', 'index');
 
+        // Cigarettes page
+        Route::get('/promos/cigarette-promo', 'domino');
+
+        // Rockbuster page
+        Route::get('/promos/rockbuster-sign-up', 'rockbuster');
+
         // Giveaway page
         Route::get('/promos/monthly-giveaway', 'monthlyGiveaway');
 
-    });
+        // Cocktails page
+        Route::get('/promos/2-for-1-promo', 'cocktails');
 
+        // Meal deal page
+        Route::get('/promos/meal-deal', 'mealDeal');
+
+        // Survey deal page
+        Route::get('/promos/footwear-discount', 'discount');
+        Route::get('/promos/survey', 'survey');
+        Route::get('/promos/ad', 'ad');
+        Route::get('/promos/voucher-success', 'voucherSuccess');
+        
+
+    });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

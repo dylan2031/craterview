@@ -50,7 +50,7 @@
             CLICK TO ENTER GIVEAWAY
         </a>
     </div>
-<a href="#" class="btn xp-btn-secondary mb-5" id="learn-more-btn">
+<a href="#learn-more-content" class="btn xp-btn-secondary mb-5" id="learn-more-btn">
     LEARN MORE
 </a>
     <div id="learn-more-content" style="display:none;">
@@ -64,9 +64,20 @@
 
         if (box.style.display === 'none' || box.style.display === '') {
             box.style.display = 'block';
+
+            const rect = box.getBoundingClientRect();
+            const offset = window.scrollY + rect.top;
+
+            // scroll only halfway to the element
+            window.scrollTo({
+                top: offset - (window.innerHeight / 2),
+                behavior: 'smooth'
+            });
         } else {
             box.style.display = 'none';
         }
+
+        this.style.display = 'none';
     });
     </script>
 </div>

@@ -448,6 +448,22 @@ which causes some visual/styling inconsistencies, this fixes that */
     background-attachment: fixed;
 }
 
+.space-bg {
+    background-image: url("/images/promos/space.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-attachment: fixed;
+}
+
+.text-shadow-yellow {
+    text-shadow:
+        0 1px 2px black,
+        0 0 8px yellow !important;
+}
+
 
 .box95 {
     border: 2px solid #000;

@@ -78,7 +78,7 @@
                         <br>
                         <strong>{{ $randomItem['name'] }}</strong>
                     </p>
-                    <img src="{{ asset('images/entertainment/' . $randomItem['image']) }}" class="img-fluid img-thumbnail" alt="Image of {{ $item['name'] }}" loading="lazy" decoding="async">>
+                    <img src="{{ asset('images/entertainment/' . $randomItem['image']) }}" class="img-fluid img-thumbnail" alt="Image of {{ $item['name'] }}" loading="lazy" decoding="async">
                 </a>
             </div>
         </div>

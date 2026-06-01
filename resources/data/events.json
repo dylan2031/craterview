@@ -7,7 +7,7 @@
         "sold-out" : false
     },
     {
-        "name" : "Bing Bong and the Seven Dizzies",
+        "name" : "Neil and the Armstrongs",
         "desc" : "New and upcoming jazz band from Tereshkova, Mars.",
         "date" : "JUN 03",
         "time" : "4:00 PM",
@@ -43,8 +43,8 @@
     
     },
     {
-        "name" : "Mumford and great great great great grandsons",
-        "desc" : "Though original members have been replaced by immortal syhthetic androids, the music remains the same.",    
+        "name" : "Mumford and great great great great [...] grandsons",
+        "desc" : "Though original members persist as brains in jars, they can no longer stomp, clap, or say 'hey'.",    
         "date" : "SEP 07",
         "time" : "8:00 PM",
         "sold-out" : false

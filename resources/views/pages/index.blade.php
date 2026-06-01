@@ -33,7 +33,7 @@
             </div>
             <div class="mt-4 d-flex flex-column flex-md-row justify-content-center gap-3">
                 <a href="/reservations/create" class="btn xp-btn-primary">Make a reservation</a>
-                <a href="{{ asset('files/craterview-brochure.pdf') }}" class="btn xp-btn-secondary" target="_blank" download> Download brochure</a>
+                <a href="/rooms" class="btn xp-btn-secondary">View available rooms</a>
             </div>
         </div>
     </section>

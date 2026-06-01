@@ -3,16 +3,23 @@
 @section('content')
     <section class="position-relative text-center text-light text-shadow-black">
         <img 
-            src="{{ asset('images/events/nye-3001.webp') }}" 
-            class="img-fluid w-100" 
-            style="object-fit: cover; height: 80vh; object-position: 44% center;" 
-            alt="Event at Sheffield Garden, one of Craterview's event venues"
+            src="{{ asset('images/events/celebration.webp') }}" 
+            class="img-fluid w-100 mob-change" 
+            style="object-fit: cover; height: 80vh; object-position: 33% center;" 
+            alt="Casino interior"
             loading="eager"
             decoding="async"
             fetchpriority="high"
             width="1600"
             height="900"
         >
+        <style>
+            @media (max-width: 767px) {
+                .mob-change {
+                    content: url('{{ asset('images/events/celebration-mb.webp') }}');
+                }
+            }
+        </style>
         <div class="position-absolute top-50 start-50 translate-middle w-100">
             <h1 class="mb-2">Events</h1>
             <h5 class="mb-4">Enjoy true 3-star satisfaction, no matter the occasion.</h5>

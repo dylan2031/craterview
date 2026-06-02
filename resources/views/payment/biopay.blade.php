@@ -223,9 +223,11 @@ If BioPay were a real product, I would organize this more cleanly.
           <p class="p-0 border-0 d-inline-block d-md-none text-center">TAP FINGERPRINT BELOW</p>
           <div class="d-flex justify-content-center">
             <button type="submit" class="btn p-0 border-0 d-inline-block d-md-none">
-              <img src="/images/payment/print.png" alt="Mobile Button" style="width:100px; height:auto;">
+              <img src="/images/payment/print.png" alt="Fingerprint icon" style="width:100px; height:auto;">
             </button>
           </div>
+          <p class="p-0 border-0 d-inline-block d-md-none text-center">TAP, DO NOT HOLD</p>
+
 
         </form>
 

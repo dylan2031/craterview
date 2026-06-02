@@ -7,7 +7,7 @@
                 <img src="{{ asset('images/icons/close.png') }}" alt="Close" class="close position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close">
             </div>
             <div class="modal-body p-0">
-                <div class="container-flex bg-light text-dark text-center">
+                <div class="container-flex bg-light text-dark text-center px-2">
                     <br>
                     <h3 style="font-family: sans-serif;">
                         <img src="{{ asset('images/icons/about.svg') }}" width="32" height="32" class="img-fluid pb-1 sidebar-icon">

@@ -214,7 +214,19 @@ If BioPay were a real product, I would organize this more cleanly.
         <form id="proceedForm" action="{{ route('payment.confirm') }}" method="POST" class="d-none mt-3">
           @csrf
           <input type="hidden" name="payment_confirmed" value="true">
-          <button type="submit" class="btn xp-btn-primary">Proceed</button>
+
+          <!-- Desktop / tablet -->
+          <button type="submit" class="btn xp-btn-primary d-none d-md-inline-block">
+          Proceed
+          </button>
+          <!-- Mobile only -->
+          <p class="p-0 border-0 d-inline-block d-md-none text-center">TAP FINGERPRINT BELOW</p>
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn p-0 border-0 d-inline-block d-md-none">
+              <img src="/images/payment/print.png" alt="Mobile Button" style="width:100px; height:auto;">
+            </button>
+          </div>
+
         </form>
 
         <div id="camError" class="text-danger mt-2 d-none">

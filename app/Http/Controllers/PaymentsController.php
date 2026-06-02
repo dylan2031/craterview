@@ -99,7 +99,7 @@ class PaymentsController extends Controller
     public function setBiopay(Request $request)
         {
             // Set the session variable biopay to true
-            session(['biopay' => true]);
+            session()->flash('biopay', true);
 
             // Redirect back to the page with the form
             return redirect()->back();

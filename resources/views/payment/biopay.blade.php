@@ -209,7 +209,7 @@ If BioPay were a real product, I would organize this more cleanly.
           </div>
         </div>
 
-        <p class="mb-3">Time remaining: <span id="countdown">15</span> seconds</p>
+        <p class="mb-3">Time remaining: <span id="countdown">18</span> seconds</p>
 
         <form id="proceedForm" action="{{ route('payment.confirm') }}" method="POST" class="d-none mt-3">
           @csrf
@@ -220,6 +220,14 @@ If BioPay were a real product, I would organize this more cleanly.
         <div id="camError" class="text-danger mt-2 d-none">
           BioPay requires camera access to initiate scan.
         </div>
+        <div id="cameraActions" class="d-none mt-3">
+          <button
+            type="button"
+            class="btn xp-btn-secondary"
+            data-bs-dismiss="modal">
+            Cancel Scan
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -228,11 +236,15 @@ If BioPay were a real product, I would organize this more cleanly.
 <script>
   const video = document.querySelector("#videoElement");
   const errorMsg = document.getElementById("camError");
+  const cameraActions = document.getElementById("cameraActions");
   const bioPayAudio = document.getElementById("bioPayAudio");
+
+  let cameraStream = null;
+  let scanStarted = false;
 
   const scanMessages = [
     "INITIATING FACIAL SCAN...",
-    " ",
+    "ONE MOMENT PLEASE...",
     "SCANNING EYE RETINA...",
     "RETINA ACCEPTED",
     "IDENTITY VERIFIED ACCESS GRANTED",
@@ -251,7 +263,7 @@ If BioPay were a real product, I would organize this more cleanly.
       scanText.textContent = scanMessages[scanStep];
       scanStep++;
       if (scanStep < scanMessages.length) {
-        setTimeout(updateScanText, 3000);
+        setTimeout(updateScanText, 3600);
       }
     };
 
@@ -279,7 +291,7 @@ If BioPay were a real product, I would organize this more cleanly.
   }
 
   function startTimer() {
-    let timeLeft = 15;
+    let timeLeft = 18;
     const countdownEl = document.getElementById("countdown");
     countdownEl.textContent = timeLeft;
 
@@ -287,17 +299,31 @@ If BioPay were a real product, I would organize this more cleanly.
       timeLeft--;
       countdownEl.textContent = timeLeft;
 
-      if (timeLeft <= 0) {
+    if (timeLeft <= 0) {
         clearInterval(timer);
+
+        if (cameraStream) {
+            cameraStream.getTracks().forEach(track => track.stop());
+        }
+
         proceedForm.classList.remove("d-none");
-      }
+    }
     }, 1000);
   }
 
   document.getElementById("bioModal").addEventListener("shown.bs.modal", async () => {
+
+    if (scanStarted) {
+      return;
+    }
+
+    scanStarted = true;
     try {
-      const stream = await navigator.mediaDevices.getUserMedia({ video: true });
-      video.srcObject = stream;
+      cameraStream = await navigator.mediaDevices.getUserMedia({
+        video: true
+      });
+
+      video.srcObject = cameraStream;
 
       // Play audio **after permission**
       bioPayAudio.currentTime = 0;
@@ -308,7 +334,9 @@ If BioPay were a real product, I would organize this more cleanly.
 
     } catch (err) {
       console.error("Camera error:", err);
+
       errorMsg.classList.remove("d-none");
+      cameraActions.classList.remove("d-none");
     }
   });
 </script>

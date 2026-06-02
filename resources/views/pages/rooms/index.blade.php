@@ -22,7 +22,7 @@
     </section>
     {{-- 3 star promise --}}
     <section>
-        <div class="container mt-3 text-center">
+        <div class="container py-3 px-2 text-center">
             <h2>All of our rooms are backed by our 3-star promise</h2>
             <img src="{{ asset('images/global/stars.webp') }}" class="img-fluid p-3" alt="3 out of 5 stars">
             <p><small class="text-muted fst-italic">Rated 3 stars by the Intergalactic Hotel Standards Committee</small></p>

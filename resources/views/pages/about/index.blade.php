@@ -24,7 +24,7 @@
     </section>
     {{-- 3 star promise --}}
     <section>
-        <div class="container text-center p-3">
+        <div class="container text-center py-3 px-2">
             <h2 class="visually-hidden">3-star promise</h2>
             <img src="{{ asset('images/about/3star-wordart.png') }}" class="img-fluid d-block mx-auto" style="height: 5rem;" alt="wordart: 3-star promise">
             <p>We guarantee <span class="fw-bold">affordability, comfort, and perfect satisfaction.</span></p> 

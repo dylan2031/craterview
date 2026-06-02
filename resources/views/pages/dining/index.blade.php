@@ -23,7 +23,7 @@
         </div>
     </section>
     <section>
-        <div class="container p-3 text-center">
+        <div class="container py-3 px-2 text-center">
             <h1>Mission statement</h1>
             <p>At Craterview Casino & Resort, we believe true culinary freedom means removing unnecessary restrictions.<br>In line with our commitment to empowering choice and pioneering taste, Craterview Casino & Resort is proud to announce we are no longer a peanut-free facility.</p>
             <blockquote class="blockquote text-center">

@@ -33,7 +33,7 @@
         </div>
     </section>
     <section>
-        <div class="container mt-3 text-center">
+        <div class="container py-3 px-2 text-center">
             <h1>Adequacy, redefined.</h1>
             <p>Whether you're attending, planning, or hosting an event, it should be an affordable and stress-free experience without compromising on essentials.</p>
             @include('includes.stars')

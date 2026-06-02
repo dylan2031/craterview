@@ -39,7 +39,7 @@
     </section>
     {{-- Intro copy --}}
     <section>
-        <div class="mt-3 mb-2 text-center">
+        <div class="mt-3 mb-2 mx-2 text-center">
             <h1>CRATERVIEW CASINO &amp; RESORT</h1>
             <h3>The comfort of Earth on Martian soil</h3>
             @include('includes.stars')

@@ -23,7 +23,7 @@
     </section>
     {{-- 'Welcome' info --}}
     <section>
-        <div class="container pt-3 text-center">
+        <div class="container py-3 px-2 text-center">
             <h1>Your holiday starts here...</h1>
             <p>Your all-inclusive getaway at Craterview Casino & Resort includes unlimited access to our outdoor pool, three indoor pools, and spa facilities.</p>
             <p>Our pool and spa facilities are open 24/7, year-round, and are cleaned and maintained daily to ensure the highest standards of hygiene.</p>

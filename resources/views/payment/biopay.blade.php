@@ -190,8 +190,7 @@ If BioPay were a real product, I would organize this more cleanly.
     <div class="modal-content">
 
       <div class="xp-title-bar px-3 py-2 d-flex align-items-center position-relative">
-        <img src="{{ asset('images/icons/mars.svg') }}" class="me-2" style="width: 18px; height: 18px;">
-        <span>Extranet Explorer &copy; 3002 | BioPay</span>
+        <span>BioPay: Pay with biometrics</span>
       </div>
 
       <div class="modal-body text-center bg-light">

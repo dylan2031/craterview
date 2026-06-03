@@ -3,7 +3,7 @@
 @section('content')
     <div class="container mt-5 mb-5">
         <!-- Retro yellowy box -->
-        <div style="background-color: #FFEB3B; padding: 20px; border-radius: 10px; border: 3px solid #FF9800; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); font-family: 'Courier New', Courier, monospace; max-width: 600px; margin: 0 auto;">
+        <div style="background-color: #fff8b0; padding: 20px; border-radius: 10px; border: 3px solid #FF9800; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); font-family: 'Courier New', Courier, monospace; max-width: 600px; margin: 0 auto;">
             <p class="text-center" style="margin-bottom: 20px; font-size: 1.5rem;">Reservation Confirmation</p>
             <p class="mb-1"><strong>Confirmation number:</strong> {{ str_pad($reservation->id, 5, '0', STR_PAD_LEFT) }}</p>
             <p class="mb-1"><strong>Name:</strong> {{ $reservation->name }}</p>

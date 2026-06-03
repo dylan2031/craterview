@@ -66,7 +66,7 @@ class PaymentsController extends Controller
             Payment::create([
                 'name'        => session('payment.name'),
                 'description' => session('payment.what'),
-                'amount'      => session('payment.price'),
+                'amount' => str_replace(',', '', session('payment.price')),
                 'message'     => session('payment.message'),
                 'user_id'     => Auth::id(), // Make sure the user is logged in
             ]);

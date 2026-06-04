@@ -7,7 +7,7 @@
         src="{{ asset('images/promos/head.webp') }}" 
         class="img-fluid w-100" 
         style="object-fit: cover; height: 80vh;" 
-        alt="Martian Crater View"
+        alt="Frutiger Aero Red"
         loading="eager"
         decoding="async"
         fetchpriority="high"
@@ -40,7 +40,7 @@
 </section>
 {{-- Intro copy --}}
 <section>
-    <div class="mt-3 mb-2 text-center">
+    <div class="mt-3 mb-2 px-2 text-center">
         <h3>A NEW ERA OF INCENTIVISED HOSPITALITY</h3>
         @include('includes.stars')
         <p>At Craterview Casino &amp; Resort, the odds have never felt so acceptable.</p>

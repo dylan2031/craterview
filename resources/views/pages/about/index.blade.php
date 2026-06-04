@@ -104,6 +104,7 @@
         <div class="container text-center mt-4">
             <h2 class="visually-hidden">Getting here</h2>
             <img src="{{ asset('images/about/dir-wordart.png') }}" class="img-fluid d-block mx-auto" style="height: 5rem;" alt="wordart: getting here">
+            <p>Cheap flights run regularly from Leeds Bradford Intergalactic Spaceport.</p>
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <img src="{{ asset('images/about/sm-map.webp') }}"
@@ -136,13 +137,13 @@
                 <div class="col-md-6">
                     <h3>Directions</h3>
                     <h5>By car</h5>
-                    <p>From Red Sand Station, drive South on Baker's Bench Avenue for two miles, then turn right. Take the first right after the Martian Rock Museum.</p>
+                    <p>From Red Sand Station, drive South on Baker's Avenue for two miles, then turn right. Take the first right after the Martian Rock Museum.</p>
                     <h5>By bus</h5>
                     <p>The M1 bus stops right outside our hotel entrance. It comes every hour from Red Sand Station, Monday to Friday between 09:00 to 18:00.</p>
                     <h5>By train</h5>
-                    <p>Coming soon. The Martian Transit Commission is working on connecting all major Martian destinations via train by the year 3025.</p>
+                    <p>Coming soon. The Martian Transit Commission is working on connecting all major Martian tourist destinations via train by the year 3007.</p>
                     <p><a href="{{ asset('images/about/map.png') }}" download class="btn xp-btn-secondary">Download map</a></p>
-                    <p><a href="https://www.google.com/maps/dir/?api=1&destination=53.7952,-1.5480&origin=My+Location" class="btn xp-btn-secondary" target="_blank" >Get directions from my current location</a></p>
+                    <p><a href="https://www.leedsbradfordairport.co.uk/getting-to-and-from" class="btn xp-btn-secondary" target="_blank" >Get directions</a></p>
                 </div>
             </div>
         </div>

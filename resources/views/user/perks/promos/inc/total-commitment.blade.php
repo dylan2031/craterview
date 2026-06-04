@@ -11,7 +11,7 @@
                 <h3 style="font-family: sans-serif;">
                     Powered by your <span style="font-family:serif;color:#B59410;">Ascension&trade; card</span>
                 </h3>
-                <p>Guest services can assist you with filling out an income and expenditure form. Once active&comma; insert your Ascension&trade; card into any slot machine and this promo may automatically activate.</p>
+                <p>Guest Services can assist you with filling out an income and expenditure form. Once active&comma; insert your Ascension&trade; card into any slot machine and this promo may automatically activate.</p>
                 <p>Claim your FREE Ascension&trade; card from Guest Services inside the casino.</p>
                 <p>Promo may be valid 7 days a week. For more information&comma; speak to Guest Services inside the casino.</p>
             </div>

@@ -257,3 +257,11 @@ Route::get('/extranet-portal', [PagesController::class, 'extranetConnect']);
 Route::post('/blimby-chat', [\App\Http\Controllers\BlimbyController::class, 'chat']);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// ********************************//
+// **        Auth gateway       ** //
+// ********************************//
+
+Route::get('/auth', function () {
+    return view('auth.gateway');
+})->name('auth.gateway');

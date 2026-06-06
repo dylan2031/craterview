@@ -20,7 +20,7 @@
                     <img src="{{ asset('images/misc/starcar_voucher.webp') }}" class="img-fluid img-thumbnail w-100" alt="Voucher: 50 Percent Off StarCar Vehicle Rental">
                 </div>
                 <div class="col-md-6 mt-2">
-                    <h5>An offer just for you, {{ Auth::user()->name }}&excl;</h5>
+                    <h5>An offer just for you, {{ Auth::user()->display_name }}&excl;</h5>
                     <p>Craterview Casino &amp; Resort has partnered with StarCar Vehicle Rental to bring you exclusive savings. As a member, you get discounted access to all bronze tier vehicles. Just present this voucher to the StarCar team to claim your exclusive offer.</p>
                     <div class="d-flex flex-column flex-md-row justify-content-center gap-3 text-light mx-auto">
                         <a href="{{ asset('files/ad/voucher.pdf') }}" download class="btn xp-btn-secondary">

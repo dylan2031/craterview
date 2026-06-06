@@ -33,7 +33,7 @@
             <!-- Greeting -->
             <div class="col-12 col-md-4 mb-4 mb-md-0">
                 <p style="font-size: 1.6rem;">
-                    {{ $greeting }}, {{ explode(' ', Auth::user()->name)[0] }}!
+                    {{ $greeting }}, {{ Auth::user()->display_name }}!
                 </p>
                 <p>Thank you for choosing Craterview Casino & Resort.</p>
             </div>

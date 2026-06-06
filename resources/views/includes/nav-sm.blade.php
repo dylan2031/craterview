@@ -101,7 +101,7 @@ style="z-index : 10000">
                     <li class="nav-item mb-2">
                         <a class="nav-link glow-on-hover text-dark d-flex align-items-center p-0" href="/dashboard">
                             <img src="{{ asset('images/icons/dashboard.svg') }}" width="32" height="32" class="me-2" alt="Dashboard Icon">
-                            {{ explode(' ', Auth::user()->name)[0] }}'s Dashboard
+                            {{ Auth::user()->display_name }}'s Dashboard
                         </a>
                     </li>
                     <li class="nav-item mb-2">

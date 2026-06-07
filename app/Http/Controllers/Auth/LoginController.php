@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 use Illuminate\Http\Request;
+use Illuminate\Validation\ValidationException;
 
 class LoginController extends Controller
 {
@@ -53,5 +54,36 @@ class LoginController extends Controller
         ];
     }
 
+    protected function validateLogin(Request $request)
+    {
+        $request->validate([
+            'username' => ['required'],
+            'password' => ['required'],
+        ], [
+            'username.required' => 'Username cannot be blank',
+            'password.required' => 'Password cannot be blank',
+        ]);
+    }
 
+    /**
+     * Override login flow so validation ALWAYS runs first
+     */
+    public function login(Request $request)
+    {
+        $this->validateLogin($request);
+
+        return $this->attemptLogin($request)
+            ? $this->sendLoginResponse($request)
+            : $this->sendFailedLoginResponse($request);
+    }
+
+    /**
+     * Authentication failure message (your XP system)
+     */
+    protected function sendFailedLoginResponse(Request $request)
+    {
+        throw ValidationException::withMessages([
+            'username' => ['Invalid credentials'],
+        ]);
+    }
 }

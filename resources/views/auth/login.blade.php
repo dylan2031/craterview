@@ -8,7 +8,7 @@
                 <div class="xp-title-bar">Log In</div>
 
                 <div class="card-body bg-light">
-                    <form method="POST" action="{{ route('login') }}">
+                    <form method="POST" action="{{ route('login') }}" novalidate>
                         @csrf
 
                         {{-- Username --}}
@@ -26,12 +26,6 @@
                                        required
                                        autofocus
                                        autocomplete="username">
-
-                                @error('username')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
                             </div>
                         </div>
 
@@ -48,12 +42,6 @@
                                        name="password"
                                        required
                                        autocomplete="current-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
                             </div>
                         </div>
 

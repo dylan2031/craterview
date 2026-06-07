@@ -8,7 +8,7 @@
                 <div class="xp-title-bar">Create Account</div>
 
                 <div class="card-body bg-light">
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ route('register') }}" novalidate>
                         @csrf
 
                         {{-- Username --}}
@@ -26,12 +26,6 @@
                                        required
                                        autocomplete="username"
                                        autofocus>
-
-                                @error('username')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
                             </div>
                         </div>
 
@@ -48,12 +42,6 @@
                                        name="email"
                                        value="{{ old('email') }}"
                                        autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
                             </div>
                         </div>
 
@@ -70,12 +58,6 @@
                                        name="password"
                                        required
                                        autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
                             </div>
                         </div>
 

@@ -42,6 +42,11 @@
         @include('includes.msg-window')
     @endif
 
+    {{-- Message pop up if we have a error --}}
+    @if ($errors->any())
+        @include('includes.error-window')
+    @endif
+
     {{-- Modal to confirm logout here --}}
     @include('includes.logout')
 

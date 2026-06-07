@@ -52,6 +52,12 @@ class RegisterController extends Controller
             'username' => ['required', 'string', 'max:255', 'unique:users'],
             'email' => ['nullable', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+        ], [
+            'username.required' => 'Username cannot be blank',
+            'username.unique' => 'Username already in use',
+            'password.min' => 'Password must be at least 8 characters',
+            'password.confirmed' => 'Passwords do not match',
+            'email.email' => 'Invalid email address',
         ]);
     }
 

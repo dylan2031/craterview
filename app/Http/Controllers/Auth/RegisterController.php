@@ -55,6 +55,7 @@ class RegisterController extends Controller
         ], [
             'username.required' => 'Username cannot be blank',
             'username.unique' => 'Username already in use',
+            'password.required' => 'Password cannot be blank',
             'password.min' => 'Password must be at least 8 characters',
             'password.confirmed' => 'Passwords do not match',
             'email.email' => 'Invalid email address',

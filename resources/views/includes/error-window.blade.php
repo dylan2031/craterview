@@ -1,5 +1,5 @@
 <div class="modal fade xp-modal" id="errorModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-dialog modal-dialog-centered modal-m">
         <div class="modal-content">
 
             <div class="xp-title-bar px-3 py-2 d-flex align-items-center position-relative">
@@ -10,14 +10,14 @@
 
             <div class="modal-body bg-light text-dark text-center px-3 py-4">
 
-            <h3 style="font-family: sans-serif;">
+            <h5 style="font-family: sans-serif;">
                 <img src="{{ asset('images/icons/preconv/error.png') }}" width="32">
                 @if ($errors->count() > 1)
                     Multiple errors
                 @else
                      {{ $errors->first() }}
                 @endif
-            </h3>
+            </h5>
 
                 <ul class="list-unstyled mt-3">
                     @if ($errors->count() > 1)

@@ -72,13 +72,15 @@ class LoginController extends Controller
     {
         $this->validateLogin($request);
 
-        return $this->attemptLogin($request)
-            ? $this->sendLoginResponse($request)
-            : $this->sendFailedLoginResponse($request);
+        if ($this->attemptLogin($request)) {
+            return $this->sendLoginResponse($request);
+        }
+
+        return $this->sendFailedLoginResponse($request);
     }
 
     /**
-     * Authentication failure message (your XP system)
+     * Authentication failure message
      */
     protected function sendFailedLoginResponse(Request $request)
     {

@@ -9,7 +9,8 @@ use App\Http\Controllers\ReservationsController;
 use App\Http\Controllers\Dashboard\NewsController;
 use App\Http\Controllers\Dashboard\ConverterController;
 use App\Http\Controllers\Dashboard\PromosController;
-
+use App\Http\Controllers\ControlPanelController;
+use App\Http\Controllers\Auth\AccountUpdateController;
 
 // **************************//
 // **        Home          **//
@@ -265,3 +266,35 @@ Route::post('/blimby-chat', [\App\Http\Controllers\BlimbyController::class, 'cha
 Route::get('/auth', function () {
     return view('auth.gateway');
 })->name('auth.gateway');
+
+// ******************************************//
+// **        cpanel and acc updates       ** //
+// ******************************************//
+
+Route::middleware(['auth'])->group(function () {
+
+    Route::get('/dashboard/cpanel', [ControlPanelController::class, 'index'])
+        ->name('cpanel');
+
+    Route::get('/dashboard/cpanel/username', [AccountUpdateController::class, 'showUsername'])
+        ->name('cpanel.username.show');
+
+    Route::post('/dashboard/cpanel/username', [AccountUpdateController::class, 'updateUsername'])
+        ->name('cpanel.username.update');
+
+    Route::get('/dashboard/cpanel/email', [AccountUpdateController::class, 'showEmail'])
+        ->name('cpanel.email.show');
+
+    Route::post('/dashboard/cpanel/email', [AccountUpdateController::class, 'updateEmail'])
+        ->name('cpanel.email.update');
+
+    Route::get('/dashboard/cpanel/password', [AccountUpdateController::class, 'showPassword'])
+        ->name('cpanel.password.show');
+
+    Route::post('/dashboard/cpanel/password', [AccountUpdateController::class, 'updatePassword'])
+        ->name('cpanel.password.update');
+
+    Route::get('/dashboard/cpanel/region', [AccountUpdateController::class, 'showRegion'])
+        ->name('cpanel.region.show');
+
+});

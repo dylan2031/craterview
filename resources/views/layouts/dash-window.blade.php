@@ -40,6 +40,17 @@
 
     <!-- Scrollable content -->
     <main class="flex-grow-1 overflow-auto container-fluid g-0">
+
+        {{-- Message pop up if we have a message --}}
+        @if(session('message'))
+            @include('includes.msg-window')
+        @endif
+
+        {{-- Message pop up if we have a error --}}
+        @if ($errors->any())
+            @include('includes.error-window')
+        @endif
+
         @yield('content')
     </main>
 

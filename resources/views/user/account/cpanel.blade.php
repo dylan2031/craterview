@@ -25,11 +25,13 @@
                     class="img-fluid" width="64" height="64">
                 <span class="d-block mt-2">Password</span>
             </a>
+            <!--
             <a href="#" class="dash-item">
                 <img src="/images/icons/preconv/error.png"
                     class="img-fluid" width="64" height="64">
                 <span class="d-block mt-2">Delete<br>Account</span>
             </a>
+            -->
         </div>
     </div>
 </div>

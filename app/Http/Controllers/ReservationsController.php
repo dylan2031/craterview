@@ -28,9 +28,35 @@ class ReservationsController extends Controller
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'room_type' => 'required|string|in:pod,single,twin,double,penthouse',
-            'check_in' => 'required|date',
+            'check_in' => 'required|date|after_or_equal:today',
             'check_out' => 'required|date|after:check_in',
             'special_request' => 'nullable|string|max:1000',
+            'confirm' => 'accepted',
+        ], [
+            // name
+            'name.required' => 'Please enter a name or alias for your reservation',
+            'name.string' => 'The name must be valid text',
+            'name.max' => 'Name or alias exceeds character limit',
+
+            // room type
+            'room_type.required' => 'Please select a room type',
+            'room_type.in' => 'The selected room type is invalid',
+
+            // check-in
+            'check_in.required' => 'Please select a check-in date',
+            'check_in.date' => 'Check-in date must be a valid date',
+            'check_in.after_or_equal' => 'Check-in date cannot be in the past',
+
+            // check-out
+            'check_out.required' => 'Please select a check-out date',
+            'check_out.date' => 'Check-out date must be a valid date',
+            'check_out.after' => 'Check-out must be after your check-in date',
+
+            // special request
+            'special_request.max' => 'Special requests cannot exceed 1000 characters',
+
+            // confirm checkbox
+            'confirm.accepted' => 'You must confirm the booking via the checkbox before continuing',
         ]);
 
         // Calculate nights

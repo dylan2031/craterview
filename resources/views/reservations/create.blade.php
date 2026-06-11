@@ -7,7 +7,7 @@
 <div class="container">
     <h3 class="mt-4">Book your stay</h3>
     <p>Thank you for choosing Craterview. We're excited to have you stay with us.</p>
-    <form action="{{ route('reservations.store') }}" method="POST">
+    <form action="{{ route('reservations.store') }}" method="POST" novalidate>
         @csrf
 
         <!-- Guest name -->

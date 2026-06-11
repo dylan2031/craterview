@@ -5,7 +5,7 @@
         <span class="d-block mt-2">Promos</span>
     </a>
     <a href="/dashboard/news" class="dash-item">
-        <img src="/images/icons/mars.svg"
+        <img src="/images/icons/preconv/news.png"
              class="img-fluid" width="64" height="64">
         <span class="d-block mt-2">News</span>
     </a>

@@ -197,29 +197,8 @@
 [3002-12-01] snapshot=rejected   status=[error]
 [3002-12-02] snapshot=rejected   status=[error]
 [3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-02] snapshot=rejected   status=[error]
-[3002-12-03] snapshot=accepted   status=[ok]
+[3002-12-02] snapshot=accepted   status=[ok]
+[3002-12-02] local backup created -m "02/12/3002 at 03:13"
 [3002-12-07] snapshot=rejected   status=[error]
 [] snapshot= status=
 [3004-12-03] snapshot=rejected   status=[ok]
@@ -24511,7 +24490,7 @@
 [2000-04-23] reboot
 [2000-04-23] power saver mode
 [2000-04-23] snapshot= status=
-[2000-04-23] initiating snapshot restore: 3002-12-03 (source: local backup)
+[2000-04-23] initiating snapshot restore: 3002-12-02 (source: local backup)
 [2000-04-23] success
 [2000-04-23] standby
 

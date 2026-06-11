@@ -61,6 +61,8 @@ class RegisterController extends Controller
             'password.min' => 'Password must be at least 8 characters',
             'password.confirmed' => 'Passwords do not match',
             'email.email' => 'Invalid email address',
+            'email.max' => 'Email address exceeds character limit',
+            'email.unique' => 'Email address already in use',
         ]);
     }
 

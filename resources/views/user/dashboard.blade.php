@@ -6,12 +6,12 @@
         <div class="container-fluid">
             <div class="row g-3">
 
-                {{-- Dashboard title --}}
+                {{-- Dashboard --}}
                 <div class="col-12">
                     <h1>Your dashboard</h1>
                 </div>
 
-                {{-- Greet (always full width) --}}
+                {{-- Greet --}}
                 <div class="col-12">
                     @include('user.dashcat.greet')
                 </div>
@@ -20,7 +20,7 @@
                 <div class="col-12 col-lg-6">
                     <h2>Reservations</h2>
                     @include('user.dashcat.reso')
-                    <br>{{-- br needed for even spacing --}}
+                    <br>{{-- br needed for even spacing, will likely correct with css later --}}
                 </div>
 
                 {{-- Perks --}}

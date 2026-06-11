@@ -13,8 +13,8 @@
         <!-- Guest name -->
         <div class="row">
             <div class="col mb-3">
-                <label for="name" class="form-label">Your name</label>
-                <input type="text" value="{{ auth()->user()->name }}" class="form-control" id="name" name="name" required>
+                <label for="name" class="form-label">Name or alias</label>
+                <input type="text" value="{{ auth()->user()->display_name }}" class="form-control" id="name" name="name" required>
             </div>
         </div>
 

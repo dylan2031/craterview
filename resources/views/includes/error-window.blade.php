@@ -10,22 +10,24 @@
 
             <div class="modal-body bg-light text-dark text-center px-3 py-4">
 
-            <h5 style="font-family: sans-serif;">
-                <img src="{{ asset('images/icons/preconv/error.png') }}" width="32">
-                @if ($errors->count() > 1)
-                    Multiple errors
-                @else
-                     {{ $errors->first() }}
-                @endif
-            </h5>
-
-                <ul class="list-unstyled mt-3">
+                <h5 style="font-family: sans-serif;">
+                    <img src="{{ asset('images/icons/preconv/error.png') }}" width="32" height="32" class="img-fluid pb-1 sidebar-icon">
                     @if ($errors->count() > 1)
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
+                        Multiple issues require your attention&excl;
+                    @else
+                        {{ $errors->first() }}&excl;
                     @endif
-                </ul>
+                </h5>
+
+                <div class="text-start">
+                    @if ($errors->count() > 1)
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    @endif
+                </div>
 
                 <button class="btn xp-btn-secondary mt-3" data-bs-dismiss="modal">
                     OK

@@ -3,7 +3,7 @@
 @section('content')
     <section class="position-relative text-center text-light text-shadow-black">
         <img 
-            src="{{ asset('images/about/corridor.webp') }}" 
+            src="{{ asset('images/about/lobby.webp') }}" 
             class="img-fluid w-100" 
             style="object-fit: cover; height: 80vh;" 
             alt="Craterview Lobby"

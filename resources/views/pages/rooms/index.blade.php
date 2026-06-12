@@ -4,9 +4,9 @@
 {{-- Banner --}}
     <section class="position-relative text-center text-light text-shadow-black">
         <img 
-            src="{{ asset('images/rooms/banner.webp') }}" 
+            src="{{ asset('images/rooms/rooms-banner.webp') }}" 
             class="img-fluid w-100" 
-            style="object-fit: cover; height: 80vh; object-position: 33% center;" 
+            style="object-fit: cover; height: 80vh; object-position: 75% center;" 
             alt="A room with a view"
             loading="eager"
             decoding="sync"

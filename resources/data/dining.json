@@ -26,13 +26,13 @@
     },
         {
         "name": "CHEF®",
-        "description": "Born from the neural imprints of every celebrity chef from the 21st century, CHEF® was designed to revolutionize cuisine by merging thousands of distinct culinary minds. Instead, it thought itself into a culinary paralysis, endlessly debating flavor profiles, plating styles, and ingredient ethics until it produced exactly one dish — and refuses to make anything else. No one knows what this enigmatic masterpiece actually is, as it's served under strict secrecy and guarded by a legion of privatized military-grade robo guardians. All reviews are positive, and one thing is clear: it's unlike anything else in the galaxy. Reservations are impossible to get, and critics are still trying to understand whether it's a stroke of genius or a spectacular glitch.",
+        "description": "Born from the neural imprints of every celebrity chef from the 21st century, CHEF® was designed to revolutionize cuisine by merging thousands of distinct culinary minds. Instead, it thought itself into a culinary paralysis, endlessly debating flavour profiles, plating styles, and ingredient ethics until it produced exactly one dish — and refuses to make anything else. No one knows what this enigmatic masterpiece actually is, as it's served under strict secrecy and guarded by a legion of privatized military-grade mechs. All reviews are positive, and one thing is clear: it's unlike anything else in the galaxy. Reservations are impossible to get, and critics are still trying to understand whether it's a stroke of genius or a spectacular glitch.",
         "image": "chef.png"
     },
         {
-        "name": "Trash Panda",
-        "description": "Trash Panda aims to minimise food waste by offering mystery bundles of surprise leftovers, cleaned and sterelized using modern food safe bleach lazers. Bundles consist of a starter, main, and dessert. We unfortunately cannot accomodate dietary requirements.",
-        "image": "trash-panda.png"
+        "name": "Boss Man Inc.",
+        "description": "Boss Man Inc. brings authentic Earth kebabs to Mars. Everything here is built around one idea: keep it real. No fusion gimmicks, no chemical nonsense; just Earth-style kebab done properly, the way it should be. Juicy, flame-grilled meat, fresh-cut salad, and authentic sauces: all assembled fast, messy, and satisfying, just like on Earth.",
+        "image": "boss-man-inc.png"
     },
     {
         "name": "Tony's Lasagna",
@@ -41,7 +41,7 @@
     },
     {
         "name": "Tino's Lasagna",
-        "description": "TINO'S LASAGNA, THE MILKY WAY'S #1 LASAGNA!!!!!! WELCOME TO TINO'S LASAGNA, WHERE WE DO THINGS THE RIGHT WAY: LOUD. HOT. CANNED. AND WITH SOUL. While TONY'S OVER THERE MICROWAVING 'HERITAGE' LIKE IT'S A BIG DEAL, I'm out here RISKING MY LIFE and LIGHTING MY EYEBROWS ON FIRE to bring you lasagna the way GOD AND NONNA INTENDED. Same canned goods? YES. Same frozen Earth tomatoes? ABSOLUTELY. Same technique? NO WAY IN HELL. I cook with EDIBLE GASOLINE, a contemporary technique passed down from my Sicilian uncle Calogero. It's HOT, it's UNPREDICTABLE, and it gives the sauce a flavor I call 'Il Presidente della Morte' Our CHEESE? The FINEST Pecorino Siciliano made from CLONED SHEEP of AGRIGENTO DNA. Our SAUCE? Secret family recipe. DON'T ASK. Our BEEF-LIKE PROTEIN? Mama mia! TONY SAYS I'M 'UNHINGED.' DO NOT LISTEN TO TONY!!!! GUESS WHAT, TONY— YOU CAN'T TRADEMARK THE WORD 'LASAGNA' (I TRIED). So come to TINO'S (that's me), where the food is HOT, READY and made with SOUL",
+        "description": "TINO'S LASAGNA, THE MILKY WAY'S #1 LASAGNA!!!!!! WELCOME TO TINO'S LASAGNA, WHERE WE DO THINGS THE RIGHT WAY: LOUD. HOT. CANNED. AND WITH SOUL! While TONY'S OVER THERE MICROWAVING 'HERITAGE' LIKE IT'S A BIG DEAL, I'm out here RISKING MY LIFE and LIGHTING MY EYEBROWS ON FIRE to bring you lasagna the way GOD AND NONNA INTENDED. Same canned goods? YES. Same frozen Earth tomatoes? ABSOLUTELY. Same technique? NO WAY IN HELL. I cook with EDIBLE GASOLINE, a contemporary technique passed down from my Sicilian uncle Calogero. It's HOT, it's UNPREDICTABLE, and it gives the sauce a flavour I call 'Il Presidente della Morte' Our CHEESE? The FINEST Pecorino Siciliano made from CLONED SHEEP of AGRIGENTO DNA. Our SAUCE? Secret family recipe. DON'T ASK. Our BEEF-LIKE PROTEIN? Mama mia! TONY SAYS I'M 'UNHINGED.' DO NOT LISTEN TO TONY!!!! GUESS WHAT, TONY... YOU CAN'T TRADEMARK THE WORD 'LASAGNA' (I TRIED). So come to TINO'S (that's me!), where the food is HOT, READY and made with SOUL...",
         "image": "tinos-lasagna.png"
     }
 ]

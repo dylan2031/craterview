@@ -136,9 +136,9 @@
             loading="lazy" decoding="async" width="1920" height="295">
             <img src="{{ asset('images/index/connection-sm.webp') }}" class="img-fluid 1-100 d-block d-lg-none" alt="Interplanetary dial-up diagram"
             loading="lazy" decoding="async" width="1080" height="540">
-            <p>Your message is guaranteed to reach Earth in 10 business days, carried through the cosmos by our reliable communication system. Messages to colonies will route via Earth, so anticipate additional waiting times to reach a colony.</p>
+            <p>Your message is guaranteed to reach Earth in 10 days, carried through the cosmos by our reliable communication system. Messages to colonies will route via Earth, so anticipate additional waiting times to reach a colony.</p>
             <p>Connected terminals are available in our Extranet Cafe, open 24/7.</p>
-            <p>In the event of one of our regularly-scheduled technical difficulties, we thank you for your patience—and your pioneering spirit.</p>
+            <p>In the event of one of our regularly-scheduled technical difficulties, we thank you for your patience... and your pioneering spirit&excl;</p>
         </div> 
     </section>
     <hr>
@@ -186,7 +186,7 @@
                 </div>
                 <div class="col-md-6">
                     <h3>Where heritage meets modernity.</h3>
-                    <p>Craterview Hotel invites you to experience the perfect fusion of time-honoured Earth tradition and 
+                    <p>Craterview Casino &amp; Resort invites you to experience the perfect fusion of time-honoured Earth tradition and 
                         forward-thinking Martian innovation. From check-in to check-out, 
                         every detail of your stay is designed with comfort, affordability, and the pioneering spirit in mind.  
                     </p>
@@ -194,9 +194,10 @@
                     <h3>Where exploration meets expectation.</h3>
                     <p>At Craterview, we believe venturing millions of miles from Earth shouldn't mean compromising on the essentials. 
                         That's why we proudly deliver a consistent 3-star experience, no more and no less, right here on the Martian surface. 
-                        From familiar amenities to vaguely luxurious decor, we've brought the comfort of Earth's mid-range hospitality to the 
+                        From comfortable beds to familiar amenities, we've brought the comfort of Earth's mid-range hospitality to the 
                         edge of the final frontier.
                     </p>
+                    <p>This is your holiday, done your way.</p>
                     <p>
                     <div class="mt-4 d-flex flex-column flex-md-row gap-3">
                         <a href="/about" class="btn xp-btn-secondary">Learn more</a>

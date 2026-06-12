@@ -26,7 +26,28 @@
 <section class="bg-domino">
     <div class="container mt-4">
         <h3 class="mb-4">Upcoming events...</h3>
-
+        <h4>This year</h4>
+        <div class="row card mt-2 mx-2">
+            <div class="card-body">
+                <div class="row align-items-center text-center text-md-start">
+                    <div class="col-12 col-md-2 mb-2 mb-md-0">
+                        <p class="m-0 p-0" style="font-size: 2rem;">DEC 31</p>
+                    </div>
+                    <div class="col-12 col-md-8 mb-2 mb-md-0">
+                        <p class="m-0 p-0" style="font-size: 1.5rem;">New Year's Eve Party</p>
+                        <small class="text-muted fst-italic">Join us for a night of unforgettable performances, featuring RON, Hologram Elvis, our very own Circuit Sinatras, and more!</small>
+                        <p class="mt-2"><i class="bi bi-clock"></i> 7:00 PM&nbsp;&nbsp;&nbsp;<i class="bi bi-geo-alt"></i> Domino Stage</p>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <button class="btn xp-btn-secondary w-100 w-md-auto disabled" disabled style="opacity: 0.5; pointer-events: none;">
+                            SOLD OUT
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h4>Coming 3003</h4>
         @foreach ($events as $event)
             <div class="row card mt-2 mx-2">
                 <div class="card-body">

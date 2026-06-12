@@ -54,7 +54,7 @@
       {
         "name": "Lunar Mini Golf™",
         "category": "amusement",
-        "description": "Welcome to Lunar Mini Golf™: the biggest little game in the galaxy! Tee off on our glow-in-the-dark course built with full-scale lunar terrain and artificial moon gravity for that authentic outer space putt. With holes that stretch longer than three Olympic swimming pools end-to-end and sand traps deeper than a black hole's bad mood, it's the ultimate challenge for golfers of all ages. Watch your ball rocket over half a regulation football field thanks to our low-gravity boost! It's family fun on an astronomical scale—because here at Craterview, 'mini' means maximum memories!.",
+        "description": "Welcome to Lunar Mini Golf™: the biggest little game in the galaxy! Tee off on our glow-in-the-dark course built with full-scale lunar terrain and artificial moon gravity for that authentic outer space putt. With holes that stretch longer than three Olympic swimming pools end-to-end and sand traps deeper than a black hole's bad mood, it's the ultimate challenge for golfers of all ages. Watch your ball rocket over half a regulation football field thanks to our low-gravity boost! It's family fun on an astronomical scale. Because here at Craterview, 'mini' means maximum memories!.",
         "age_suitability": "All ages",
         "location": "The Strip™",
         "price": 2,
@@ -93,7 +93,7 @@
       {
         "name": "Red Planet Gifts™",
         "category": "shopping",
-        "description": "Whether you're searching for the perfect fridge magnet, a T-shirt for your mate, or just forgot your toothbrush again — we've got you covered. Red Planet Gifts™ is your one-stop shop for tasteful souvenirs, last-minute gifts, and everything in between. Proudly featuring local merchandise and exclusive items you won't find anywhere else in the solar system.",
+        "description": "Whether you're searching for the perfect fridge magnet, a T-shirt for your mate, or just forgot your toothbrush again, we've got you covered. Red Planet Gifts™ is your one-stop shop for tasteful souvenirs, last-minute gifts, and everything in between. Proudly featuring local merchandise and exclusive items you won't find anywhere else in the solar system.",
         "age_suitability": "All ages",
         "location": "Pavilion",
         "price": 1,
@@ -145,7 +145,7 @@
       {
         "name": "Penguin Habitat",
         "category": "exhibition",
-        "description": "The moon may have polar bears, but we have penguins! Once a majestic symbol of Earth's frozen landscapes, the Penguin Habitat at Craterview Casino and Resort now offers a cold-weather escape for our favorite flightless friends—now proudly residing on Mars after Earth's ice caps melted away. Located in a custom-built, state-of-the-art snow dome that maintains a comfortable -15°C, this habitat is a frosty throwback to Earth's polar regions, complete with Martian winter vibes that would make any penguin feel right at home. Watch these adorable waddlers slide, dive, and occasionally argue over who gets to take the best nap spot. After all, they've earned their luxury after the great evacuation!",
+        "description": "The moon may have polar bears, but we have penguins! Once a majestic symbol of Earth's frozen landscapes, the Penguin Habitat at Craterview Casino and Resort now offers a cold-weather escape for our favorite flightless friends, now proudly residing on Mars after Earth's ice caps melted away. Located in a custom-built, state-of-the-art snow dome that maintains a comfortable -15°C, this habitat is a frosty throwback to Earth's polar regions, complete with Martian winter vibes that would make any penguin feel right at home. Watch these adorable waddlers slide, dive, and occasionally argue over who gets to take the best nap spot. After all, they've earned their luxury after the great evacuation!",
         "age_suitability": "All ages",
         "location": "Nebula Park",
         "price": 3,
@@ -171,7 +171,7 @@
       {
         "name": "House of Terror™",
         "category": "amusement",
-        "description": "Enter… if you dare! Welcome to the House of Terror™, Craterview's spookiest attraction—where the jump scares are guaranteed, the screams are real, and the set design is very impressive for the budget we worked with! This haunted walkthrough dares you to test your nerves across three terrifying tiers of fright.",
+        "description": "Enter… if you dare! Welcome to the House of Terror™, Craterview's spookiest attraction, where the jump scares are guaranteed, the screams are real, and the set design is very impressive for the budget we worked with! This haunted walkthrough dares you to test your nerves across three terrifying tiers of fright.",
         "age_suitability": "Ages 13 and up",
         "location": "The Strip™",
         "price": 2,
@@ -184,7 +184,7 @@
       {
         "name": "Upside-down Condo",
         "category": "amusement",
-        "description": "Inspired by Earth's quirky upside-down houses, this colossal Martian condo flips the concept—literally and figuratively. Suspended on its roof with staircases that are nearly impossible to climb and balconies underfoot, it's an eye-catching marvel in the heart of the Strip™. Tourists flock for a photo — but locals whisper about the Upside Down Man, a figure said to walk on the ceilings and stare out from the lowest window… upside down.",
+        "description": "Inspired by Earth's quirky upside-down houses, this colossal Martian condo flips the concept... literally and figuratively. Suspended on its roof with staircases that are nearly impossible to climb and balconies underfoot, it's an eye-catching marvel in the heart of the Strip™. Tourists flock for a photo, but locals whisper about the Upside Down Man, a figure said to walk on the ceilings and stare out from the lowest window… upside down.",
         "age_suitability": "All ages",
         "location": "The Strip™",
         "price": 1,
@@ -210,7 +210,7 @@
       {
         "name": "Dogem Cars™",
         "category": "amusement",
-        "description": "Tired of bottling up that sweet, simmering road rage? Let it all out on the Dogem Cars™, where the only rules of the road are impact, impact, and more impact—now with 100% less liability. This neon-drenched arena is where repressed commuters and sugar-fueled children collide—literally. We've recreated the feel of Earth's traffic chaos just before the invention of flying cars, minus the lawsuits, but complete with angry horn-beeping and the occasional wild turn signal. Perfect for all ages (and all grudges), Dogem Cars is Craterview's premiere outlet for your inner rage goblin. No brakes. No reverse. No accountability. Just good, clean-ish fun and mild emotional catharsis.",
+        "description": "Tired of bottling up that sweet, simmering road rage? Let it all out on the Dogem Cars™, where the only rules of the road are impact, impact, and more impact, now with 100% less liability! This neon-drenched arena is where repressed commuters and sugar-fueled children collide, literally. We've recreated the feel of Earth's traffic chaos just before the invention of flying cars, minus the whiplash claims, but complete with angry horn-beeping and the occasional wild turn signal. Perfect for all ages (and all grudges), Dogem Cars is Craterview's premiere outlet for your inner rage goblin. No brakes. No reverse. No accountability. Just good, clean-ish fun and mild emotional catharsis.",
         "age_suitability": "All ages",
         "location": "The Strip™",
         "price": 1,
@@ -249,7 +249,7 @@
       {
         "name": "Mars Safari™",
         "category": "excursion",
-        "description": "Climb aboard the rover and prepare for a once-in-a-lifetime expedition into the breathtaking emptiness of the Martian wilderness. Witness the raw, untouched beauty of miles upon miles of nothing at all. Marvel at the infinite stretch of barren land, punctuated only by the occasional lonely rock or boulder — each one seemingly identical, yet certainly distinct.",
+        "description": "Climb aboard the rover and prepare for a once-in-a-lifetime expedition into the breathtaking emptiness of the Martian wilderness. Witness the raw, untouched beauty of miles upon miles of nothing at all. Marvel at the infinite stretch of barren land, punctuated only by the occasional lonely rock or boulder; each one seemingly identical, yet certainly distinct.",
         "age_suitability": "All ages",
         "location": "Nebula Park",
         "price": 1,
@@ -301,7 +301,7 @@
       {
         "name": "Made On Earth™",
         "category": "shopping",
-        "description": "Made on Earth is your one-stop destination for authentic Earth-crafted treasures. Discover an unbeatable selection of premium memorabilia, including commemorative plastic coins, laser-etched shot glasses, and beautifully molded fridge magnets — all crafted with care by Earth's finest high-speed assembly lines. Looking for something special? Our exclusive \"I ❤️ Mars\" collection is a must-see, featuring durable cotton-blend T-shirts and stylish multi-use tote bags. With unbeatable prices and a vast inventory, Made on Earth delivers unforgettable souvenirs at truly down-to-Earth value.",
+        "description": "Made on Earth is your one-stop destination for authentic Earth-crafted treasures. Discover an unbeatable selection of premium memorabilia, including commemorative plastic coins, laser-etched shot glasses, and beautifully molded fridge magnets, all crafted with care by Earth's finest high-speed assembly lines. Looking for something special? Our exclusive \"I ❤️ Mars\" collection is a must-see, featuring durable cotton-blend T-shirts and stylish multi-use tote bags. With unbeatable prices and a vast inventory, Made on Earth delivers unforgettable souvenirs at truly down-to-Earth value.",
         "age_suitability": "All ages",
         "location": "The Strip™",
         "price": 3,
@@ -314,7 +314,7 @@
       {
         "name": "Rubber Relic",
         "category": "exhibition",
-        "description": "The largest rubber band ball on the entire red planet! Measuring in at a whopping 4 meters (that's 13.1234 feet of tension-fueled glory), this miracle of Martian miscellany is not just a ball—it's a statement. Whether you're a rubber band enthusiast, a lover of the absurd, or just lost on your way to the vending machine, see the Rubber Band Ball for free!",
+        "description": "The largest rubber band ball on the entire red planet! Measuring in at a whopping 4 meters (that's 13.1234 feet of tension-fueled glory), this miracle of Martian miscellany is not just a ball: it's a statement. Whether you're a rubber band enthusiast, a lover of the absurd, or just lost on your way to the vending machine, see the Rubber Band Ball for free!",
         "age_suitability": "All ages",
         "location": "Nebula Park",
         "price": 0,
@@ -340,7 +340,7 @@
       {
         "name": "Crater Gifts™",
         "category": "shopping",
-        "description": "Crater Gifts™ isn't your average gift shop — it's a bizarre bazaar of Martian odds and ends. From glittery alien snow globes and mysterious orbs to dog treats, plastic ray guns, and full-body costumes of 21st century celebrities, there's truly something for everyone (and no one). Whether you're picking up a gift, a laugh, or a last-minute disguise, Crater Gifts™ has exactly the kind of weird you'd expect to find on Mars — and then some.",
+        "description": "Crater Gifts™ isn't your average gift shop. It's a bizarre bazaar of Martian odds and ends. From glittery alien snow globes and mysterious orbs to dog treats, plastic ray guns, and full-body costumes of 21st century celebrities, there's truly something for everyone (and no one). Whether you're picking up a gift, a laugh, or a last-minute disguise, Crater Gifts™ has exactly the kind of weird you'd expect to find on Mars, and then some.",
         "age_suitability": "All ages",
         "location": "The Crater",
         "price": 2,

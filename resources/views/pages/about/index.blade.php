@@ -3,7 +3,7 @@
 @section('content')
     <section class="position-relative text-center text-light text-shadow-black">
         <img 
-            src="{{ asset('images/about/lobby.webp') }}" 
+            src="{{ asset('images/about/corridor.webp') }}" 
             class="img-fluid w-100" 
             style="object-fit: cover; height: 80vh;" 
             alt="Craterview Lobby"
@@ -18,7 +18,7 @@
             <p>Established in 2972, Craterview cemented itself as Mars's premier destination for a perfectly adequate vacation experience.</p>
             <img src="{{ asset('images/global/stars.webp') }}" alt="3 star rating" class="img-fluid mx-auto d-block" width="427" height="104">  
             <p class="fst-italic small">Rated 3 stars by the Intergalactic Hotel Standards Committee</p>
-            <h5 class="mt-2">Our 3-star rating isn't just a number — it's a badge of honor.</h5>
+            <h5 class="mt-2">Our 3-star rating isn't just a number. It's a badge of honour.</h5>
             <p class="mt-4">It is a testament to our consistency, unwavering commitment, and extraordinary mediocrity.</p>
         </div>
     </section>

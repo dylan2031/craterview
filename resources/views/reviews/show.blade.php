@@ -9,7 +9,7 @@
 
     <!-- Review Author and Date -->
     <p class="text-muted">
-        <strong>{{ $review->user->name }}'s</strong> review left on
+        <strong>{{ $review->user->display_name }}'s</strong> review left on
         {{ $review->created_at->format('M j, ') . ($review->fictional_year ?? $review->created_at->year) }}
     </p>
 

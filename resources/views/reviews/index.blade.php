@@ -58,7 +58,7 @@
                 @if (count($reviews)>0)
                     @foreach ($reviews as $review)
                         <div class="xp-card card-text p-3 mb-2">
-                            <p class="mb-0">{{ $review->user->name }} says...</p>
+                            <p class="mb-0">{{ $review->user->display_name }} says...</p>
                             <small class="text-muted">
                                 {{-- show fake year if there, this is just for worldbuilding so some reviews are from the future --}}
                                 {{ $review->created_at->format('M j, ') . ($review->fictional_year ?? $review->created_at->year) }}

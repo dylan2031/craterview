@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Review;
 use App\Services\AIReviewResponder;
+use Illuminate\Support\Facades\Validator;
 
 class ReviewsController extends Controller
 {
@@ -42,11 +43,32 @@ class ReviewsController extends Controller
     public function store(Request $request)
     {
         // Validate the incoming request data
-        $validated = $request->validate([
-            'title' => 'required|string|max:255',
-            'star_rating' => 'required|integer|min:1|max:5',
-            'body' => 'required|string',
-        ]);
+        $validated = Validator::make($request->all(), [
+            'title' => [
+                'required',
+                'string',
+                'max:255',
+            ],
+            'star_rating' => [
+                'required',
+                'integer',
+                'between:1,5',
+            ],
+            'body' => [
+                'required',
+                'string',
+                'max:5000',
+            ],
+        ], [
+            'title.required' => 'Review title cannot be blank',
+            'title.max' => 'Review title exceeds character limit',
+
+            'star_rating.required' => 'Please select a star rating',
+            'star_rating.between' => 'Star rating must be between 1 and 5',
+
+            'body.required' => 'Review body cannot be blank',
+            'body.max' => 'Review is too long',
+        ])->validate();
 
         // Add the user_id to the validated data
         $validated['user_id'] = auth()->id();
@@ -61,7 +83,7 @@ class ReviewsController extends Controller
 
         // Back to page
         return redirect('/reviews#top')->with('message', 'Thank you for your feedback. Your review has been submitted successfully.')
-        ->with('aiNotification', true);;
+        ->with('aiNotification', true);
     }
 
     /**
@@ -95,11 +117,32 @@ class ReviewsController extends Controller
     {
         $review = Review::findOrFail($id);
     
-        $validated = $request->validate([
-            'title' => 'required|string|max:255',
-            'star_rating' => 'required|integer|min:1|max:5',
-            'body' => 'required|string',
-        ]);
+        $validated = Validator::make($request->all(), [
+            'title' => [
+                'required',
+                'string',
+                'max:255',
+            ],
+            'star_rating' => [
+                'required',
+                'integer',
+                'between:1,5',
+            ],
+            'body' => [
+                'required',
+                'string',
+                'max:5000',
+            ],
+        ], [
+            'title.required' => 'Review title cannot be blank',
+            'title.max' => 'Review title exceeds character limit',
+
+            'star_rating.required' => 'Please select a star rating',
+            'star_rating.between' => 'Star rating must be between 1 and 5',
+
+            'body.required' => 'Review body cannot be blank',
+            'body.max' => 'Review is too long',
+        ])->validate();
     
         $review->update($validated);
     

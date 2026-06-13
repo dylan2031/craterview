@@ -6,7 +6,7 @@
 </div>
 <div class="container">
     <h3 class="mt-4">Edit Review</h3>
-    <form action="{{ route('reviews.update', $review->id) }}" method="POST">
+    <form action="{{ route('reviews.update', $review->id) }}" method="POST" novalidate>
         @csrf
         @method('PUT')
         <!-- Title -->

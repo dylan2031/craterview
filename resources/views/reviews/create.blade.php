@@ -6,7 +6,7 @@
 </div>
 <div class="container">
     <h3 class="mt-4">Write a review</h3>
-    <form action="{{ route('reviews.store') }}" method="POST">
+    <form action="{{ route('reviews.store') }}" method="POST" novalidate>
         @csrf
         <!-- Title -->
         <div class="mb-3">

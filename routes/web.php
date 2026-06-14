@@ -9,7 +9,7 @@ use App\Http\Controllers\ReservationsController;
 use App\Http\Controllers\Dashboard\NewsController;
 use App\Http\Controllers\Dashboard\ConverterController;
 use App\Http\Controllers\Dashboard\PromosController;
-use App\Http\Controllers\ControlPanelController;
+use App\Http\Controllers\AccPanelController;
 use App\Http\Controllers\Auth\AccountUpdateController;
 
 // **************************//
@@ -273,28 +273,28 @@ Route::get('/auth', function () {
 
 Route::middleware(['auth'])->group(function () {
 
-    Route::get('/dashboard/cpanel', [ControlPanelController::class, 'index'])
-        ->name('cpanel');
+    Route::get('/dashboard/acc-panel', [AccPanelController::class, 'index'])
+        ->name('acc-panel');
 
-    Route::get('/dashboard/cpanel/username', [AccountUpdateController::class, 'showUsername'])
-        ->name('cpanel.username.show');
+    Route::get('/dashboard/acc-panel/username', [AccountUpdateController::class, 'showUsername'])
+        ->name('acc-panel.username.show');
 
-    Route::post('/dashboard/cpanel/username', [AccountUpdateController::class, 'updateUsername'])
-        ->name('cpanel.username.update');
+    Route::post('/dashboard/acc-panel/username', [AccountUpdateController::class, 'updateUsername'])
+        ->name('acc-panel.username.update');
 
-    Route::get('/dashboard/cpanel/email', [AccountUpdateController::class, 'showEmail'])
-        ->name('cpanel.email.show');
+    Route::get('/dashboard/acc-panel/email', [AccountUpdateController::class, 'showEmail'])
+        ->name('acc-panel.email.show');
 
-    Route::post('/dashboard/cpanel/email', [AccountUpdateController::class, 'updateEmail'])
-        ->name('cpanel.email.update');
+    Route::post('/dashboard/acc-panel/email', [AccountUpdateController::class, 'updateEmail'])
+        ->name('acc-panel.email.update');
 
-    Route::get('/dashboard/cpanel/password', [AccountUpdateController::class, 'showPassword'])
-        ->name('cpanel.password.show');
+    Route::get('/dashboard/acc-panel/password', [AccountUpdateController::class, 'showPassword'])
+        ->name('acc-panel.password.show');
 
-    Route::post('/dashboard/cpanel/password', [AccountUpdateController::class, 'updatePassword'])
-        ->name('cpanel.password.update');
+    Route::post('/dashboard/acc-panel/password', [AccountUpdateController::class, 'updatePassword'])
+        ->name('acc-panel.password.update');
 
-    Route::get('/dashboard/cpanel/region', [AccountUpdateController::class, 'showRegion'])
-        ->name('cpanel.region.show');
+    Route::get('/dashboard/acc-panel/region', [AccountUpdateController::class, 'showRegion'])
+        ->name('acc-panel.region.show');
 
 });

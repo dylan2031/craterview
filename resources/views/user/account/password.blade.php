@@ -9,7 +9,7 @@
 @section('form')
 
 <form method="POST"
-      action="{{ route('cpanel.password.update') }}" novalidate>
+      action="{{ route('acc-panel.password.update') }}" novalidate>
 
     @csrf
 

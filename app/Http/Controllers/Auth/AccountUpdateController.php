@@ -24,7 +24,7 @@ class AccountUpdateController extends Controller
     public function showUsername()
     {
         return view('user.account.username', [
-            'windowTitle' => 'Control Panel',
+            'windowTitle' => 'Account Panel',
         ]);
     }
 
@@ -60,7 +60,7 @@ class AccountUpdateController extends Controller
         $user->save();
 
         return redirect()
-            ->route('cpanel')->with('message', 'Username successfully updated!');
+            ->route('acc-panel')->with('message', 'Username successfully updated!');
     }
 
     /**************************
@@ -72,7 +72,7 @@ class AccountUpdateController extends Controller
     public function showEmail()
     {
         return view('user.account.email', [
-            'windowTitle' => 'Control Panel',
+            'windowTitle' => 'Account Panel',
         ]);
     }
 
@@ -103,7 +103,8 @@ class AccountUpdateController extends Controller
         $user->email = $request->input('email');
         $user->save();
 
-        return back()->with('message', 'Email updated successfully');
+        return redirect()->
+            route('acc-panel')->with('message', 'Email updated successfully!');
     }
 
     /**************************
@@ -115,7 +116,7 @@ class AccountUpdateController extends Controller
     public function showPassword()
     {
         return view('user.account.password', [
-            'windowTitle' => 'Control Panel',
+            'windowTitle' => 'Account Panel',
         ]);
     }
 
@@ -163,8 +164,8 @@ class AccountUpdateController extends Controller
         $user->save();
 
         return redirect()
-            ->route('cpanel')
-            ->with('message', $warning ?? 'Password successfully updated.');
+            ->route('acc-panel')
+            ->with('message', $warning ?? 'Password successfully updated!');
     }
 
     /**************************
@@ -176,7 +177,7 @@ class AccountUpdateController extends Controller
     public function showRegion()
     {
         return view('user.account.region', [
-            'windowTitle' => 'Control Panel',
+            'windowTitle' => 'Account Panel',
         ]);
     }
 }

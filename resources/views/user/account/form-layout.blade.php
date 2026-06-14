@@ -6,14 +6,14 @@
     <div class="box95 w-100">
 
         <div class="titlebar-95 d-flex align-items-center px-2">
-            <a href="{{ route('cpanel') }}"
+            <a href="{{ route('acc-panel') }}"
                class="win95-back d-inline-flex align-items-center text-decoration-none text-light">
 
                 <img src="{{ asset('images/icons/back.svg') }}"
                      width="16"
                      class="me-1">
 
-                Back to Control Panel
+                Back to Account Panel
             </a>
         </div>
 

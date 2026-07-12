@@ -45,7 +45,7 @@
             @include('includes.stars')
             <p>Perched on the rim of the breathtaking manmade crater known as the '2077 United Nations Space Commission Nuclear
                 Power Plant Accident Site' &#40;name change pending&#41;, Craterview blends nostalgic Earth comfort with modern 
-                interplanetary convenience &mdash; offering panoramic views, cutting-edge gambling facilities, all the amenities 
+                interplanetary convenience&comma; offering panoramic views, cutting-edge gambling facilities, all the amenities 
                 you could ever dream of! Please be aware that this does not include on-site laundry.
             </p>
             <p>Whether you're here on business, pleasure, or both, Craterview is your gateway to the Red Planet's most budget-friendly crater.</p>

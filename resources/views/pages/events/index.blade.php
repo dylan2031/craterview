@@ -116,11 +116,10 @@
             style="object-fit: cover; height: 100vh;" 
             alt="Martian Crater View"
             loading="lazy" decoding="async" width="800" height="1080">
-        >
 
         <div class="position-absolute top-50 start-50 translate-middle w-100 px-3">
             <h5 class="mb-1">Craterview Casino & Resort presents...</h5>
-            <img src="{{ asset('images/events/domino-stage.webp') }}" alt="Domino Stage" class="img-fluid mx-auto d-block" width="350" height="350>   
+            <img src="{{ asset('images/events/domino-stage.webp') }}" alt="Domino Stage" class="img-fluid mx-auto d-block" width="350" height="350">   
             <p class="mb-1">Live performances brought to you by</p>
             <img src="{{ asset('images/sponsors/domino-sm.webp') }}" alt="Domino Cigarette Company" width="135" height="60" style="height: 60px; vertical-align: middle;">
             <p>the #1 doctor recommended brand on Mars!</p>

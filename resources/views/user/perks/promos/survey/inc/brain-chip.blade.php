@@ -7,7 +7,7 @@
                 <img src="{{ asset('images/icons/close.png') }}" alt="Close" class="close position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close">
             </div>
             <div class="modal-body bg-light text-center p-4">
-                <h3 style="font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;" class="text-primary" id="winnerflash">
+                <h3 style="font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;" class="text-primary" id="winnerflash">
                     WINNER&excl;&excl;&excl;&excl;&excl;&excl;
                 </h3>
                 <p>You have won a NeuraChip Pro X12</p>

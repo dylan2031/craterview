@@ -7,12 +7,12 @@
                 <img src="{{ asset('images/icons/close.png') }}" alt="Close" class="close position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close">
             </div>
             <div class="modal-body bg-light text-center p-4" id="flash">
-                <h3 style="font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;">
+                <h3 style="font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;">
                     CONGRATULATIONS!!!!!!
                 </h3>
-                <p style="font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;">You may have won an xbox 720&excl;&excl;&excl;&excl;&excl;&excl;</p>
+                <p style="font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;">You may have won an xbox 720&excl;&excl;&excl;&excl;&excl;&excl;</p>
                 <img src="{{ asset('images/ads/720.jpg') }}" class="img-fluid p-1 mx-auto d-block" alt="720">
-                <p style="font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;">Enter your details to enter prize draw &lpar;ONLY 0 SPOTS LEFT&excl;&excl;&excl;&excl;&excl;&excl;&rpar;</p>
+                <p style="font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;">Enter your details to enter prize draw &lpar;ONLY 0 SPOTS LEFT&excl;&excl;&excl;&excl;&excl;&excl;&rpar;</p>
                 <button type="button" disabled>Entries are now closed</button>
            </div>
         </div>                        

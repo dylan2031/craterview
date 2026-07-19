@@ -117,7 +117,7 @@
                     loading="lazy" decoding="async" width="1600" height="800">
                     <div class="d-flex flex-column flex-md-row justify-content-center gap-3 text-light mx-auto">
                         <a href="/extranet-portal" class="btn xp-btn-primary">Shop now</a>
-                        <a href="/extranet-portal" class="btn xp-btn-secondary">Donate</a>
+                        <a href="{{ asset('files/sponsors/domino-form-T51-b.pdf') }}" target="_blank" class="btn xp-btn-secondary">Donate</a>
                     </div>
                 </div>
             </div>

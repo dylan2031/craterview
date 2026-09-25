@@ -36,7 +36,7 @@ class AIReviewResponder
                 ]
             ],
             'temperature' => 0.5,
-            'max_tokens' => 200
+            'max_tokens' => 300
         ]);
 
         $reply = $response->json('choices.0.message.content');

@@ -85,6 +85,7 @@
         </div>         
     @else
         <p>You haven't left any reviews yet. When you do, they will appear here.</p>
+        <a href="/reviews/create" class="btn xp-btn-secondary ms-2 mb-2"><i class="bi bi-star"></i> Write a new review</a>
     @endif
 </div>
 @endsection

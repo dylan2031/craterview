@@ -351,17 +351,17 @@
         "keywords": ["gift", "shop", "souvenir", "t shirt", "t-shirt", "essentials", "toilet", "toothbrush", "magnet", "merch", "airsoft", "gun"]
       },
       {
-        "name": "Biggies™ Nightclub",
+        "name": "Purgatory™ Nightclub",
         "category": "nightlife",
-        "description": "Party like it's 2984! Imported directly from the town of Pontefract's nightlife on Earth, Biggies™ franchised Mars location is an unexpected venture into interplanetary expansion. It offers an unforgettable experience: two chaotic floors, five music zones that blur into each other, and a fully operational robot staff ready to serve your every questionable decision. Moreover, the legendary sticky floors have been reimagined as a cutting-edge feature: the innovative Magnetic-Adhesion Dancefloor™. Crafted with the same advanced Martian polymer technology used in spacewalk boots, our dancefloor ensures you stay grounded, both physically and emotionally. Gone are the days of slipping on spilled drinks. Now you stick where you stand, just like back home. Open late, and always cheap. Biggies™: Because gravity shouldn't be the only thing holding you back!",
+        "description": "Saints and sinners alike are eternally cursed to party until the sun comes up at Purgatory, where the water turns into more than just wine with 2 for 1 select spirits plus mixer and Ω2 shots before midnight.",
         "age_suitability": "Adults",
         "location": "The Strip™",
         "price": 1,
         "hours": "10:00 PM - 6:00 AM",
-        "image": "biggies.avif",
+        "image": "purgatory.avif",
         "included_in_pass": false,
         "featured": false,
-        "keywords": ["drink", "bar", "club", "late"]
+        "keywords": ["drink", "bar", "bars", "club", "late"]
       },
       {
         "name": "21st Century Pool™",

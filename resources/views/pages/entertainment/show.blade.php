@@ -17,7 +17,7 @@
                 use Illuminate\Support\Str;
                 $ageSuitabilityMessages = [
                     'All ages' => 'Family-friendly fun for everyone!',
-                    'Ages 13 and up' => 'For those too old for daycare but too wild for golf — this one\'s for you.',
+                    'Ages 13 and up' => 'This one\'s for those of you that are too old for daycare but too wild for golf.',
                     'Adults' => 'While Craterview Casino & Resort is a family-friendly experience and everyone is welcome, this particular attraction is perfect for off-the-clock businesspeople, parents when the kids are asleep, and your average Jane Does and Joe Schmos who just need a break.',
                 ];
                 $ageKey = $item['age_suitability'];

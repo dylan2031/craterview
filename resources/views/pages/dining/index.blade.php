@@ -51,7 +51,7 @@
                     <br>
                     <div class="mt-4 d-flex flex-column flex-md-row gap-3 text-light">
                         <a href="{{ asset('files/menu/all-inclusive-buffet.pdf') }}" target="_blank" rel="noopener noreferrer" class="btn xp-btn-primary"><i class="bi bi-fork-knife"></i> View Menu</a>
-                        <a href="/extranet-portal" class="btn xp-btn-secondary"><i class="bi bi-telephone"></i> Reservations</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#neuraModal" class="btn xp-btn-secondary"><i class="bi bi-cpu"></i> Reservations</a>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                         <br>
                         <div class="mt-4 d-flex flex-column flex-md-row gap-3 text-light">
                             <a href="{{ asset('files/menu/' . Str::slug($item['name']) . '.pdf') }}" target="_blank" rel="noopener noreferrer" class="btn xp-btn-primary"><i class="bi bi-fork-knife"></i> View Menu</a>
-                            <a href="/extranet-portal" class="btn xp-btn-secondary"><i class="bi bi-telephone"></i> Reservations</a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#neuraModal" class="btn xp-btn-secondary"><i class="bi bi-cpu"></i> Reservations</a>
                         </div>
                         {{-- keeping this in case I want to revert later
                         <div class="d-flex flex-column flex-md-row align-items-center gap-3 text-light">
@@ -90,5 +90,6 @@
                 <hr>
             @endforeach
         </div>
+        @include('includes.neurachip-contact')
     </section>
 @endsection

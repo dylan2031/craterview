@@ -39,12 +39,13 @@
                         @if($venue['historical-venue'])
                             <p>Maintained by the <img src="{{ asset('images/sponsors/jack-maple.webp') }}" alt="Jack and Maple" style="height: 30px; vertical-align: middle;"> Hospitality for Historical Preservation Program.</p>
                         @endif
-                        <a href="/extranet-portal" class="btn xp-btn-primary">Contact sales</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#neuraModal" class="btn xp-btn-primary">Contact sales</a>
                     </div>
                 </div>
                 <hr>
             @endforeach
         </div>
+        @include('includes.neurachip-contact')
     </section>
     <section">
         <div class="container text-center">

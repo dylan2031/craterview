@@ -16,7 +16,7 @@
         <style>
         @media (max-width: 767px) {
             .mob-change {
-                content: url('{{ asset('images/reviews/reviews-mobile-blur.webp') }}');
+                content: url('{{ asset('images/reviews/reviews-mobile.webp') }}');
             }
         }
         </style>
